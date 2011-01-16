@@ -1,3 +1,16 @@
+h3. Türkçe Tercüme 
+
+Ana sitenin Türkçe tercümesini yaparken takip edebilmek amaçlı olarak koyasını 
+oluşturmaya çalıştım. Buradan klonlayıp klasörün içinde
+
+script/server -e production
+
+komutuyla çalıştırabilirsiniz. Administrator - radiant kullanıcı ve şifre ile giriliyor. 
+Ben önce lokalde alıştırma yapayım diye bunu tercih ettim. Ama bir şekilde sayfaları veritabanı 
+dışına alıp çalışmak daha doğru olacak.
+
+Radiant cms kullanımı için gem olarak kurulması gerekiyor. Şimdilik sqlite3 veritabanı kullandım.
+ 
 == Welcome to Radiant
 
 Radiant is a no-fluff, open source content management system designed for
