@@ -1,0 +1,355 @@
+# Logfile created on Sun Jan 16 09:27:36 +0200 2011
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:35:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Redirected to http://localhost:3000/admin/welcome
+Completed in 128ms (DB: 13) | 302 Found [http://localhost/]
+
+
+Processing Admin::WelcomeController#index (for 127.0.0.1 at 2011-01-16 09:35:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 16ms (DB: 2) | 302 Found [http://localhost/admin/welcome]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:35:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-16 09:35:33) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 67ms (View: 58, DB: 4) | 200 OK [http://localhost/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-16 09:35:48) [POST]
+  Parameters: {"username_or_email"=>"admin", "action"=>"login", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/welcome", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 22ms (DB: 3) | 302 Found [http://localhost/admin/login]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:35:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 568ms (View: 513, DB: 6) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 09:36:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 1007ms (View: 923, DB: 11) | 200 OK [http://localhost/admin/pages/new]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 09:37:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 101ms (View: 60, DB: 12) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:37:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 326ms (View: 25, DB: 21) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 09:38:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 348ms (View: 280, DB: 30) | 200 OK [http://localhost/admin/pages/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 09:41:16) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"en", "title"=>"Ruby Programming Language", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "content"=>"<r:find url=\"/en/news/\">\r\n<r:children>\r\n\r\n<r:each limit=\"2\" order=\"desc\">\r\n<div class=\"post\">\r\n  <h3><r:link /></h3>\r\n\r\n  <r:content />\r\n\r\n  <r:if_content part=\"extended\"><p><r:link>Continue&nbsp;Reading&#8230;</r:link></p></r:if_content>\r\n\r\n  <p class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></p>\r\n</div>\r\n\r\n</r:each>\r\n\r\n<div id=\"news\">\r\n  <h3><a href=\"/en/news/\">Other News</a></h3>\r\n  <ul><r:each limit=\"3\" offset=\"2\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <ul><r:each limit=\"3\" offset=\"5\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <p class=\"more\"><a href=\"/en/news/\">More&nbsp;News&#8230;</a></p>\r\n</div>\r\n\r\n</r:children>\r\n</r:find>\r\n", "_destroy"=>""}, "1"=>{"name"=>"extended", "filter_id"=>"", "content"=>"", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"Home", "parent_id"=>"", "published_at"=>"", "status_id"=>"1", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 404ms (DB: 11) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:41:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 372ms (View: 331, DB: 9) | 200 OK [http://localhost/admin/pages]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:41:30) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 65ms (View: 18, DB: 20) | 404 Not Found [http://localhost/]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:41:38) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 116ms (View: 15, DB: 22) | 404 Not Found [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:41:46) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "Home"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 113ms (View: 15, DB: 25) | 404 Not Found [http://localhost/en/Home]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:42:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 99ms (View: 60, DB: 13) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 09:42:07) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 294ms (View: 263, DB: 15) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-16 09:42:25) [PUT]
+  Parameters: {"commit"=>"Save Changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"1", "page"=>{"class_name"=>"", "slug"=>"en", "title"=>"Ruby Programming Language", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "id"=>"1", "content"=>"<r:find url=\"/en/news/\">\r\n<r:children>\r\n\r\n<r:each limit=\"2\" order=\"desc\">\r\n<div class=\"post\">\r\n  <h3><r:link /></h3>\r\n\r\n  <r:content />\r\n\r\n  <r:if_content part=\"extended\"><p><r:link>Continue&nbsp;Reading&#8230;</r:link></p></r:if_content>\r\n\r\n  <p class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></p>\r\n</div>\r\n\r\n</r:each>\r\n\r\n<div id=\"news\">\r\n  <h3><a href=\"/en/news/\">Other News</a></h3>\r\n  <ul><r:each limit=\"3\" offset=\"2\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <ul><r:each limit=\"3\" offset=\"5\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <p class=\"more\"><a href=\"/en/news/\">More&nbsp;News&#8230;</a></p>\r\n</div>\r\n\r\n</r:children>\r\n</r:find>\r\n", "_destroy"=>""}, "1"=>{"name"=>"extended", "filter_id"=>"", "id"=>"2", "content"=>"", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"Home", "parent_id"=>"", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 284ms (DB: 8) | 302 Found [http://localhost/admin/pages/1]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:42:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 568ms (View: 526, DB: 8) | 200 OK [http://localhost/admin/pages]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:42:41) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 64ms (View: 16, DB: 21) | 404 Not Found [http://localhost/]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:42:48) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 325ms (DB: 31) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:43:08) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "home"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 128ms (View: 27, DB: 31) | 404 Not Found [http://localhost/en/home]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:43:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 360ms (View: 319, DB: 15) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 09:45:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 49ms (View: 32, DB: 7) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#new (for 127.0.0.1 at 2011-01-16 09:46:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/new
+Completed in 115ms (View: 98, DB: 6) | 200 OK [http://localhost/admin/layouts/new]
+
+
+Processing Admin::LayoutsController#create (for 127.0.0.1 at 2011-01-16 09:47:45) [POST]
+  Parameters: {"layout"=>{"name"=>"English Home Page", "content_type"=>"text/html;charset=utf-8", "lock_version"=>"0", "content"=>"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\r\n   \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n  <head>\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />\r\n    <title><r:content part=\"title\" inherit=\"true\" contextual=\"true\" /></title>\r\n<r:snippet name=\"stylesheets\" />\r\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/favicon.ico\" />\r\n    <r:content part=\"head\" />\r\n    <r:if_content part=\"styles\">\r\n    <style type=\"text/css\">\r\n    <!--\r\n    <r:content part=\"styles\" />\r\n    -->\r\n    </style>\r\n    </r:if_content>\r\n  </head>\r\n  <body id=\"home-page-layout\">\r\n    <div id=\"page\">\r\n      <div id=\"header\">\r\n        <div id=\"logo\"><img src=\"/images/logo.gif\" width=\"331\" height=\"119\" alt=\"Ruby - A Programmer's Best Friend\" title=\"\" /></div>\r\n        <div class=\"site-links\">\r\n<r:snippet name=\"en-site-links\" />\r\n        </div>\r\n      </div>\r\n      <hr class=\"hidden-modern\" />\r\n      <div id=\"main-wrapper\">\r\n        <div id=\"main\">\r\n          <div id=\"content-wrapper\">\r\n            <div id=\"head-wrapper-1\">\r\n              <div id=\"head-wrapper-2\">\r\n                <div id=\"head\">\r\n\r\n                  <div id=\"intro\">\r\n                    <h1>Ruby is&#8230;</h1>\r\n                    <p>A dynamic, open source programming language with a focus on\r\n                      simplicity and productivity. It has an elegant syntax that is\r\n                      natural to read and easy to write.</p>\r\n                    <p><a href=\"about/\">Read&nbsp;More&#8230;</a></p>\r\n                  </div>\r\n                  <div id=\"code\">\r\n<r:snippet name=\"random-code-snippet\" />\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div id=\"content\">\r\n<r:content />\r\n            </div>\r\n          </div>\r\n          <hr class=\"hidden-modern\" />\r\n          <div id=\"sidebar-wrapper\">\r\n            <div id=\"sidebar\">\r\n<r:content part=\"sidebar\" />\r\n            </div>\r\n          </div>\r\n          <hr class=\"hidden-modern\" />\r\n          <div class=\"foot\">\r\n            <div class=\"site-links\">\r\n<r:snippet name=\"en-site-links\" />\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div id=\"search-box\">\r\n<r:snippet name=\"en-search\" />\r\n      </div>\r\n      <div id=\"footer\">\r\n<r:snippet name=\"en-footer\" />\r\n      </div>\r\n    </div>\r\n<r:snippet name=\"google-analytics\" />\r\n  </body>\r\n</html>\r\n"}, "commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/layouts"}
+Redirected to http://localhost:3000/admin/layouts
+Completed in 223ms (DB: 31) | 302 Found [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 09:47:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 96ms (View: 67, DB: 8) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#new (for 127.0.0.1 at 2011-01-16 09:48:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/new
+Completed in 130ms (View: 109, DB: 5) | 200 OK [http://localhost/admin/layouts/new]
+
+
+Processing Admin::LayoutsController#create (for 127.0.0.1 at 2011-01-16 09:50:03) [POST]
+  Parameters: {"layout"=>{"name"=>"English Normal Page", "content_type"=>"text/html;charset=utf-8", "lock_version"=>"0", "content"=>"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\r\n   \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n  <head>\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />\r\n    <title><r:content part=\"title\" inherit=\"true\" contextual=\"true\" /></title>\r\n<r:snippet name=\"stylesheets\" />\r\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/favicon.ico\" />\r\n    <r:content part=\"head\" />\r\n    <r:if_content part=\"styles\">\r\n    <style type=\"text/css\">\r\n    <!--\r\n    <r:content part=\"styles\" />\r\n    -->\r\n    </style>\r\n    </r:if_content>\r\n  </head>\r\n  <body>\r\n    <div id=\"page\">\r\n      <div id=\"header\">\r\n        <div id=\"logo\"><a href=\"/en/\"><img src=\"/images/logo.gif\" width=\"331\" height=\"119\" alt=\"Ruby - A Programmer's Best Friend\" title=\"\" /></a></div>\r\n        <div class=\"site-links\">\r\n<r:snippet name=\"en-site-links\" />\r\n        </div>\r\n      </div>\r\n      <hr class=\"hidden-modern\" />\r\n      <div id=\"main-wrapper\">\r\n        <div id=\"main\">\r\n          <div id=\"content-wrapper\">\r\n            <div id=\"head-wrapper-1\">\r\n              <div id=\"head-wrapper-2\">\r\n                <div id=\"head\">\r\n<r:content part=\"multi-page\" inherit=\"true\" contextual=\"true\" />\r\n                  <h1><r:content part=\"title\" inherit=\"true\" contextual=\"true\" /></h1>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div id=\"content\">\r\n<r:content />\r\n<div id=\"extended\">\r\n<r:content part=\"extended\" />\r\n</div>\r\n            </div>\r\n          </div>\r\n          <hr class=\"hidden-modern\" />\r\n          <div id=\"sidebar-wrapper\">\r\n            <div id=\"sidebar\">\r\n<r:content part=\"sidebar\" inherit=\"true\" />\r\n            </div>\r\n          </div>\r\n          <hr class=\"hidden-modern\" />\r\n          <div class=\"foot\">\r\n            <div class=\"site-links\">\r\n<r:snippet name=\"en-site-links\" />\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div id=\"search-box\">\r\n<r:snippet name=\"en-search\" />\r\n      </div>\r\n      <div id=\"footer\">\r\n<r:snippet name=\"en-footer\" />\r\n      </div>\r\n    </div>\r\n<r:snippet name=\"google-analytics\" />\r\n  </body>\r\n</html>"}, "commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/layouts"}
+Redirected to http://localhost:3000/admin/layouts
+Completed in 147ms (DB: 22) | 302 Found [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 09:50:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 411ms (View: 379, DB: 21) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#new (for 127.0.0.1 at 2011-01-16 09:51:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/new
+Completed in 94ms (View: 80, DB: 5) | 200 OK [http://localhost/admin/layouts/new]
+
+
+Processing Admin::LayoutsController#create (for 127.0.0.1 at 2011-01-16 09:52:55) [POST]
+  Parameters: {"layout"=>{"name"=>"Error Message", "content_type"=>"text/html;charset=utf-8", "lock_version"=>"0", "content"=>"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\r\n   \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n  <head>\r\n    <title>Oops! <r:title /></title>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=iso-8859-1\" />\r\n    <style type=\"text/css\">\r\n    <!--\r\n      a {\r\n        color: #3256B6;\r\n      }\r\n      a:visited {\r\n        color: #7130B8;\r\n      }\r\n      a:hover, a:visited:hover {\r\n        color: #C61A1A;\r\n        text-decoration: none;\r\n      }\r\n      body {\r\n        font-family: Verdana, Arial, Helvetica, sans-serif;\r\n        font-size: 80%;\r\n        text-align: center;\r\n      }\r\n      h1, h2 {\r\n        font-family: Georgia, Palatino, \"Times New Roman\", Times, serif;\r\n        font-weight: normal;\r\n      }\r\n      h1 { \r\n        font-size: 400%;\r\n        margin-bottom: 0;\r\n        text-align: center;\r\n      }\r\n      h2 {\r\n        color: #c61a1a;\r\n        font-size: 180%;\r\n      }\r\n      p {\r\n        line-height: 1.7;\r\n        margin-top: 1.5em;\r\n      }\r\n      .two-column {\r\n        float: left;\r\n        margin-bottom: 1.5em;\r\n        padding-left: 10%;\r\n        padding-right: 10%;\r\n        width: 80%;\r\n      }\r\n      .two-column .column {\r\n        float: left;\r\n        width: 49%;\r\n      }\r\n      #page {\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        text-align: left;\r\n        width: 42em;\r\n      }\r\n      #search-box {\r\n        background-color: #fcfcf1;\r\n        border-top: 1px dotted #ddd;\r\n        border-bottom: 1px dotted #ddd;\r\n        margin-top: 2em;\r\n        margin-bottom: 2em;\r\n        text-align: center;\r\n      }\r\n      #search-box form {\r\n        margin: 1.5em;\r\n      }\r\n      #search-box .textbox {\r\n        font-size: 100%;\r\n        width: 250px;\r\n      }\r\n      #search-box input[type=submit] {\r\n        font-size: 140%;\r\n      }\r\n      #footer {\r\n        text-align: center;\r\n      }\r\n    -->\r\n    </style>\r\n  </head>\r\n  <body>\r\n    <div id=\"page\">\r\n      <div id=\"header\">\r\n        <h1>Oops!</h1>\r\n        <h2><r:title /></h2>\r\n      </div>\r\n      <div id=\"content\">\r\n        <r:content />\r\n        <div id=\"search-box\">\r\n<r:snippet name=\"en-search\" />\r\n        </div>\r\n      </div>\r\n      <div id=\"footer\">\r\n        <img src=\"/images/small-logo.gif\" alt=\"Ruby - A Programmer's Best Friend\" />\r\n      </div>\r\n    </div>\r\n<r:snippet name=\"google-analytics\" />\r\n  </body>\r\n</html>\r\n"}, "commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/layouts"}
+Redirected to http://localhost:3000/admin/layouts
+Completed in 185ms (DB: 39) | 302 Found [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 09:52:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 57ms (View: 40, DB: 7) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#new (for 127.0.0.1 at 2011-01-16 09:53:37) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/new
+Completed in 93ms (View: 78, DB: 6) | 200 OK [http://localhost/admin/layouts/new]
+
+
+Processing Admin::LayoutsController#create (for 127.0.0.1 at 2011-01-16 09:54:15) [POST]
+  Parameters: {"layout"=>{"name"=>"XML", "content_type"=>"text/xml;charset=utf-8", "lock_version"=>"0", "content"=>"<r:content />"}, "commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/layouts"}
+Redirected to http://localhost:3000/admin/layouts
+Completed in 130ms (DB: 9) | 302 Found [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 09:54:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 94ms (View: 74, DB: 8) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#new (for 127.0.0.1 at 2011-01-16 09:54:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/new
+Completed in 83ms (View: 58, DB: 7) | 200 OK [http://localhost/admin/layouts/new]
+
+
+Processing Admin::LayoutsController#create (for 127.0.0.1 at 2011-01-16 09:55:08) [POST]
+  Parameters: {"layout"=>{"name"=>"None", "content_type"=>"", "lock_version"=>"0", "content"=>"<r:content />"}, "commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/layouts"}
+Redirected to http://localhost:3000/admin/layouts
+Completed in 126ms (DB: 8) | 302 Found [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 09:55:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 166ms (View: 119, DB: 12) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 09:55:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 120ms (View: 56, DB: 9) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#new (for 127.0.0.1 at 2011-01-16 09:57:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/new
+Completed in 134ms (View: 120, DB: 4) | 200 OK [http://localhost/admin/snippets/new]
+
+
+Processing Admin::SnippetsController#create (for 127.0.0.1 at 2011-01-16 09:57:42) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "snippet"=>{"name"=>"random-code-snippet", "filter_id"=>"", "lock_version"=>"0", "content"=>"<r:random>\r\n  <r:option>\r\n                    <div class=\"comment\"># The Greeter class</div>\r\n                    <div><span class=\"keyword\">class</span> Greeter</div>\r\n                    <div>&nbsp;&nbsp;<span class=\"keyword\">def</span> initialize<span class=\"op\">(</span>name<span class=\"op\">)</span></div>\r\n                    <div>&nbsp;&nbsp;&nbsp;&nbsp;@name <span class=\"op\">=</span> name<span class=\"op\">.</span>capitalize</div>\r\n                    <div>&nbsp;&nbsp;<span class=\"keyword\">end</span></div>\r\n                    <div class=\"blank-line\">&nbsp;</div>\r\n                    <div>&nbsp;&nbsp;<span class=\"keyword\">def</span> salute</div>\r\n                    <div>&nbsp;&nbsp;&nbsp;&nbsp;puts <span class=\"string\">\"Hello \#{</span><span class=\"op\">@</span>name<span class=\"string\">}!\"</span></div>\r\n                    <div>&nbsp;&nbsp;<span class=\"keyword\">end</span></div>\r\n                    <div><span class=\"keyword\">end</span></div>\r\n                    <div class=\"blank-line\">&nbsp;</div>\r\n                    <div class=\"comment\"># Create a new object</div>\r\n                    <div>g <span class=\"op\">=</span> Greeter<span class=\"op\">.</span>new<span class=\"op\">(</span><span class=\"string\">\"world\"</span><span class=\"op\">)</span></div>\r\n                    <div class=\"blank-line\">&nbsp;</div>\r\n                    <div class=\"comment\"># Output \"Hello World!\"</div>\r\n                    <div>g<span class=\"op\">.</span>salute</div>\r\n  </r:option>\r\n\r\n  <r:option>\r\n                    <div class=\"comment\"># The famous Hello World</div>\r\n                    <div class=\"comment\"># program is trivial in</div>\r\n                    <div class=\"comment\"># Ruby.  You don't need:</div>\r\n                    <div class=\"comment\">#</div>\r\n                    <div class=\"comment\"># * a \"main\" method</div>\r\n                    <div class=\"comment\"># * newline escapes</div>\r\n                    <div class=\"comment\"># * semicolons</div>\r\n                    <div class=\"comment\">#</div>\r\n                    <div class=\"comment\"># Here's the code:</div>\r\n                    <div class=\"blank-line\">&nbsp;</div>\r\n                    <div>puts <span class=\"string\">\"Hello World!\"</span></div>\r\n  </r:option>\r\n\r\n  <r:option>\r\n\t\t\t\t\t<div class=\"comment\"># Output \"I love Ruby\"</div>\r\n\t\t\t\t\t<div>say <span class=\"op\">=</span> <span class=\"string\">\"I love Ruby\"</span></div>\r\n\t\t\t\t\t<div>puts say</div>\r\n\t\t\t\t\t<div class=\"blank-line\">&nbsp;</div>\r\n\t\t\t\t\t<div class=\"comment\"># Output \"I *LOVE* RUBY\"</div>\r\n\t\t\t\t\t<div>say<span class=\"op\">[</span><span class=\"string\">'love'</span><span class=\"op\">]</span> = <span class=\"string\">\"*love*\"</span></div>\r\n\t\t\t\t\t<div>puts say<span class=\"op\">.</span>upcase</div>\r\n\t\t\t\t\t<div class=\"blank-line\">&nbsp;</div>\r\n\t\t\t\t\t<div class=\"comment\"># Output \"I *love* Ruby\"</div>\r\n\t\t\t\t\t<div class=\"comment\"># five times</div>\r\n\t\t\t\t\t<div><span class=\"numeric\">5</span><span class=\"op\">.</span>times <span class=\"op\">{</span> puts say <span class=\"op\">}</span></div>\r\n  </r:option>\r\n  \r\n  <r:option>\r\n\t  <div class=\"comment\"># Ruby knows what you</div>\r\n\t  <div class=\"comment\"># mean, even if you</div>\r\n\t  <div class=\"comment\"># want to do math on</div>\r\n\t  <div class=\"comment\"># an entire Array</div>\r\n    <div>cities&nbsp;&nbsp;<span class=\"op\">=</span> <span class=\"string\">%w[ London</span></div>\r\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"string\">Oslo</span></div>\r\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"string\">Paris</span></div>\r\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"string\">Amsterdam</span></div>\r\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"string\">Berlin ]</span></div>\r\n    <div>visited <span class=\"op\">=</span> <span class=\"string\">%w[Berlin Oslo]</span></div>\r\n\t\t<div class=\"blank-line\">&nbsp;</div>\r\n    <div>puts <span class=\"string\">\"I still need \"</span> <span class=\"op\">+</span></div>\r\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"string\">\"to visit the \"</span> <span class=\"op\">+</span></div>\r\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"string\">\"following cities:\"</span><span class=\"op\">,</span></div>\r\n    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cities <span class=\"op\">-</span> visited</div>\r\n  </r:option>\r\n</r:random>\r\n"}, "controller"=>"admin/snippets"}
+Redirected to http://localhost:3000/admin/snippets
+Completed in 165ms (DB: 11) | 302 Found [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 09:57:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 77ms (View: 59, DB: 7) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:58:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 82ms (View: 47, DB: 13) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PreferencesController#show (for 127.0.0.1 at 2011-01-16 09:58:17) [GET]
+  Parameters: {"action"=>"show", "controller"=>"admin/preferences"}
+Rendering template within layouts/application
+Rendering admin/preferences/edit
+Completed in 498ms (View: 427, DB: 21) | 200 OK [http://localhost/admin/preferences]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:58:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 124ms (View: 85, DB: 16) | 200 OK [http://localhost/admin/pages]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:58:31) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 65ms (View: 18, DB: 19) | 404 Not Found [http://localhost/]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 09:58:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 83ms (View: 52, DB: 10) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 09:58:39) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 516ms (View: 485, DB: 14) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing Admin::WelcomeController#logout (for 127.0.0.1 at 2011-01-16 09:58:50) [GET]
+  Parameters: {"action"=>"logout", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/login
+Completed in 198ms (DB: 20) | 302 Found [http://localhost/admin/logout]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-16 09:58:52) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 43ms (View: 33, DB: 4) | 200 OK [http://localhost/admin/login]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:59:14) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 360ms (DB: 17) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:59:25) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "Home"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 94ms (View: 7, DB: 18) | 404 Not Found [http://localhost/en/Home]
