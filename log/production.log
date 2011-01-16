@@ -353,3 +353,2396 @@ Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 09:59:25) [GET]
 Rendering template within layouts/application
 Rendering site/not_found (404)
 Completed in 94ms (View: 7, DB: 18) | 404 Not Found [http://localhost/en/Home]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 11:53:28) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "Home"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 192ms (View: 59, DB: 23) | 404 Not Found [http://localhost/en/Home]
+
+
+Processing Admin::WelcomeController#index (for 127.0.0.1 at 2011-01-16 11:54:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/admin]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 11:54:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 19ms (DB: 0) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-16 11:54:42) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 39ms (View: 29, DB: 4) | 200 OK [http://localhost/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-16 11:54:45) [POST]
+  Parameters: {"username_or_email"=>"admin", "action"=>"login", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/welcome", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 35ms (DB: 4) | 302 Found [http://localhost/admin/login]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 11:54:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 149ms (View: 99, DB: 22) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 11:54:49) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 1015ms (View: 968, DB: 36) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-16 11:55:36) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"1", "page"=>{"class_name"=>"", "slug"=>"en", "title"=>"Ruby Programming Language", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "id"=>"1", "content"=>"<r:find url=\"/en/news/\">\r\n<r:children>\r\n\r\n<r:each limit=\"2\" order=\"desc\">\r\n<div class=\"post\">\r\n  <h3><r:link /></h3>\r\n\r\n  <r:content />\r\n\r\n  <r:if_content part=\"extended\"><p><r:link>Continue&nbsp;Reading&#8230;</r:link></p></r:if_content>\r\n\r\n  <p class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></p>\r\n</div>\r\n\r\n</r:each>\r\n\r\n<div id=\"news\">\r\n  <h3><a href=\"/en/news/\">Other News</a></h3>\r\n  <ul><r:each limit=\"3\" offset=\"2\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <ul><r:each limit=\"3\" offset=\"5\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <p class=\"more\"><a href=\"/en/news/\">More&nbsp;News&#8230;</a></p>\r\n</div>\r\n\r\n</r:children>\r\n</r:find>\r\n", "_destroy"=>""}, "1"=>{"name"=>"extended", "filter_id"=>"", "id"=>"2", "content"=>"", "_destroy"=>""}}, "lock_version"=>"1", "breadcrumb"=>"Home", "parent_id"=>"", "published_at"=>"January 16, 2011", "status_id"=>"100", "description"=>"", "layout_id"=>"1", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/1/edit
+Completed in 300ms (DB: 6) | 302 Found [http://localhost/admin/pages/1]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 11:55:36) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 618ms (View: 597, DB: 10) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 11:55:55) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 1471ms (DB: 29) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 11:55:58) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 70ms (View: 15, DB: 23) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 12:03:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 184ms (View: 153, DB: 8) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 12:03:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 167ms (View: 124, DB: 17) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#new (for 127.0.0.1 at 2011-01-16 12:03:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/new
+Completed in 311ms (View: 298, DB: 5) | 200 OK [http://localhost/admin/snippets/new]
+
+
+Processing Admin::SnippetsController#create (for 127.0.0.1 at 2011-01-16 12:04:10) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "snippet"=>{"name"=>"en-site-links", "filter_id"=>"", "lock_version"=>"0", "content"=>"<r:navigation urls=\"Downloads: /en/downloads/; Documentation: /en/documentation/; Libraries: /en/libraries/; Community: /en/community/; News: /en/news/; Security: /en/security/; About Ruby: /en/about/\">\r\n  <r:normal><a href=\"<r:url />\"><r:title /></a></r:normal>\r\n  <r:here><strong><r:title /></strong></r:here>\r\n  <r:selected><strong><a href=\"<r:url />\"><r:title /></a></strong></r:selected>\r\n  <r:between><span class=\"separator\"> | </span></r:between>\r\n</r:navigation>"}, "controller"=>"admin/snippets"}
+Redirected to http://localhost:3000/admin/snippets
+Completed in 143ms (DB: 9) | 302 Found [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 12:04:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 76ms (View: 48, DB: 17) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:04:20) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 1588ms (DB: 74) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:04:21) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 41ms (View: 15, DB: 11) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing Admin::SnippetsController#new (for 127.0.0.1 at 2011-01-16 12:04:55) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/new
+Completed in 164ms (View: 140, DB: 5) | 200 OK [http://localhost/admin/snippets/new]
+
+
+Processing Admin::SnippetsController#create (for 127.0.0.1 at 2011-01-16 12:05:22) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "snippet"=>{"name"=>"en-footer", "filter_id"=>"", "lock_version"=>"0", "content"=>"        <div class=\"fine-print\">\r\n          <r:snippet name=\"languages\" />\r\n          <p>This website is made with Ruby and powered by <a href=\"http://radiantcms.org\">Radiant CMS</a>.\r\n            It is proudly maintained by <a href=\"http://rubyidentity.org\">members of the Ruby community</a>. Please contact\r\n            our <a href=\"mailto:webmaster@ruby-lang.org\">webmaster</a> for questions or comments\r\n            concerning this website.</p>\r\n        </div>"}, "controller"=>"admin/snippets"}
+Redirected to http://localhost:3000/admin/snippets
+Completed in 154ms (DB: 7) | 302 Found [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 12:05:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 89ms (View: 68, DB: 9) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:05:28) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 1718ms (DB: 46) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:05:30) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 53ms (View: 16, DB: 17) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing Admin::SnippetsController#new (for 127.0.0.1 at 2011-01-16 12:06:13) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/new
+Completed in 141ms (View: 126, DB: 5) | 200 OK [http://localhost/admin/snippets/new]
+
+
+Processing Admin::SnippetsController#create (for 127.0.0.1 at 2011-01-16 12:06:34) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "snippet"=>{"name"=>"en-syndicate", "filter_id"=>"", "lock_version"=>"0", "content"=>"<h3>Syndicate</h3>\r\n<p><a href=\"/en/feeds/news.rss\">Recent News (RSS)</a></p>"}, "controller"=>"admin/snippets"}
+Redirected to http://localhost:3000/admin/snippets
+Completed in 128ms (DB: 9) | 302 Found [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 12:06:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 81ms (View: 56, DB: 9) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:06:40) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 1635ms (DB: 29) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:06:42) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 97ms (View: 39, DB: 21) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing Admin::SnippetsController#new (for 127.0.0.1 at 2011-01-16 12:07:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/new
+Completed in 189ms (View: 172, DB: 5) | 200 OK [http://localhost/admin/snippets/new]
+
+
+Processing Admin::SnippetsController#create (for 127.0.0.1 at 2011-01-16 12:07:29) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "snippet"=>{"name"=>"en-tutorial-pages", "filter_id"=>"", "lock_version"=>"0", "content"=>"<div class=\"page-nav\">\r\nPart: <a href=\".\">1</a> | <a href=\"2\">2</a> | <a href=\"3\">3</a> | <a href=\"4\">4</a>\r\n</div>"}, "controller"=>"admin/snippets"}
+Redirected to http://localhost:3000/admin/snippets
+Completed in 121ms (DB: 8) | 302 Found [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 12:07:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 92ms (View: 70, DB: 10) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:07:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 1451ms (DB: 43) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:07:36) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 51ms (View: 15, DB: 16) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing Admin::SnippetsController#new (for 127.0.0.1 at 2011-01-16 12:08:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/new
+Completed in 178ms (View: 156, DB: 14) | 200 OK [http://localhost/admin/snippets/new]
+
+
+Processing Admin::SnippetsController#create (for 127.0.0.1 at 2011-01-16 12:09:25) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "snippet"=>{"name"=>"stylesheets", "filter_id"=>"", "lock_version"=>"0", "content"=>"    <link rel=\"stylesheet\" type=\"text/css\" href=\"/stylesheets/low.css\" />\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/stylesheets/screen.css\" media=\"screen\" />\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/stylesheets/print.css\" media=\"print\" />\r\n    <link title=\"Low vision\" rel=\"alternate stylesheet\" type=\"text/css\" href=\"/stylesheets/low_vision_screen.css\" media=\"screen\" />"}, "controller"=>"admin/snippets"}
+Redirected to http://localhost:3000/admin/snippets
+Completed in 121ms (DB: 7) | 302 Found [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 12:09:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 438ms (View: 407, DB: 11) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:09:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 1522ms (DB: 27) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:09:37) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "low.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 85ms (View: 23, DB: 19) | 404 Not Found [http://localhost/stylesheets/low.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:09:37) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 63ms (View: 15, DB: 31) | 404 Not Found [http://localhost/stylesheets/screen.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:09:37) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "print.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 53ms (View: 14, DB: 20) | 404 Not Found [http://localhost/stylesheets/print.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:09:37) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 42ms (View: 13, DB: 14) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:09:37) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "low_vision_screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 50ms (View: 23, DB: 12) | 404 Not Found [http://localhost/stylesheets/low_vision_screen.css]
+
+
+Processing Admin::SnippetsController#new (for 127.0.0.1 at 2011-01-16 12:10:28) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/new
+Completed in 181ms (View: 168, DB: 5) | 200 OK [http://localhost/admin/snippets/new]
+
+
+Processing Admin::SnippetsController#create (for 127.0.0.1 at 2011-01-16 12:10:53) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "snippet"=>{"name"=>"languages", "filter_id"=>"", "lock_version"=>"0", "content"=>"<p>Content available in <a href=\"/en/\">English</a>, <a href=\"/fr/\">French</a>, <a href=\"/ja/\">Japanese</a>, <a href=\"/ko/\">Korean</a>, <a href=\"/pl/\">Polish</a>, <a href=\"/es/\">Spanish</a>, <a href=\"/pt/\">Portuguese</a>, <a href=\"/zh_cn/\">Simplified Chinese</a>, <a href=\"/zh_TW/\">Traditional Chinese</a>, <a href=\"/id/\">Bahasa Indonesia</a>, <a href=\"/de/\">German</a>, <a href=\"/it/\">Italian</a>, <a href=\"/cs/\">Czech</a> and <a href=\"/bg/\">Bulgarian</a>.</p> "}, "controller"=>"admin/snippets"}
+Redirected to http://localhost:3000/admin/snippets
+Completed in 126ms (DB: 10) | 302 Found [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 12:10:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 131ms (View: 106, DB: 10) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:11:16) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 1873ms (DB: 48) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:11:18) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "low.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 344ms (View: 21, DB: 13) | 404 Not Found [http://localhost/stylesheets/low.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:11:19) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 58ms (View: 18, DB: 18) | 404 Not Found [http://localhost/stylesheets/screen.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:11:19) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 54ms (View: 17, DB: 15) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:11:19) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "print.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 50ms (View: 16, DB: 16) | 404 Not Found [http://localhost/stylesheets/print.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:11:19) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "low_vision_screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 62ms (View: 17, DB: 27) | 404 Not Found [http://localhost/stylesheets/low_vision_screen.css]
+
+
+Processing Admin::SnippetsController#new (for 127.0.0.1 at 2011-01-16 12:12:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/new
+Completed in 216ms (View: 202, DB: 6) | 200 OK [http://localhost/admin/snippets/new]
+
+
+Processing Admin::SnippetsController#create (for 127.0.0.1 at 2011-01-16 12:12:50) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "snippet"=>{"name"=>"en-search", "filter_id"=>"", "lock_version"=>"0", "content"=>"<form id=\"search-form\" action=\"http://www.google.com/cse\">\r\n  <table class=\"fieldset\">\r\n    <tr>\r\n      <td>\r\n        <input class=\"field\" type=\"text\" name=\"q\" size=\"31\" style=\"background: white url(http://www.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat\" onfocus=\"this.style.background='white'\" onblur=\"if (/^\\s*$/.test(this.value)) this.style.background='white url(http://www.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat'\"/>\r\n      </td>\r\n      <td>\r\n        <input type=\"hidden\" name=\"cx\" value=\"013598269713424429640:g5orptiw95w\" />\r\n        <input type=\"hidden\" name=\"ie\" value=\"UTF-8\" />\r\n        <input class=\"button\" type=\"submit\" name=\"sa\" value=\"Search\" />\r\n      </td>\r\n    </tr>\r\n  </table>\r\n</form>"}, "controller"=>"admin/snippets"}
+Redirected to http://localhost:3000/admin/snippets
+Completed in 111ms (DB: 8) | 302 Found [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 12:12:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 152ms (View: 116, DB: 9) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:13:06) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2183ms (DB: 35) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:13:08) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "low.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 73ms (View: 20, DB: 18) | 404 Not Found [http://localhost/stylesheets/low.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:13:08) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 54ms (View: 16, DB: 18) | 404 Not Found [http://localhost/stylesheets/screen.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:13:08) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "print.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 72ms (View: 16, DB: 30) | 404 Not Found [http://localhost/stylesheets/print.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:13:08) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 54ms (View: 18, DB: 16) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:13:09) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "low_vision_screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 47ms (View: 15, DB: 16) | 404 Not Found [http://localhost/stylesheets/low_vision_screen.css]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 12:13:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 93ms (View: 59, DB: 15) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 12:13:51) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 718ms (View: 689, DB: 15) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:21:37) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2181ms (DB: 48) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:21:40) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 69ms (View: 22, DB: 22) | 404 Not Found [http://localhost/stylesheets/screen.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:21:40) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "print.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 95ms (View: 36, DB: 26) | 404 Not Found [http://localhost/stylesheets/print.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:21:40) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 62ms (View: 25, DB: 18) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:21:40) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "low_vision_screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 87ms (View: 28, DB: 44) | 404 Not Found [http://localhost/stylesheets/low_vision_screen.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:16) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "print.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 77ms (View: 34, DB: 16) | 404 Not Found [http://localhost/stylesheets/print.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:16) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 98ms (View: 38, DB: 26) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:16) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 134ms (View: 57, DB: 39) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:16) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 188ms (View: 122, DB: 29) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:16) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 126ms (View: 40, DB: 31) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:17) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "site-links-background.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 126ms (View: 22, DB: 35) | 404 Not Found [http://localhost/images/site-links-background.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:17) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 68ms (View: 27, DB: 21) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:17) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 63ms (View: 20, DB: 21) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:17) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "low_vision_screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 57ms (View: 20, DB: 15) | 404 Not Found [http://localhost/stylesheets/low_vision_screen.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:17) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 51ms (View: 18, DB: 14) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:17) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-bottom-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 53ms (View: 17, DB: 17) | 404 Not Found [http://localhost/images/blue-columns-bottom-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:17) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 56ms (View: 15, DB: 17) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:25:17) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 57ms (View: 16, DB: 21) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2007ms (DB: 90) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:50) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 59ms (View: 18, DB: 20) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:50) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 99ms (View: 44, DB: 22) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:50) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 97ms (View: 26, DB: 41) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:50) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 102ms (View: 37, DB: 34) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:50) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "site-links-background.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 97ms (View: 36, DB: 33) | 404 Not Found [http://localhost/images/site-links-background.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:50) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 84ms (View: 35, DB: 23) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:50) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 78ms (View: 20, DB: 19) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:51) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["stylesheets", "low_vision_screen.css"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 59ms (View: 21, DB: 16) | 404 Not Found [http://localhost/stylesheets/low_vision_screen.css]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:51) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 64ms (View: 18, DB: 24) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:51) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-bottom-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 61ms (View: 26, DB: 15) | 404 Not Found [http://localhost/images/blue-columns-bottom-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:51) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 55ms (View: 23, DB: 16) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:26:51) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 86ms (View: 20, DB: 16) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:53) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2227ms (DB: 48) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:55) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 98ms (View: 16, DB: 36) | 404 Not Found [http://localhost/images/logo.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:55) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 135ms (View: 24, DB: 72) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:56) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 159ms (View: 46, DB: 39) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:56) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "site-links-background.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 157ms (View: 62, DB: 42) | 404 Not Found [http://localhost/images/site-links-background.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:56) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 137ms (View: 42, DB: 37) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:56) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 100ms (View: 36, DB: 19) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:56) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 72ms (View: 20, DB: 18) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:56) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 90ms (View: 30, DB: 24) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:56) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-bottom-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 72ms (View: 27, DB: 22) | 404 Not Found [http://localhost/images/blue-columns-bottom-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:57) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 75ms (View: 24, DB: 33) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:31:57) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 58ms (View: 23, DB: 16) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:46) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 138ms (View: 43, DB: 46) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 126ms (View: 25, DB: 59) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 76ms (View: 23, DB: 14) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "site-links-background.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 69ms (View: 18, DB: 26) | 404 Not Found [http://localhost/images/site-links-background.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 78ms (View: 24, DB: 12) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 183ms (View: 66, DB: 30) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 136ms (View: 33, DB: 58) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-bottom-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 136ms (View: 63, DB: 16) | 404 Not Found [http://localhost/images/blue-columns-bottom-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:48) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 63ms (View: 18, DB: 15) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:34:48) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 57ms (View: 25, DB: 15) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:36:26) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 111ms (View: 39, DB: 22) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:36:26) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 99ms (View: 20, DB: 13) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:36:26) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 58ms (View: 19, DB: 14) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:36:26) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 62ms (View: 21, DB: 16) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:36:26) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 69ms (View: 18, DB: 18) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:36:26) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 73ms (View: 31, DB: 17) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:36:26) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-bottom-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 66ms (View: 16, DB: 28) | 404 Not Found [http://localhost/images/blue-columns-bottom-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:36:27) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 66ms (View: 19, DB: 15) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:36:27) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 67ms (View: 28, DB: 21) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:31) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 1724ms (DB: 32) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:33) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 76ms (View: 21, DB: 24) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:34) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 91ms (View: 30, DB: 23) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:34) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 58ms (View: 18, DB: 18) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:34) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 190ms (View: 68, DB: 46) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:34) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 109ms (View: 27, DB: 48) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:34) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 608ms (View: 56, DB: 492) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-bottom-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 208ms (View: 69, DB: 43) | 404 Not Found [http://localhost/images/blue-columns-bottom-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 98ms (View: 38, DB: 25) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:38:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 99ms (View: 27, DB: 39) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:39:58) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 85ms (View: 37, DB: 18) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:39:58) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 92ms (View: 38, DB: 16) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:39:58) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 107ms (View: 47, DB: 29) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:39:58) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 99ms (View: 35, DB: 26) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:39:58) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 62ms (View: 18, DB: 16) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:39:58) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 76ms (View: 21, DB: 20) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:39:58) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-bottom-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 195ms (View: 83, DB: 67) | 404 Not Found [http://localhost/images/blue-columns-bottom-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:39:59) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 87ms (View: 23, DB: 19) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:39:59) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 104ms (View: 32, DB: 37) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 12:42:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 99ms (View: 78, DB: 9) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 12:42:41) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 442ms (View: 403, DB: 29) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 12:45:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 409ms (View: 357, DB: 21) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 12:45:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 142ms (View: 103, DB: 18) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing Admin::PreferencesController#show (for 127.0.0.1 at 2011-01-16 12:46:00) [GET]
+  Parameters: {"action"=>"show", "controller"=>"admin/preferences"}
+Rendering template within layouts/application
+Rendering admin/preferences/edit
+Completed in 271ms (View: 251, DB: 5) | 200 OK [http://localhost/admin/preferences]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 12:46:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 355ms (View: 45, DB: 16) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 12:46:40) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 324ms (View: 292, DB: 14) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing Admin::PagePartsController#create (for 127.0.0.1 at 2011-01-16 12:48:15) [POST]
+  Parameters: {"commit"=>"Add Part", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page_part"=>{"name"=>"sidebar"}, "index"=>"2", "controller"=>"admin/page_parts"}
+Completed in 78ms (View: 52, DB: 4) | 200 OK [http://localhost/admin/page_parts]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-16 12:49:18) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"1", "page"=>{"class_name"=>"", "slug"=>"en", "title"=>"Ruby Programming Language", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "id"=>"1", "content"=>"<r:find url=\"/en/news/\">\r\n<r:children>\r\n\r\n<r:each limit=\"2\" order=\"desc\">\r\n<div class=\"post\">\r\n  <h3><r:link /></h3>\r\n\r\n  <r:content />\r\n\r\n  <r:if_content part=\"extended\"><p><r:link>Continue&nbsp;Reading&#8230;</r:link></p></r:if_content>\r\n\r\n  <p class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></p>\r\n</div>\r\n\r\n</r:each>\r\n\r\n<div id=\"news\">\r\n  <h3><a href=\"/en/news/\">Other News</a></h3>\r\n  <ul><r:each limit=\"3\" offset=\"2\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <ul><r:each limit=\"3\" offset=\"5\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <p class=\"more\"><a href=\"/en/news/\">More&nbsp;News&#8230;</a></p>\r\n</div>\r\n\r\n</r:children>\r\n</r:find>\r\n", "_destroy"=>""}, "1"=>{"id"=>"2", "_destroy"=>"true"}, "2"=>{"name"=>"sidebar", "filter_id"=>"", "content"=>"<r:if_url matches=\"^/en/$\">\r\n<div class=\"navigation\"><a href=\"/en/downloads/\"><img src=\"/images/download.gif\" alt=\"Download Ruby\" title=\"\" /></a></div>\r\n</r:if_url>\r\n\r\n<div class=\"navigation\">\r\n  <h3><strong>Get Started,</strong> it&#8217;s easy!</h3>\r\n  <ul class=\"menu\">\r\n    <li><a href=\"http://TryRuby.org\">Try Ruby! (in your browser)</a></li>\r\n<r:unless_url matches=\"^/en/$\">\r\n    <li><a href=\"/en/downloads/\">Download Ruby</a></li>\r\n</r:unless_url>\r\n    <li><a href=\"/en/documentation/quickstart/\">Ruby in Twenty Minutes</a></li>\r\n    <li><a href=\"/en/documentation/ruby-from-other-languages/\">Ruby from Other Languages</a></li>\r\n  </ul>\r\n</div>\r\n\r\n<div class=\"navigation\">\r\n  <h3><strong>Explore</strong> a new world&hellip;</h3>\r\n  <ul class=\"menu\">\r\n    <li><a href=\"/en/documentation/\">Documentation</a></li>\r\n    <li><a href=\"http://www.amazon.com/s/ref=sr_nr_n_5?ie=UTF8&amp;rs=1000&amp;keywords=Ruby&amp;rh=i%3Aaps%2Ck%3ARuby%2Ci%3Astripbooks%2Cn%3A1000%2Cn%3A5\">Books</a></li>\r\n    <li><a href=\"/en/libraries/\">Libraries</a></li>\r\n    <li><a href=\"/en/documentation/success-stories/\">Success Stories</a></li>\r\n  </ul>\r\n</div>\r\n\r\n<div class=\"navigation\">\r\n  <h3><strong>Participate</strong> in a friendly and growing community.</h3>\r\n  <ul>\r\n    <li><a href=\"/en/community/mailing-lists/\">Mailing Lists</a>: Talk about Ruby with programmers from all around the world.</li>\r\n    <li><a href=\"/en/community/user-groups/\">User Groups</a>: Get in contact with Rubyists in your area.</li>\r\n    <li><a href=\"/en/community/weblogs/\">Weblogs</a>: Read about what&#8217;s happening right now in the Ruby community.</li>\r\n    <li><a href=\"/en/community/ruby-core/\">Ruby Core</a>: Help polish the rough edges of the latest Ruby.</li>\r\n    <li><a href=\"http://redmine.ruby-lang.org/\">Issue Tracking</a>: Report or help solve issues in Ruby.</li>\r\n  </ul>\r\n</div>\r\n\r\n<r:unless_url matches=\"^/en/libraries/top-projects\">\r\n<h3>Some Top Ruby Projects</h3>\r\n<r:find url=\"/en/libraries/top-projects/\"><r:content part=\"top-projects\" /></r:find>\r\n<p class=\"more\"><a href=\"/en/libraries/top-projects/\">More&#8230;</a></p>\r\n</r:unless_url>\r\n\r\n<r:snippet name=\"en-syndicate\" />", "_destroy"=>""}}, "lock_version"=>"2", "breadcrumb"=>"Home", "parent_id"=>"", "published_at"=>"January 16, 2011", "status_id"=>"100", "description"=>"", "layout_id"=>"1", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/1/edit
+Completed in 488ms (DB: 60) | 302 Found [http://localhost/admin/pages/1]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 12:49:21) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 814ms (View: 787, DB: 11) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:01) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2469ms (DB: 40) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:08) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 138ms (View: 63, DB: 54) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:08) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 144ms (View: 52, DB: 63) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:08) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 639ms (View: 24, DB: 47) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:09) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 164ms (View: 57, DB: 49) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:09) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 99ms (View: 27, DB: 29) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:09) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 122ms (View: 52, DB: 45) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:09) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-bottom-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 102ms (View: 30, DB: 17) | 404 Not Found [http://localhost/images/blue-columns-bottom-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:10) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 108ms (View: 33, DB: 15) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:10) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 94ms (View: 35, DB: 15) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:50:10) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 113ms (View: 38, DB: 47) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing Admin::PagePartsController#create (for 127.0.0.1 at 2011-01-16 12:51:07) [POST]
+  Parameters: {"commit"=>"Add Part", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page_part"=>{"name"=>"head"}, "index"=>"2", "controller"=>"admin/page_parts"}
+Completed in 118ms (View: 83, DB: 4) | 200 OK [http://localhost/admin/page_parts]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-16 12:51:17) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"1", "page"=>{"class_name"=>"", "slug"=>"en", "title"=>"Ruby Programming Language", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "id"=>"1", "content"=>"<r:find url=\"/en/news/\">\r\n<r:children>\r\n\r\n<r:each limit=\"2\" order=\"desc\">\r\n<div class=\"post\">\r\n  <h3><r:link /></h3>\r\n\r\n  <r:content />\r\n\r\n  <r:if_content part=\"extended\"><p><r:link>Continue&nbsp;Reading&#8230;</r:link></p></r:if_content>\r\n\r\n  <p class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></p>\r\n</div>\r\n\r\n</r:each>\r\n\r\n<div id=\"news\">\r\n  <h3><a href=\"/en/news/\">Other News</a></h3>\r\n  <ul><r:each limit=\"3\" offset=\"2\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <ul><r:each limit=\"3\" offset=\"5\" order=\"desc\">\r\n    <li><r:link />\r\n      <span class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></span></li></r:each>\r\n  </ul>\r\n  <p class=\"more\"><a href=\"/en/news/\">More&nbsp;News&#8230;</a></p>\r\n</div>\r\n\r\n</r:children>\r\n</r:find>\r\n", "_destroy"=>""}, "1"=>{"name"=>"sidebar", "filter_id"=>"", "id"=>"3", "content"=>"<r:if_url matches=\"^/en/$\">\r\n<div class=\"navigation\"><a href=\"/en/downloads/\"><img src=\"/images/download.gif\" alt=\"Download Ruby\" title=\"\" /></a></div>\r\n</r:if_url>\r\n\r\n<div class=\"navigation\">\r\n  <h3><strong>Get Started,</strong> it&#8217;s easy!</h3>\r\n  <ul class=\"menu\">\r\n    <li><a href=\"http://TryRuby.org\">Try Ruby! (in your browser)</a></li>\r\n<r:unless_url matches=\"^/en/$\">\r\n    <li><a href=\"/en/downloads/\">Download Ruby</a></li>\r\n</r:unless_url>\r\n    <li><a href=\"/en/documentation/quickstart/\">Ruby in Twenty Minutes</a></li>\r\n    <li><a href=\"/en/documentation/ruby-from-other-languages/\">Ruby from Other Languages</a></li>\r\n  </ul>\r\n</div>\r\n\r\n<div class=\"navigation\">\r\n  <h3><strong>Explore</strong> a new world&hellip;</h3>\r\n  <ul class=\"menu\">\r\n    <li><a href=\"/en/documentation/\">Documentation</a></li>\r\n    <li><a href=\"http://www.amazon.com/s/ref=sr_nr_n_5?ie=UTF8&amp;rs=1000&amp;keywords=Ruby&amp;rh=i%3Aaps%2Ck%3ARuby%2Ci%3Astripbooks%2Cn%3A1000%2Cn%3A5\">Books</a></li>\r\n    <li><a href=\"/en/libraries/\">Libraries</a></li>\r\n    <li><a href=\"/en/documentation/success-stories/\">Success Stories</a></li>\r\n  </ul>\r\n</div>\r\n\r\n<div class=\"navigation\">\r\n  <h3><strong>Participate</strong> in a friendly and growing community.</h3>\r\n  <ul>\r\n    <li><a href=\"/en/community/mailing-lists/\">Mailing Lists</a>: Talk about Ruby with programmers from all around the world.</li>\r\n    <li><a href=\"/en/community/user-groups/\">User Groups</a>: Get in contact with Rubyists in your area.</li>\r\n    <li><a href=\"/en/community/weblogs/\">Weblogs</a>: Read about what&#8217;s happening right now in the Ruby community.</li>\r\n    <li><a href=\"/en/community/ruby-core/\">Ruby Core</a>: Help polish the rough edges of the latest Ruby.</li>\r\n    <li><a href=\"http://redmine.ruby-lang.org/\">Issue Tracking</a>: Report or help solve issues in Ruby.</li>\r\n  </ul>\r\n</div>\r\n\r\n<r:unless_url matches=\"^/en/libraries/top-projects\">\r\n<h3>Some Top Ruby Projects</h3>\r\n<r:find url=\"/en/libraries/top-projects/\"><r:content part=\"top-projects\" /></r:find>\r\n<p class=\"more\"><a href=\"/en/libraries/top-projects/\">More&#8230;</a></p>\r\n</r:unless_url>\r\n\r\n<r:snippet name=\"en-syndicate\" />", "_destroy"=>""}, "2"=>{"name"=>"head", "filter_id"=>"", "content"=>"<link href=\"/en/feeds/news.rss\" rel=\"alternate\" title=\"RSS\" type=\"application/rss+xml\" />", "_destroy"=>""}}, "lock_version"=>"2", "breadcrumb"=>"Home", "parent_id"=>"", "published_at"=>"January 16, 2011", "status_id"=>"100", "description"=>"", "layout_id"=>"1", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/1/edit
+Completed in 327ms (DB: 7) | 302 Found [http://localhost/admin/pages/1]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 12:51:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 405ms (View: 375, DB: 11) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2211ms (DB: 44) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:34) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 66ms (View: 25, DB: 13) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:34) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 68ms (View: 20, DB: 15) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 54ms (View: 18, DB: 16) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 64ms (View: 20, DB: 14) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 78ms (View: 26, DB: 26) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 137ms (View: 47, DB: 46) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-bottom-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 66ms (View: 33, DB: 15) | 404 Not Found [http://localhost/images/blue-columns-bottom-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 101ms (View: 25, DB: 39) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 494ms (View: 21, DB: 39) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:51:36) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 60ms (View: 17, DB: 14) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:53:31) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "shadow.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 140ms (View: 22, DB: 35) | 404 Not Found [http://localhost/images/shadow.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:53:31) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 85ms (View: 20, DB: 25) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:53:31) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 67ms (View: 18, DB: 17) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:53:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 86ms (View: 33, DB: 27) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:53:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 82ms (View: 23, DB: 29) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:53:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 98ms (View: 29, DB: 29) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:53:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 64ms (View: 23, DB: 16) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:53:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 112ms (View: 60, DB: 32) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:53:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 85ms (View: 45, DB: 16) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:58:45) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 3128ms (DB: 36) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:58:49) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "logo-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 72ms (View: 20, DB: 21) | 404 Not Found [http://localhost/images/logo-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:58:49) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 82ms (View: 37, DB: 16) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:58:49) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 68ms (View: 19, DB: 25) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:58:49) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 80ms (View: 19, DB: 15) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:58:49) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 85ms (View: 25, DB: 26) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:58:49) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 89ms (View: 39, DB: 24) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:58:50) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 130ms (View: 45, DB: 15) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:58:50) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 107ms (View: 44, DB: 17) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:59:43) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "header-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 67ms (View: 19, DB: 14) | 404 Not Found [http://localhost/images/header-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:59:43) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "columns.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 62ms (View: 18, DB: 14) | 404 Not Found [http://localhost/images/columns.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:59:43) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 140ms (View: 38, DB: 32) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:59:44) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 136ms (View: 40, DB: 64) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:59:44) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 82ms (View: 21, DB: 35) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:59:44) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 90ms (View: 29, DB: 20) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 12:59:44) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 54ms (View: 16, DB: 18) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:00:52) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 144ms (View: 34, DB: 35) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:00:52) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 127ms (View: 46, DB: 52) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:00:52) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 61ms (View: 22, DB: 18) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:00:52) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 82ms (View: 16, DB: 42) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:00:52) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 61ms (View: 15, DB: 24) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 567ms (View: 24, DB: 514) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:33) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 88ms (View: 21, DB: 29) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:33) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 82ms (View: 24, DB: 20) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:33) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 59ms (View: 23, DB: 18) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:33) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 60ms (View: 19, DB: 18) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:41) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 195ms (View: 45, DB: 63) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:41) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 143ms (View: 65, DB: 35) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:41) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 80ms (View: 40, DB: 19) | 404 Not Found [http://localhost/images/dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:41) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 90ms (View: 31, DB: 19) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:01:42) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 123ms (View: 35, DB: 19) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:02:25) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 510ms (View: 49, DB: 24) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:02:25) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 115ms (View: 55, DB: 19) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:02:25) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 162ms (View: 80, DB: 35) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:02:26) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 99ms (View: 17, DB: 51) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:03:11) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 81ms (View: 20, DB: 22) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:03:11) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 94ms (View: 18, DB: 48) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:03:11) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 175ms (View: 74, DB: 13) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:03:12) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 87ms (View: 30, DB: 28) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:03:56) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2746ms (DB: 54) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:04:00) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 74ms (View: 22, DB: 19) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:04:00) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 107ms (View: 23, DB: 65) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:04:00) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 59ms (View: 19, DB: 18) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:04:00) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 71ms (View: 34, DB: 19) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:04:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 64ms (View: 26, DB: 12) | 404 Not Found [http://localhost/images/blue-columns-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:04:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 58ms (View: 19, DB: 14) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:04:48) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "dark-dotted-underline.gif"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 61ms (View: 18, DB: 14) | 404 Not Found [http://localhost/images/dark-dotted-underline.gif]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:04:48) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "footer-background.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 68ms (View: 16, DB: 21) | 404 Not Found [http://localhost/images/footer-background.jpg]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:06:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["images", "blue-columns-top-home-page.jpg"], "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 205ms (View: 29, DB: 59) | 404 Not Found [http://localhost/images/blue-columns-top-home-page.jpg]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 13:11:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 118ms (View: 96, DB: 11) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#edit (for 127.0.0.1 at 2011-01-16 13:11:31) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/edit
+Completed in 185ms (View: 139, DB: 5) | 200 OK [http://localhost/admin/layouts/1/edit]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 13:12:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 115ms (View: 80, DB: 16) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#edit (for 127.0.0.1 at 2011-01-16 13:12:45) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/edit
+Completed in 152ms (View: 123, DB: 14) | 200 OK [http://localhost/admin/snippets/2/edit]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 13:14:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 184ms (View: 126, DB: 15) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 13:14:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 96ms (View: 65, DB: 13) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#new (for 127.0.0.1 at 2011-01-16 13:15:40) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/new
+Completed in 397ms (View: 385, DB: 5) | 200 OK [http://localhost/admin/layouts/new]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 13:15:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 263ms (View: 172, DB: 12) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 13:16:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 99ms (View: 68, DB: 12) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#new (for 127.0.0.1 at 2011-01-16 13:17:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/new
+Completed in 457ms (View: 439, DB: 10) | 200 OK [http://localhost/admin/layouts/new]
+
+
+Processing Admin::LayoutsController#create (for 127.0.0.1 at 2011-01-16 13:17:53) [POST]
+  Parameters: {"layout"=>{"name"=>"Plain Text", "content_type"=>"text/plain;charset=utf-8", "lock_version"=>"0", "content"=>"<r:content />"}, "commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/layouts"}
+Redirected to http://localhost:3000/admin/layouts
+Completed in 138ms (DB: 8) | 302 Found [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 13:17:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 136ms (View: 99, DB: 9) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 13:22:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 176ms (View: 138, DB: 8) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 13:22:15) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 735ms (View: 699, DB: 18) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing Admin::LayoutsController#index (for 127.0.0.1 at 2011-01-16 13:23:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 76ms (View: 57, DB: 8) | 200 OK [http://localhost/admin/layouts]
+
+
+Processing Admin::LayoutsController#edit (for 127.0.0.1 at 2011-01-16 13:23:22) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/edit
+Completed in 245ms (View: 136, DB: 30) | 200 OK [http://localhost/admin/layouts/1/edit]
+
+
+Processing Admin::SnippetsController#index (for 127.0.0.1 at 2011-01-16 13:23:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 244ms (View: 173, DB: 34) | 200 OK [http://localhost/admin/snippets]
+
+
+Processing Admin::SnippetsController#edit (for 127.0.0.1 at 2011-01-16 13:24:25) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/edit
+Completed in 200ms (View: 173, DB: 14) | 200 OK [http://localhost/admin/snippets/2/edit]
+
+
+Processing Admin::SnippetsController#update (for 127.0.0.1 at 2011-01-16 13:28:13) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"2", "snippet"=>{"name"=>"en-site-links", "filter_id"=>"", "lock_version"=>"0", "content"=>"<r:navigation urls=\"Downloads: /en/downloads/| Documentation: /en/documentation/| Libraries: /en/libraries/| Community: /en/community/| News: /en/news/| Security: /en/security/| About Ruby: /en/about/\">\r\n  <r:normal><a href=\"<r:url />\"><r:title /></a></r:normal>\r\n  <r:here><strong><r:title /></strong></r:here>\r\n  <r:selected><strong><a href=\"<r:url />\"><r:title /></a></strong></r:selected>\r\n  <r:between><span class=\"separator\"> | </span></r:between>\r\n</r:navigation>"}, "controller"=>"admin/snippets", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/snippets/2/edit
+Completed in 178ms (DB: 4) | 302 Found [http://localhost/admin/snippets/2]
+
+
+Processing Admin::SnippetsController#edit (for 127.0.0.1 at 2011-01-16 13:28:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/edit
+Completed in 427ms (View: 413, DB: 5) | 200 OK [http://localhost/admin/snippets/2/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:28:22) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2965ms (DB: 82) | 200 [http://localhost/en]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 13:29:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 103ms (View: 58, DB: 18) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 13:29:46) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 502ms (View: 467, DB: 16) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 13:31:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 56ms (View: 37, DB: 7) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 13:31:47) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 707ms (View: 615, DB: 14) | 200 OK [http://localhost/admin/pages/1/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 13:33:22) [POST]
+  Parameters: {"action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"ArchivePage", "slug"=>"news", "title"=>"Recent News", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "content"=>"<r:children:each limit=\"5\" order=\"desc\">\r\n<div class=\"post\">\r\n  <h3><r:link /></h3>\r\n\r\n  <r:content />\r\n\r\n  <r:if_content part=\"extended\"><p><r:link>Continue&nbsp;Reading&#8230;</r:link></p></r:if_content>\r\n\r\n  <p class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></p>\r\n</div>\r\n\r\n</r:children:each>\r\n\r\n<r:children:each limit=\"1\" offset=\"5\" order=\"desc\">\r\n<p><a href=\"<r:date format=\"/en/news/%Y/\" />\"><r:date format=\"%Y\" /> Archives&#8230;</a></p>\r\n</r:children:each>", "_destroy"=>""}, "1"=>{"name"=>"extended", "filter_id"=>"", "content"=>"", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"News", "parent_id"=>"1", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/2/edit
+Completed in 427ms (DB: 6) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 13:33:23) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 356ms (View: 324, DB: 13) | 200 OK [http://localhost/admin/pages/2/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:33:37) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 3222ms (DB: 62) | 200 [http://localhost/en]
+
+
+Processing Admin::PagePartsController#create (for 127.0.0.1 at 2011-01-16 13:34:35) [POST]
+  Parameters: {"commit"=>"Add Part", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page_part"=>{"name"=>"sidebar"}, "index"=>"2", "controller"=>"admin/page_parts"}
+Completed in 110ms (View: 83, DB: 18) | 200 OK [http://localhost/admin/page_parts]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-16 13:34:54) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"2", "page"=>{"class_name"=>"ArchivePage", "slug"=>"news", "title"=>"Recent News", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "id"=>"5", "content"=>"<r:children:each limit=\"5\" order=\"desc\">\r\n<div class=\"post\">\r\n  <h3><r:link /></h3>\r\n\r\n  <r:content />\r\n\r\n  <r:if_content part=\"extended\"><p><r:link>Continue&nbsp;Reading&#8230;</r:link></p></r:if_content>\r\n\r\n  <p class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></p>\r\n</div>\r\n\r\n</r:children:each>\r\n\r\n<r:children:each limit=\"1\" offset=\"5\" order=\"desc\">\r\n<p><a href=\"<r:date format=\"/en/news/%Y/\" />\"><r:date format=\"%Y\" /> Archives&#8230;</a></p>\r\n</r:children:each>", "_destroy"=>""}, "1"=>{"id"=>"6", "_destroy"=>"true"}, "2"=>{"name"=>"sidebar", "filter_id"=>"", "content"=>"<r:if_url matches=\"^/en/news/?$\">\r\n<div class=\"navigation\">\r\n  <h3><strong>Archives By Year</strong></h3>\r\n  <ul class=\"menu\">\r\n<r:children:each order=\"desc\"><r:header>\r\n    <li><a href=\"<r:date format=\"/en/news/%Y/\"/>\"><r:date format=\"%Y\" /> Archives</a></li>\r\n</r:header></r:children:each>\r\n  </ul>\r\n</div>\r\n</r:if_url>\r\n\r\n<r:unless_url matches=\"^/en/news/?$\">\r\n<r:find url=\"/en/news/\">\r\n<div class=\"navigation\">\r\n  <h3><strong>Recent News</strong></h3>\r\n  <ul class=\"menu\">\r\n<r:children:each order=\"desc\" limit=\"5\">\r\n    <li><r:link /></li>\r\n</r:children:each>\r\n  </ul>\r\n</div>\r\n</r:find>\r\n</r:unless_url>\r\n\r\n<r:snippet name=\"en-syndicate\" />", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"News", "parent_id"=>"1", "published_at"=>"January 16, 2011", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/2/edit
+Completed in 329ms (DB: 8) | 302 Found [http://localhost/admin/pages/2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 13:34:56) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 598ms (View: 580, DB: 10) | 200 OK [http://localhost/admin/pages/2/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:35:17) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2920ms (DB: 56) | 200 [http://localhost/en]
+
+
+Processing Admin::PagePartsController#create (for 127.0.0.1 at 2011-01-16 13:36:07) [POST]
+  Parameters: {"commit"=>"Add Part", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page_part"=>{"name"=>"head"}, "index"=>"2", "controller"=>"admin/page_parts"}
+Completed in 331ms (View: 314, DB: 4) | 200 OK [http://localhost/admin/page_parts]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-16 13:36:19) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"2", "page"=>{"class_name"=>"ArchivePage", "slug"=>"news", "title"=>"Recent News", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "id"=>"5", "content"=>"<r:children:each limit=\"5\" order=\"desc\">\r\n<div class=\"post\">\r\n  <h3><r:link /></h3>\r\n\r\n  <r:content />\r\n\r\n  <r:if_content part=\"extended\"><p><r:link>Continue&nbsp;Reading&#8230;</r:link></p></r:if_content>\r\n\r\n  <p class=\"post-info\">Posted by <r:author /> on <r:date format=\"%d %b %Y\" /></p>\r\n</div>\r\n\r\n</r:children:each>\r\n\r\n<r:children:each limit=\"1\" offset=\"5\" order=\"desc\">\r\n<p><a href=\"<r:date format=\"/en/news/%Y/\" />\"><r:date format=\"%Y\" /> Archives&#8230;</a></p>\r\n</r:children:each>", "_destroy"=>""}, "1"=>{"name"=>"sidebar", "filter_id"=>"", "id"=>"7", "content"=>"<r:if_url matches=\"^/en/news/?$\">\r\n<div class=\"navigation\">\r\n  <h3><strong>Archives By Year</strong></h3>\r\n  <ul class=\"menu\">\r\n<r:children:each order=\"desc\"><r:header>\r\n    <li><a href=\"<r:date format=\"/en/news/%Y/\"/>\"><r:date format=\"%Y\" /> Archives</a></li>\r\n</r:header></r:children:each>\r\n  </ul>\r\n</div>\r\n</r:if_url>\r\n\r\n<r:unless_url matches=\"^/en/news/?$\">\r\n<r:find url=\"/en/news/\">\r\n<div class=\"navigation\">\r\n  <h3><strong>Recent News</strong></h3>\r\n  <ul class=\"menu\">\r\n<r:children:each order=\"desc\" limit=\"5\">\r\n    <li><r:link /></li>\r\n</r:children:each>\r\n  </ul>\r\n</div>\r\n</r:find>\r\n</r:unless_url>\r\n\r\n<r:snippet name=\"en-syndicate\" />", "_destroy"=>""}, "2"=>{"name"=>"head", "filter_id"=>"", "content"=>"<link href=\"/en/feeds/news.rss\" rel=\"alternate\" title=\"RSS\" type=\"application/rss+xml\" />", "_destroy"=>""}}, "lock_version"=>"1", "breadcrumb"=>"News", "parent_id"=>"1", "published_at"=>"January 16, 2011", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/2/edit
+Completed in 301ms (DB: 11) | 302 Found [http://localhost/admin/pages/2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 13:36:20) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 452ms (View: 400, DB: 20) | 200 OK [http://localhost/admin/pages/2/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:36:33) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2214ms (DB: 45) | 200 [http://localhost/en]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 13:40:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 217ms (View: 148, DB: 13) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 13:40:29) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 375ms (View: 307, DB: 18) | 200 OK [http://localhost/admin/pages/2/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 13:42:51) [POST]
+  Parameters: {"action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"see-matz-in-san-francisco-or-silicon-valley", "title"=>"See Matz in San Francisco or Silicon Valley", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "content"=>"Matz is visiting San Francisco and Silicon Vally on October 7th and 11th. He will be talking about new opportunities for Ruby such as embedded applications, cloud computing, and super computing. Keynote Speech is \"Ruby 2.0 What we want to accomplish in the near future.\" Not only Matz but some cool startups from Fukuoka, Japan will give a demo on some of their latest developments using Ruby. For more info, please go to \"http://investfk.com/\":http://investfk.com/.\r\n\r\nBy the way, the reason why Matz is coming with startups from Fukuoka is Fukuoka is the only prefecture that has governmental Ruby committee in Japan. Fukuoka is one of the most enthusiastic city in Japan in terms of Ruby.", "_destroy"=>""}, "1"=>{"name"=>"extended", "filter_id"=>"", "content"=>"", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"See Matz in San Francisco or Silicon Valley", "parent_id"=>"2", "published_at"=>"October 10, 2010", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/3/edit
+Completed in 436ms (DB: 8) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 13:42:52) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 350ms (View: 310, DB: 11) | 200 OK [http://localhost/admin/pages/3/edit]
+
+
+Processing Admin::PagePartsController#create (for 127.0.0.1 at 2011-01-16 13:43:37) [POST]
+  Parameters: {"commit"=>"Add Part", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page_part"=>{"name"=>"summary"}, "index"=>"2", "controller"=>"admin/page_parts"}
+Completed in 118ms (View: 99, DB: 11) | 200 OK [http://localhost/admin/page_parts]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-16 13:43:50) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"3", "page"=>{"class_name"=>"", "slug"=>"see-matz-in-san-francisco-or-silicon-valley", "title"=>"See Matz in San Francisco or Silicon Valley", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "id"=>"9", "content"=>"Matz is visiting San Francisco and Silicon Vally on October 7th and 11th. He will be talking about new opportunities for Ruby such as embedded applications, cloud computing, and super computing. Keynote Speech is \"Ruby 2.0 What we want to accomplish in the near future.\" Not only Matz but some cool startups from Fukuoka, Japan will give a demo on some of their latest developments using Ruby. For more info, please go to \"http://investfk.com/\":http://investfk.com/.\r\n\r\nBy the way, the reason why Matz is coming with startups from Fukuoka is Fukuoka is the only prefecture that has governmental Ruby committee in Japan. Fukuoka is one of the most enthusiastic city in Japan in terms of Ruby.", "_destroy"=>""}, "1"=>{"id"=>"10", "_destroy"=>"true"}, "2"=>{"name"=>"summary", "filter_id"=>"", "content"=>"", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"See Matz in San Francisco or Silicon Valley", "parent_id"=>"2", "published_at"=>"October 10, 2010", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/3/edit
+Completed in 304ms (DB: 8) | 302 Found [http://localhost/admin/pages/3]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 13:43:52) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 434ms (View: 404, DB: 20) | 200 OK [http://localhost/admin/pages/3/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:43:57) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2580ms (DB: 71) | 200 [http://localhost/en]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 13:45:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 123ms (View: 81, DB: 20) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 13:45:46) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 425ms (View: 298, DB: 14) | 200 OK [http://localhost/admin/pages/2/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 13:47:25) [POST]
+  Parameters: {"action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"ruby-1-8-7-p302-is-released", "title"=>"Ruby 1.8.7-p302 is released", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "content"=>"Ruby 1.8.7-p302 has been released(((<ruby-talk:367769>))). This is a security fix for CVE-2010-0541. See ((<the vulnerability report|URL:http://www.ruby-lang.org/en/news/2010/08/16/xss-in-webrick-cve-2010-0541/>)) for more details.\r\n\r\nI recommend all Ruby 1.8.7 users to upgrade the 1.8.7 to p302.\r\n", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}}, "lock_version"=>"0", "breadcrumb"=>"Ruby 1.8.7-p302 is released", "parent_id"=>"2", "published_at"=>"August 16, 2010", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/4/edit
+Completed in 217ms (DB: 6) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 13:47:26) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 272ms (View: 217, DB: 23) | 200 OK [http://localhost/admin/pages/4/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 13:47:36) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2583ms (DB: 66) | 200 [http://localhost/en]
+
+
+Processing Admin::WelcomeController#logout (for 127.0.0.1 at 2011-01-16 13:59:44) [GET]
+  Parameters: {"action"=>"logout", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/login
+Completed in 29ms (DB: 3) | 302 Found [http://localhost/admin/logout]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-16 13:59:44) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 32ms (View: 14, DB: 4) | 200 OK [http://localhost/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-16 14:40:38) [POST]
+  Parameters: {"username_or_email"=>"admin", "action"=>"login", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/welcome", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/admin/welcome
+Completed in 63ms (DB: 4) | 302 Found [http://localhost/admin/login]
+
+
+Processing Admin::WelcomeController#index (for 127.0.0.1 at 2011-01-16 14:40:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 20ms (DB: 4) | 302 Found [http://localhost/admin/welcome]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 14:40:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 306ms (View: 215, DB: 22) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 14:40:43) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"2", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 318ms (View: 230, DB: 11) | 200 OK [http://localhost/admin/pages/2/children/?level=1]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 14:41:40) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 1086ms (View: 998, DB: 21) | 200 OK [http://localhost/admin/pages/2/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 14:43:10) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"ruby-1-9-1-preview-1-released", "title"=>" Ruby 1.9.1-preview 1 released", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "content"=>"Yugui (Yuki Sonoda) announced the release of  Ruby 1.9.1-preview 1:\r\n\r\n\r\n<blockquote>\r\nThis is a preview release of Ruby 1.9.1, which will be the first stable version of the Ruby 1.9 series. Try it out now and get an early taste of a modern, faster, multilingualized, and much improved Ruby with clearer syntax.<br><br>\r\n\r\nIf you encounter any bugs or problems, please let us know via the official issue tracking system:\r\n\r\n\"http://redmine.ruby-lang.org\":http://redmine.ruby-lang.org\r\n\r\n</blockquote>\r\n\r\nYou can download the release from;\r\n\r\n* \"ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-preview1.tar.bz2\":ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-preview1.tar.bz2\r\n \r\n      SIZE: 6169022 bytes\r\n      MD5: 0d51dc949bb6b438ad4ebfabbb5f6754\r\n      SHA256: dc39000537d7c7528ef26af8e1c3a6215b30b6c579c615eaec7013513410456a\r\n\r\n* \"ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-preview1.tar.gz\":ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-preview1.tar.gz\r\n\r\n      SIZE: 7409682 bytes\r\n      MD5: 738f701532452fd5d36f5c155f3ba692\r\n      SHA256: 99443bdae9f94ba7b08de187881f8cbee172379edf9c5fa85fc04c869150ff6d\r\n\r\n* \"ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-preview1.zip\":ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-preview1.zip\r\n\r\n      SIZE: 8569116 bytes\r\n      MD5: 5f68246246c4cd29d8a3b6b34b29b6ac\r\n      SHA256: a6c3a7bf7ea83b595024764926353e08596a78e40c57ac58c568662e5e88df95\r\n", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}}, "lock_version"=>"0", "breadcrumb"=>" Ruby 1.9.1-preview 1 released", "parent_id"=>"2", "published_at"=>"October 31, 2010", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 420ms (DB: 8) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 14:43:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 355ms (View: 273, DB: 69) | 200 OK [http://localhost/admin/pages]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 14:43:14) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 4122ms (DB: 127) | 200 [http://localhost/en]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 14:45:10) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 1168ms (View: 369, DB: 33) | 200 OK [http://localhost/admin/pages/2/children/new]
+
+
+Processing Admin::ReferencesController#show (for 127.0.0.1 at 2011-01-16 14:47:29) [GET]
+  Parameters: {"action"=>"show", "type"=>"filters", "controller"=>"admin/references", "filter_name"=>"Markdown"}
+Rendering admin/references/filters
+Completed in 56ms (View: 21, DB: 3) | 200 OK [http://localhost/admin/reference/filters?filter_name=Markdown]
+
+
+Processing Admin::ReferencesController#show (for 127.0.0.1 at 2011-01-16 14:48:08) [GET]
+  Parameters: {"class_name"=>"", "action"=>"show", "type"=>"tags", "controller"=>"admin/references"}
+Rendering admin/references/tags
+Completed in 753ms (View: 709, DB: 3) | 200 OK [http://localhost/admin/reference/tags?class_name=]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 14:50:21) [POST]
+  Parameters: {"action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"ruby-1-9-2-is-released", "title"=>"Ruby 1.9.2 is released", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "content"=>"Ruby 1.9.2 is released. This is the latest stable version of 1.9 series.\r\n", "_destroy"=>""}, "1"=>{"name"=>"extended", "filter_id"=>"Markdown", "content"=>"=== About Ruby 1.9.2\r\nThe new 1.9.2 is almost compatible with 1.9.1, except these changes:\r\n* Many new methods\r\n* New socket API (improved IPv6 support)\r\n* New encodings\r\n* New Random class which supports several random numbers generators\r\n* Time is reimplemented. The bug with year 2038 is fixed.\r\n* regex improvements\r\n* $: doesn't include the current direcotry.\r\n* dl is reimplemented on top of libffi.\r\n* new psych library wrapping libyaml which can replace syck.\r\n\r\nSee ((<NEWS|URL:http://svn.ruby-lang.org/repos/ruby/tags/v1_9_2_0/NEWS>)) and ((<ChangeLog|URL:http://svn.ruby-lang.org/repos/ruby/tags/v1_9_2_0/ChangeLog>)) for more detailed information.\r\n\r\nRuby 1.9.2 passes more that 99% of ((<RubySpec|URL:http://www.rubyspec.org>)).\r\n\r\n=== Supported platforms\r\nRuby 1.9 supports four levels.\r\n\r\n:Supported\r\n  We've checked that Ruby 1.9.2 works well on most of them..\r\n  * Debian GNU/Linux 5.0 на IA32.\r\n:Efforts made for\r\n  We've checked that Ruby 1.9.2 works well on most of them.\r\n  * mswin32, x64-mswin64, mingw32\r\n  * MacOS X 10.5 (Intel) and 10.6\r\n  * FreeBSD 6 and later (amd64, IA32)\r\n  * Solaris 10\r\n  * Symbian OS\r\n:Efforts made for\r\n  We've checked that Ruby 1.9.2 works well on most of them with small modifications. Patches are accepted.\r\n  * Other Linux distributions\r\n  * Other versions of MacOS X.\r\n  * cygwin\r\n  * AIX 5\r\n  * Other POSIX-compatible systems\r\n  * BeOS (Haiku)\r\n\r\n=== FAQ\r\n:Standart library is installed in ((%/usr/local/lib/ruby/1.9.1%))\r\n  This version is \"librariry compatible version\". Ruby 1.9.2 is almost 1.9.1 compatible, so the library is installed in 1.9.1 direcotry.\r\n:It causes a (({LoadError}))\r\n  (({$:})) doesn't include the current directory. Some script may need modifications to work properly.\r\n\r\n=== Downloads\r\n* ((<URL:http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p0.tar.bz2>))\r\n  :SIZE:\r\n    8495472 bytes\r\n  :MD5:\r\n    d8a02cadf57d2571cd4250e248ea7e4b\r\n  :SHA256:\r\n    e9710990ed8c2e794123aba509010471915fb13c27dae0118831d2001a9c8d3b\r\n\r\n* ((<URL:http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p0.tar.gz>))\r\n  :SIZE:\r\n    10787899 bytes\r\n  :MD5:\r\n    755aba44607c580fddc25e7c89260460\r\n  :SHA256:\r\n    8c0c4e261a921b5c406bf9e76ac23bf3c915651534e9d1b9e8c5d0bee4a7285c\r\n\r\n* ((<URL:http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p0.zip>))\r\n  :SIZE:\r\n    12159728 bytes\r\n  :MD5:\r\n    e57a393ccd62ddece4c63bd549d8cf7f\r\n  :SHA256:\r\n    e61521af06da71fde9f0c7c08baaf7415614d00c86ec5a7ab08b60a4f3185b2a", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"Ruby 1.9.2 is released", "parent_id"=>"2", "published_at"=>"November 15, 2010", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/6/edit
+Completed in 495ms (DB: 14) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 14:50:22) [GET]
+  Parameters: {"action"=>"edit", "id"=>"6", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 1084ms (View: 1056, DB: 18) | 200 OK [http://localhost/admin/pages/6/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 14:50:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 5104ms (DB: 150) | 200 [http://localhost/en]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 14:52:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 514ms (View: 405, DB: 67) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 14:52:34) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 1010ms (View: 889, DB: 57) | 200 OK [http://localhost/admin/pages/2/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 14:55:38) [POST]
+  Parameters: {"action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"ruby-1-8-7-p330-released", "title"=>"Ruby 1.8.7-p330 released", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Markdown", "content"=>"Here you are an annual release of 1.8.7 updates.", "_destroy"=>""}, "1"=>{"name"=>"extended", "filter_id"=>"Markdown", "content"=>"Here you are an annual release of 1.8.7 updates.", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"Ruby 1.8.7-p330 released", "parent_id"=>"2", "published_at"=>"December 25, 2010", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/7/edit
+Completed in 408ms (DB: 6) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 14:55:39) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 592ms (View: 543, DB: 25) | 200 OK [http://localhost/admin/pages/7/edit]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-16 14:57:09) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"7", "page"=>{"class_name"=>"", "slug"=>"ruby-1-8-7-p330-released", "title"=>"Ruby 1.8.7-p330 released", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Markdown", "id"=>"16", "content"=>"Here you are an annual release of 1.8.7 updates.", "_destroy"=>""}, "1"=>{"name"=>"extended", "filter_id"=>"Markdown", "id"=>"17", "content"=>"### Downloads ###\r\n\r\n- [ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p330.tar.gz](ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p330.tar.gz)\r\n- [ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p330.tar.bz2](ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p330.tar.bz2)\r\n- [ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p330.zip](ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p330.zip)\r\n\r\n### Checksums ###\r\n\r\n    MD5(ruby-1.8.7-p330.tar.gz)= 50a49edb787211598d08e756e733e42e\r\n    SHA256(ruby-1.8.7-p330.tar.gz)= 6c261a463b5ffce1dc0920c980218379479dbdf94866d5ed53f1c71f1407c561\r\n    SIZE(ruby-1.8.7-p330.tar.gz)= 4873383\r\n    \r\n    MD5(ruby-1.8.7-p330.tar.bz2)= 2689719fb42c8cf0aa336f8c8933f413\r\n    SHA256(ruby-1.8.7-p330.tar.bz2)= 486c73b023b564c07e062e2e61114e81de970913b04fac6798d0fbe8b7723790\r\n    SIZE(ruby-1.8.7-p330.tar.bz2)= 4191156\r\n    \r\n    MD5(ruby-1.8.7-p330.zip)= 537d424438a0fefe40bed91b022592d6\r\n    SHA256(ruby-1.8.7-p330.zip)= 18df0d26d10a9be32275ba7b39ffd222a153fcc4669e4b772eab142d7e7bde90\r\n    SIZE(ruby-1.8.7-p330.zip)= 5972777\r\n\r\n\r\nIt is worth noting that, though Ruby project experienced license\r\nchange recently (from GPLv2 to 2-clause BSDL) and this is the\r\nfirst time since then to release something, that change do not\r\nreach to already-released versions like 1.8.7, matz said to us.\r\nSo you do not have to worry about it.  If you are already using\r\n1.8.7, you can continue using it.\r\n\r\nThank you, happy holidays.", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"Ruby 1.8.7-p330 released", "parent_id"=>"2", "published_at"=>"December 25, 2010", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/7/edit
+Completed in 492ms (DB: 7) | 302 Found [http://localhost/admin/pages/7]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 14:57:09) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 556ms (View: 512, DB: 12) | 200 OK [http://localhost/admin/pages/7/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 14:57:13) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 4953ms (DB: 66) | 200 [http://localhost/en]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 14:58:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 652ms (View: 503, DB: 100) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 14:58:46) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 1163ms (View: 1078, DB: 15) | 200 OK [http://localhost/admin/pages/2/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 15:00:13) [POST]
+  Parameters: {"action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"ruby-1-9-2-p136-is-released", "title"=>"Ruby 1.9.2-p136 is released", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "content"=>"Ruby 1.9.2-p136 has been released. ", "_destroy"=>""}, "1"=>{"name"=>"extended", "filter_id"=>"SmartyPants", "content"=>"This is the second release of Ruby 1.9.2. \r\nIt fixes many bugs found in 1.9.2-p0.\r\nSee ((<ChangeLog|URL:http://svn.ruby-lang.org/repos/ruby/tags/v1_9_2_136/ChangeLog>)) for\r\nmore detail.\r\n\r\n=== Download\r\n* ((<URL:http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p136.tar.bz2>))\r\n  :SIZE:\r\n    8819324 bytes\r\n  :MD5:\r\n    52958d35d1b437f5d9d225690de94c13\r\n  :SHA256:\r\n    33092509aad118f07f0483a3db1d4c5adaccf4bb0324cd43f44e3bd3dd1858cb\r\n\r\n* ((<URL:http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p136.tar.gz>))\r\n  :SIZE:\r\n    11155066 bytes\r\n  :MD5:\r\n    6e17b200b907244478582b7d06cd512e\r\n  :SHA256:\r\n    c4314df44f3ab81230685fb51c296ce21034f4c719e2fcc0baba221d19f28746\r\n\r\n* ((<URL:http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p136.zip>))\r\n  :SIZE:\r\n    12566581 bytes\r\n  :MD5:\r\n    f400021058e886786ded510a9f45b2c6\r\n  :SHA256:\r\n    84ffc047b29032ba848dbbf50d3302de7ac732db1448e57303c27ad4b47c2c5b", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"Ruby 1.9.2-p136 is released", "parent_id"=>"2", "published_at"=>"December 25, 2010", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/8/edit
+Completed in 463ms (DB: 7) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 15:00:14) [GET]
+  Parameters: {"action"=>"edit", "id"=>"8", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 478ms (View: 445, DB: 11) | 200 OK [http://localhost/admin/pages/8/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 15:00:28) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 4573ms (DB: 126) | 200 [http://localhost/en]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 15:01:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 856ms (View: 788, DB: 29) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 15:02:51) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 464ms (View: 423, DB: 11) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 15:03:04) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 1235ms (View: 1168, DB: 13) | 200 OK [http://localhost/admin/pages/1/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 15:06:00) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"libraries", "title"=>"Libraries", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "content"=>"A myriad of fascinating and useful libraries are out there for Ruby, many released as \"a convenient _gem_ file\":http://docs.rubygems.org.  Other libraries are released as archived (.zip or .tar.gz) directories of source code.  Let's take a look at finding libraries and installing them for your own use.\r\n\r\nh3. <a id=\"finding-libraries\"></a>Finding Libraries\r\n\r\n\"*RubyForge*\":http://rubyforge.org/ is a popular home for Ruby libraries.  One good spot to browse is its \"software map\":http://rubyforge.org/softwaremap/trove_list.php, which lists libraries by topic.  (If you end up creating your own libraries, you can \"register\":http://rubyforge.org/register/ your project at Rubyforge to get free Subversion access, web space, and mailing lists.)\r\n\r\nThe \"*Ruby Application Archive*\":http://raa.ruby-lang.org/ (or RAA) is a directory of all manner of Ruby software, categorized by function.  Right now, the \"Database\":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=Database\r\ncategory has the most entries, leading by 1 over \"Net.\":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=Net\r\n\"HTML\":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=HTML and \"XML\":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=XML\r\nare also popular categories.  There are even 4 \r\n\"Physics\":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=Physics entries.\r\n\r\nh3. <a id=\"using-rubygems\"></a>Using RubyGems\r\n\r\nAs stated on the \"RubyGems website\":http://docs.rubygems.org, \"RubyGems is the premier ruby packaging system. It provides a standard format for distributing Ruby programs and libraries, and an easy to use tool for managing the installation of gem packages.\" In some ways, it is a distribution packaging system similar to, say, apt-get, targeted at ruby software. The official gems repository is \"Gemcutter\":http://gemcutter.org.\r\n\r\nWhile the Windows installer includes RubyGems, many operating systems do not.  Please refer to \"Installing RubyGems\":#installing-rubygems below, if next gem commands do not work for you.\r\n\r\nh4. Searching for Gems\r\n\r\nThe *search* command can be used to look for gems of a certain name.  To search for the word \"html\" in the name of a gem:\r\n\r\n<notextile><r:code lang=\"bash\">\r\n $ gem search html --remote\r\n\r\n *** REMOTE GEMS ***\r\n\r\n html-sample (1.0, 1.1)\r\n    A sample Ruby gem, just to illustrate how RubyGems works.\r\n</r:code></notextile>\r\n\r\n(_The @--remote@ flag indicates that we'll be searching the official Gemcutter gems._)\r\n\r\nh4. Installing a Gem\r\n\r\nOnce you know which gem you'd like to *install*:\r\n\r\n<notextile><r:code lang=\"bash\">\r\n $ gem install html-sample\r\n</r:code></notextile>\r\n\r\nYou can even install just a certain version of the library using the @--version@ flag.\r\n\r\n<notextile><r:code lang=\"bash\">\r\n $ gem install html-sample --version 1.0\r\n</r:code></notextile>\r\n\r\nh4. Listing All Gems\r\n\r\nFor a complete *list* of all gems at Gemcutter:\r\n\r\n<notextile><r:code lang=\"bash\">\r\n $ gem list --remote\r\n</r:code></notextile>\r\n\r\nTo list only gems you've installed, leave off the flag.\r\n\r\n<notextile><r:code lang=\"bash\">\r\n $ gem list\r\n</r:code></notextile>\r\n\r\nFor more on using RubyGems, see \"*the official manual*\":http://rubygems.org/read/chapter/1, which includes examples for using gems in your Ruby scripts.\r\n\r\nh3. <a id=\"installing-rubygems\"></a>Installing RubyGems\r\n\r\nTo install RubyGems, download RubyGems 0.9.0 from its \"downloads page\":http://rubyforge.org/frs/?group_id=126.  Extract the archive and run @setup.rb@. On some operating systems you may need to do this as root.\r\n\r\nFor example, on Linux:\r\n\r\n<notextile><r:code lang=\"bash\">\r\n$ tar xzvf rubygems-0.9.0.tar.gz\r\n$ cd rubygems-0.9.0\r\n$ su -\r\n# ruby setup.rb\r\n</r:code></notextile>\r\n\r\nIf you need some further direction on how to install Ruby, check out the \"*installation chapter*\":http://rubygems.org/read/chapter/3 in the RubyGems manual.", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}}, "lock_version"=>"0", "breadcrumb"=>"Libraries", "parent_id"=>"1", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 434ms (DB: 11) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 15:06:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 1093ms (View: 1008, DB: 35) | 200 OK [http://localhost/admin/pages]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 15:06:14) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 5107ms (DB: 116) | 200 [http://localhost/en]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 15:07:16) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"9", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 406ms (View: 318, DB: 54) | 200 OK [http://localhost/admin/pages/9/children/new]
+
+
+Processing Admin::PagePartsController#create (for 127.0.0.1 at 2011-01-16 15:08:38) [POST]
+  Parameters: {"commit"=>"Add Part", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page_part"=>{"name"=>"top-projects"}, "index"=>"2", "controller"=>"admin/page_parts"}
+Completed in 137ms (View: 101, DB: 4) | 200 OK [http://localhost/admin/page_parts]
+
+
+Processing Admin::PagePartsController#create (for 127.0.0.1 at 2011-01-16 15:09:01) [POST]
+  Parameters: {"commit"=>"Add Part", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page_part"=>{"name"=>"styles"}, "index"=>"2", "controller"=>"admin/page_parts"}
+Completed in 101ms (View: 75, DB: 5) | 200 OK [http://localhost/admin/page_parts]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 15:10:27) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"top-projects", "title"=>"Top Ruby Projects", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "content"=>"<p><em>This is a list of the 30 most downloaded Ruby projects (according to <a href=\"http://rubyforge.org\">RubyForge</a>).</em></p>\r\n\r\n<r:top_projects src=\"http://rubyforge.org/export/top_downloads.php\">\r\n<table id=\"top-projects-table\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n<thead>\r\n<tr>\r\n<th class=\"rank\">Rank</th>\r\n<th class=\"project\">Project</th>\r\n<th class=\"downloads\">Downloads</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<r:each limit=\"30\">\r\n<tr>\r\n<td class=\"rank\"><r:rank /></td>\r\n<td class=\"project\"><h4><r:link /></h4><p><r:description /></p></td>\r\n<td class=\"downloads\"><r:downloads /></td>\r\n</tr>\r\n</r:each>\r\n</tbody>\r\n</table>\r\n</r:top_projects>\r\n\r\n<p><a href=\"http://rubyforge.org/top/toplist.php?type=downloads\">View the full list of the top 100 downloads at RubyForge&#8230;</a></p>", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}, "2"=>{"name"=>"styles", "filter_id"=>"", "content"=>"#content table {\r\n  margin-top: 1.5em;\r\n  margin-bottom: 1.5em;\r\n}\r\n#content table th,\r\n#content table td {\r\n  padding-left: 8px;\r\n  padding-right: 8px;\r\n  text-align: left;\r\n  vertical-align: top;\r\n}\r\n#content table th {\r\n  background-color: #eee;\r\n  color: #667;\r\n  font-family: Georgia, Palatino, \"Times New Roman\", Times, serif;\r\n  font-size: 85%;\r\n}\r\n#content table td {\r\n  background-image: url(/images/dotted-underline.gif);\r\n  background-position: bottom;\r\n  background-repeat: repeat-x;\r\n  padding-top: 4px;\r\n  padding-bottom: 4px;\r\n}\r\n#top-projects-table h4 {\r\n  font-size: 110%;\r\n  font-weight: bold;\r\n  margin-top: 2px;\r\n  margin-bottom: .5em;\r\n}\r\n#top-projects-table p {\r\n  font-size: 85%;\r\n  line-height: 1.4em;\r\n  margin: 0;\r\n  margin-bottom: .5em;\r\n}", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"Top Ruby Projects", "parent_id"=>"9", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 486ms (DB: 20) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 15:10:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 802ms (View: 740, DB: 22) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 15:10:35) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"9", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 228ms (View: 95, DB: 49) | 200 OK [http://localhost/admin/pages/9/children/?level=1]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 15:10:39) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 553ms (View: 487, DB: 14) | 200 OK [http://localhost/admin/pages/10/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 15:12:34) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 4636ms (DB: 72) | 200 [http://localhost/en]
+
+
+Processing Admin::WelcomeController#logout (for 127.0.0.1 at 2011-01-16 15:16:10) [GET]
+  Parameters: {"action"=>"logout", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/login
+Completed in 18ms (DB: 3) | 302 Found [http://localhost/admin/logout]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-16 15:16:10) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 676ms (View: 666, DB: 4) | 200 OK [http://localhost/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-16 18:49:28) [POST]
+  Parameters: {"username_or_email"=>"admin", "action"=>"login", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "controller"=>"admin/welcome", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/admin/welcome
+Completed in 28ms (DB: 3) | 302 Found [http://localhost/admin/login]
+
+
+Processing Admin::WelcomeController#index (for 127.0.0.1 at 2011-01-16 18:49:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 13ms (DB: 3) | 302 Found [http://localhost/admin/welcome]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 18:49:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 439ms (View: 327, DB: 63) | 200 OK [http://localhost/admin/pages]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-16 18:49:45) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "libraries"], "controller"=>"site"}
+Completed in 3103ms (DB: 68) | 200 [http://localhost/en/libraries/]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 18:51:29) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 661ms (View: 552, DB: 14) | 200 OK [http://localhost/admin/pages/1/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 18:55:07) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"about", "title"=>"About Ruby", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "content"=>"Wondering why Ruby is so popular?  Its fans call it a beautiful, artful language.  And yet, they say it's handy and practical.  What gives?\r\n\r\nh3. The Ideals of Ruby's Creator\r\n\r\n!>{padding-left:8px}http://redhanded.hobix.com/images/ruby-lang-matz.png!\r\n\r\nRuby is a language of careful balance.  Its creator, <a href=\"http://www.rubyist.net/~matz/\">Yukihiro \"matz\" Matsumoto</a>, blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.\r\n\r\nHe has often said that he is \"trying to make Ruby natural, not simple,\" in a way that mirrors life.\r\n\r\nBuilding on this, he adds:\r\n\r\nbq. Ruby is simple in appearance, but is very complex inside, just like our human body[1].\r\n\r\nh3. About Ruby's Growth\r\n\r\nSince its public release in 1995, Ruby has drawn devoted coders worldwide.  In 2006, Ruby achieved mass acceptance.  With active user groups formed in the world's major cities and Ruby-related conferences filled to capacity.\r\n\r\n!>{padding-left:8px}http://gmane.org/plot-rate.php?group=gmane.comp.lang.ruby.general&width=280&height=140&title=Ruby-Talk+Activity+over+4+Years(Graph courtesy of Gmane.)!\r\n\r\nRuby-Talk, the primary \"mailing list\":/en/community/mailing-lists/ for discussion of the Ruby language has climbed to an average of 200 messages per day.\r\n \r\nThe TIOBE index, which measures the growth of programming languages, ranks Ruby as #9 among programming languages worldwide.  Much of the growth is attributed to the popularity of software written in Ruby, particularly the Ruby on Rails web framework[2].\r\n\r\nRuby is also \"totally free\":./license.txt.  Not only free of charge, but also free to use, copy, modify, and distribute.\r\n\r\nh3. Seeing Everything as an Object\r\n\r\nInitially, Matz looked at other languages to find an ideal syntax.  Recalling his search, he said, \"I wanted a scripting language that was more powerful than Perl, and more object-oriented than Python[3].\"\r\n\r\nIn Ruby, everything is an object.  Every bit of information and code can be given their own properties and actions.  Object-oriented programming calls properties by the name _instance variables_ and actions are known as _methods_.  Ruby's pure object-oriented approach is most commonly demonstrated by a bit of code which applies an action to a number.\r\n\r\n<notextile><r:code>\r\n5.times { print \"We *love* Ruby -- it's outrageous!\" }\r\n</r:code></notextile>\r\n\r\nIn many languages, numbers and other primitive types are not objects.  Ruby follows the influence of the Smalltalk language by giving methods and instance variables to all of its types.  This eases one's use of Ruby, since rules applying to objects apply to all of Ruby.\r\n\r\nh3. Ruby's Flexibility\r\n\r\nRuby is seen as a flexible language, since it allows its users to freely alter its parts.  Essential parts of Ruby can be removed or redefined, at will.  Existing parts can be added upon.  Ruby tries not to restrict the coder.\r\n\r\nFor example, addition is performed with the plus (@+@) operator.  But, if you'd rather use the readable word @plus@, you could add such a method to Ruby's builtin @Numeric@ class.\r\n\r\n<notextile><r:code>\r\nclass Numeric\r\n  def plus(x)\r\n    self.+(x)\r\n  end\r\nend\r\n\r\ny = 5.plus 6\r\n# y is now equal to 11\r\n</r:code></notextile>\r\n\r\nRuby's operators are syntactic sugar for methods. You can redefine them as well.\r\n\r\nh3. Blocks, a Truly Expressive Feature\r\n\r\nRuby's block are also seen as a source of great flexibility.  A programmer can attach a closure to any method, describing how that method should act.  The closure is called a _block_ and has become one of the most popular features for newcomers to Ruby from other imperative languages like PHP or Visual Basic.\r\n\r\nBlocks are inspired by functional languages.  Matz said, \"in Ruby closures, I wanted to respect the Lisp culture[4].\"\r\n\r\n<notextile><r:code>\r\nsearch_engines = \r\n  %w[Google Yahoo MSN].map do |engine|\r\n    \"http://www.\" + engine.downcase + \".com\"\r\n  end\r\n</r:code></notextile>\r\n\r\nIn the above code, the block is described inside the @do ... end@ construct.  The @map@ method applies the block to the provided list of words.  Many other methods in Ruby leave a hole open for a coder to write their own block to fill in the details of what that method should do.\r\n\r\nh3. Ruby and the Mixin\r\n\r\nUnlike many object-oriented languages, Ruby features single inheritance only, *on purpose*. But Ruby knows the\r\nconcept of modules (called Categories in Objective-C). Modules are collections\r\nof methods.\r\n\r\nClasses can mixin a module and receive all its methods for free.  For example, any class which implements the @each@ method can mixin the @Enumerable@ module, which adds a pile of methods that use @each@ for looping.\r\n\r\n<notextile><r:code>\r\nclass MyArray\r\n  include Enumerable\r\nend\r\n</r:code></notextile>\r\n\r\nGenerally, Rubyists see this as a much clearer way than multiple inheritance, which is complex and can be too restrictive.\r\n\r\nh3. Ruby's Visual Appearance\r\n\r\nWhile Ruby often uses very limited punctuation and usually prefers English keywords, some punctuation is used to decorate Ruby.  \r\nRuby needs no variable declarations. It uses simple naming conventions to\r\ndenote the scope of variables. \r\n\r\n* @var@ could be a local variable.\r\n* @@var@ is an instance variable.\r\n* @$var@ is a global variable.\r\n\r\nThese sigils enhance readability by allowing the programmer to easily identify the roles of each variable.  It also becomes unnecessary to use a tiresome @self.@ prepended to every instance member.\r\n\r\nh3. Beyond the Basics\r\n\r\nRuby has a wealth of other features, among which are the following:\r\n\r\n* Ruby has exception handling features, like Java or Python, to make it easy to\r\nhandle errors.\r\n\r\n* Ruby features a true mark-and-sweep garbage collector for all Ruby\r\nobjects. No need to maintain reference counts in extension\r\nlibraries.  As Matz says, \"This is better for your health.\"\r\n\r\n* Writing C extensions in Ruby is easier than in Perl or Python, with a very elegant\r\nAPI for calling Ruby from C.  This includes calls for embedding Ruby in software, for use\r\nas a scripting language.  A SWIG interface is also available.\r\n\r\n* Ruby can load extension libraries dynamically if an OS allows.\r\n\r\n* Ruby features OS independent threading. Thus, for all platforms on which Ruby\r\nruns, you also have multithreading, regardless of if the OS supports it or not,\r\neven on MS-DOS!\r\n\r\n* Ruby is highly portable: it is developed mostly on GNU/Linux, but works on many\r\ntypes of UNIX, Mac OS X, Windows 95/98/Me/NT/2000/XP, DOS, BeOS, OS/2, etc.\r\n\r\nh4. References\r\n\r\nfn1. Matz, speaking on the Ruby-Talk mailing list, \"May 12th, 2000\":http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773.\r\n\r\nfn2. See the \"Ruby on Rails\":http://rubyonrails.org/ home page for more.\r\n\r\nfn3. Matz, in \"An Interview with the Creator of Ruby\":http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html, Nov. 29th, 2001.\r\n\r\nfn4. Matz, in \"Blocks and Closures in Ruby\":http://www.artima.com/intv/closures2.html, December 22nd, 2003.\r\n", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}}, "lock_version"=>"0", "breadcrumb"=>"About Ruby", "parent_id"=>"1", "published_at"=>"", "status_id"=>"1", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 514ms (DB: 11) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 18:55:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 367ms (View: 289, DB: 33) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 18:55:47) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 1010ms (View: 951, DB: 11) | 200 OK [http://localhost/admin/pages/11/edit]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-16 18:56:26) [PUT]
+  Parameters: {"commit"=>"Save Changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "id"=>"11", "page"=>{"class_name"=>"", "slug"=>"about", "title"=>"About Ruby", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "id"=>"23", "content"=>"Wondering why Ruby is so popular?  Its fans call it a beautiful, artful language.  And yet, they say it's handy and practical.  What gives?\r\n\r\nh3. The Ideals of Ruby's Creator\r\n\r\n!>{padding-left:8px}http://redhanded.hobix.com/images/ruby-lang-matz.png!\r\n\r\nRuby is a language of careful balance.  Its creator, <a href=\"http://www.rubyist.net/~matz/\">Yukihiro \"matz\" Matsumoto</a>, blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.\r\n\r\nHe has often said that he is \"trying to make Ruby natural, not simple,\" in a way that mirrors life.\r\n\r\nBuilding on this, he adds:\r\n\r\nbq. Ruby is simple in appearance, but is very complex inside, just like our human body[1].\r\n\r\nh3. About Ruby's Growth\r\n\r\nSince its public release in 1995, Ruby has drawn devoted coders worldwide.  In 2006, Ruby achieved mass acceptance.  With active user groups formed in the world's major cities and Ruby-related conferences filled to capacity.\r\n\r\n!>{padding-left:8px}http://gmane.org/plot-rate.php?group=gmane.comp.lang.ruby.general&width=280&height=140&title=Ruby-Talk+Activity+over+4+Years(Graph courtesy of Gmane.)!\r\n\r\nRuby-Talk, the primary \"mailing list\":/en/community/mailing-lists/ for discussion of the Ruby language has climbed to an average of 200 messages per day.\r\n \r\nThe TIOBE index, which measures the growth of programming languages, ranks Ruby as #9 among programming languages worldwide.  Much of the growth is attributed to the popularity of software written in Ruby, particularly the Ruby on Rails web framework[2].\r\n\r\nRuby is also \"totally free\":./license.txt.  Not only free of charge, but also free to use, copy, modify, and distribute.\r\n\r\nh3. Seeing Everything as an Object\r\n\r\nInitially, Matz looked at other languages to find an ideal syntax.  Recalling his search, he said, \"I wanted a scripting language that was more powerful than Perl, and more object-oriented than Python[3].\"\r\n\r\nIn Ruby, everything is an object.  Every bit of information and code can be given their own properties and actions.  Object-oriented programming calls properties by the name _instance variables_ and actions are known as _methods_.  Ruby's pure object-oriented approach is most commonly demonstrated by a bit of code which applies an action to a number.\r\n\r\n<notextile><r:code>\r\n5.times { print \"We *love* Ruby -- it's outrageous!\" }\r\n</r:code></notextile>\r\n\r\nIn many languages, numbers and other primitive types are not objects.  Ruby follows the influence of the Smalltalk language by giving methods and instance variables to all of its types.  This eases one's use of Ruby, since rules applying to objects apply to all of Ruby.\r\n\r\nh3. Ruby's Flexibility\r\n\r\nRuby is seen as a flexible language, since it allows its users to freely alter its parts.  Essential parts of Ruby can be removed or redefined, at will.  Existing parts can be added upon.  Ruby tries not to restrict the coder.\r\n\r\nFor example, addition is performed with the plus (@+@) operator.  But, if you'd rather use the readable word @plus@, you could add such a method to Ruby's builtin @Numeric@ class.\r\n\r\n<notextile><r:code>\r\nclass Numeric\r\n  def plus(x)\r\n    self.+(x)\r\n  end\r\nend\r\n\r\ny = 5.plus 6\r\n# y is now equal to 11\r\n</r:code></notextile>\r\n\r\nRuby's operators are syntactic sugar for methods. You can redefine them as well.\r\n\r\nh3. Blocks, a Truly Expressive Feature\r\n\r\nRuby's block are also seen as a source of great flexibility.  A programmer can attach a closure to any method, describing how that method should act.  The closure is called a _block_ and has become one of the most popular features for newcomers to Ruby from other imperative languages like PHP or Visual Basic.\r\n\r\nBlocks are inspired by functional languages.  Matz said, \"in Ruby closures, I wanted to respect the Lisp culture[4].\"\r\n\r\n<notextile><r:code>\r\nsearch_engines = \r\n  %w[Google Yahoo MSN].map do |engine|\r\n    \"http://www.\" + engine.downcase + \".com\"\r\n  end\r\n</r:code></notextile>\r\n\r\nIn the above code, the block is described inside the @do ... end@ construct.  The @map@ method applies the block to the provided list of words.  Many other methods in Ruby leave a hole open for a coder to write their own block to fill in the details of what that method should do.\r\n\r\nh3. Ruby and the Mixin\r\n\r\nUnlike many object-oriented languages, Ruby features single inheritance only, *on purpose*. But Ruby knows the\r\nconcept of modules (called Categories in Objective-C). Modules are collections\r\nof methods.\r\n\r\nClasses can mixin a module and receive all its methods for free.  For example, any class which implements the @each@ method can mixin the @Enumerable@ module, which adds a pile of methods that use @each@ for looping.\r\n\r\n<notextile><r:code>\r\nclass MyArray\r\n  include Enumerable\r\nend\r\n</r:code></notextile>\r\n\r\nGenerally, Rubyists see this as a much clearer way than multiple inheritance, which is complex and can be too restrictive.\r\n\r\nh3. Ruby's Visual Appearance\r\n\r\nWhile Ruby often uses very limited punctuation and usually prefers English keywords, some punctuation is used to decorate Ruby.  \r\nRuby needs no variable declarations. It uses simple naming conventions to\r\ndenote the scope of variables. \r\n\r\n* @var@ could be a local variable.\r\n* @@var@ is an instance variable.\r\n* @$var@ is a global variable.\r\n\r\nThese sigils enhance readability by allowing the programmer to easily identify the roles of each variable.  It also becomes unnecessary to use a tiresome @self.@ prepended to every instance member.\r\n\r\nh3. Beyond the Basics\r\n\r\nRuby has a wealth of other features, among which are the following:\r\n\r\n* Ruby has exception handling features, like Java or Python, to make it easy to\r\nhandle errors.\r\n\r\n* Ruby features a true mark-and-sweep garbage collector for all Ruby\r\nobjects. No need to maintain reference counts in extension\r\nlibraries.  As Matz says, \"This is better for your health.\"\r\n\r\n* Writing C extensions in Ruby is easier than in Perl or Python, with a very elegant\r\nAPI for calling Ruby from C.  This includes calls for embedding Ruby in software, for use\r\nas a scripting language.  A SWIG interface is also available.\r\n\r\n* Ruby can load extension libraries dynamically if an OS allows.\r\n\r\n* Ruby features OS independent threading. Thus, for all platforms on which Ruby\r\nruns, you also have multithreading, regardless of if the OS supports it or not,\r\neven on MS-DOS!\r\n\r\n* Ruby is highly portable: it is developed mostly on GNU/Linux, but works on many\r\ntypes of UNIX, Mac OS X, Windows 95/98/Me/NT/2000/XP, DOS, BeOS, OS/2, etc.\r\n\r\nh4. References\r\n\r\nfn1. Matz, speaking on the Ruby-Talk mailing list, \"May 12th, 2000\":http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773.\r\n\r\nfn2. See the \"Ruby on Rails\":http://rubyonrails.org/ home page for more.\r\n\r\nfn3. Matz, in \"An Interview with the Creator of Ruby\":http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html, Nov. 29th, 2001.\r\n\r\nfn4. Matz, in \"Blocks and Closures in Ruby\":http://www.artima.com/intv/closures2.html, December 22nd, 2003.\r\n", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"About Ruby", "parent_id"=>"1", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 442ms (DB: 65) | 302 Found [http://localhost/admin/pages/11]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 18:56:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 457ms (View: 394, DB: 41) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 18:59:23) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"11", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 539ms (View: 435, DB: 36) | 200 OK [http://localhost/admin/pages/11/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 19:00:44) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"license-txt", "title"=>"license.txt", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "content"=>"RUBY LICENSE\r\n\r\nRuby is copyrighted free software by Yukihiro Matsumoto <matz@netlab.co.jp>.\r\nYou can redistribute it and/or modify it under either the terms of the GPL\r\n(see COPYING.txt file), or the conditions below:\r\n\r\n  1. You may make and give away verbatim copies of the source form of the\r\n     software without restriction, provided that you duplicate all of the\r\n     original copyright notices and associated disclaimers.\r\n\r\n  2. You may modify your copy of the software in any way, provided that\r\n     you do at least ONE of the following:\r\n\r\n     a) place your modifications in the Public Domain or otherwise\r\n        make them Freely Available, such as by posting said\r\n\t    modifications to Usenet or an equivalent medium, or by allowing\r\n\t    the author to include your modifications in the software.\r\n\r\n     b) use the modified software only within your corporation or\r\n        organization.\r\n\r\n     c) rename any non-standard executables so the names do not conflict\r\n\t    with standard executables, which must also be provided.\r\n\r\n     d) make other distribution arrangements with the author.\r\n\r\n  3. You may distribute the software in object code or executable\r\n     form, provided that you do at least ONE of the following:\r\n\r\n     a) distribute the executables and library files of the software,\r\n\t    together with instructions (in the manual page or equivalent)\r\n\t    on where to get the original distribution.\r\n\r\n     b) accompany the distribution with the machine-readable source of\r\n\t    the software.\r\n\r\n     c) give non-standard executables non-standard names, with\r\n        instructions on where to get the original software distribution.\r\n\r\n     d) make other distribution arrangements with the author.\r\n\r\n  4. You may modify and include the part of the software into any other\r\n     software (possibly commercial).  But some files in the distribution\r\n     are not written by the author, so that they are not under this terms.\r\n\r\n     They are gc.c(partly), utils.c(partly), regex.[ch], st.[ch] and some\r\n     files under the ./missing directory.  See each file for the copying\r\n     condition.\r\n\r\n  5. The scripts and library files supplied as input to or produced as \r\n     output from the software do not automatically fall under the\r\n     copyright of the software, but belong to whomever generated them, \r\n     and may be sold commercially, and may be aggregated with this\r\n     software.\r\n\r\n  6. THIS SOFTWARE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR\r\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\r\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\r\n     PURPOSE.", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}}, "lock_version"=>"0", "breadcrumb"=>"license.txt", "parent_id"=>"11", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"6", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 456ms (DB: 48) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 19:00:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 1014ms (View: 870, DB: 90) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 19:03:14) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"11", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 147ms (View: 79, DB: 12) | 200 OK [http://localhost/admin/pages/11/children/?level=1]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-16 19:03:30) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 894ms (View: 786, DB: 11) | 200 OK [http://localhost/admin/pages/1/edit]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 19:04:04) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 733ms (View: 648, DB: 19) | 200 OK [http://localhost/admin/pages/1/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 19:04:49) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"community", "title"=>"Community", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "content"=>"The community that grows up around a programming language is one of its most important strengths. Ruby has a vibrant and growing community that is friendly towards people of all skill levels.\r\n\r\nIf you are interested in getting involved, here are a couple of places to start:\r\n\r\n<dl>\r\n<dt>\"Ruby User Groups\":user-groups/</dt>\r\n<dd>Your local Ruby user group is a great place to network with other Ruby programmers. Ruby user groups are self-organizing and typically feature monthly meetings, a mailing list, a Web site, and if you are lucky, frequent codefests.</dd>\r\n\r\n<dt>\"Ruby Mailing Lists and Newsgroups\":mailing-lists/</dt>\r\n<dd>Ruby has an assortment of lists on different topics and in several languages. If you have questions about Ruby, asking them on a mailing list is a great way to get answers.</dd>\r\n\r\n<dt>\"Ruby on IRC\":irc://irc.freenode.net/ruby-lang</dt>\r\n<dd>The Ruby Language IRC Channel is a wonderful way to chat with fellow Rubyists. (\"Previous Chat Logs\":http://meme.b9.com/)\r\n</dd>\r\n\r\n<dt>\"Ruby Core\":ruby-core/</dt>\r\n<dd>With Ruby 2.0 underway, now is a fantastic time to be following Ruby's development. If you are interested in helping with Ruby, start here.</dd>\r\n\r\n<dt>\"Weblogs About Ruby\":weblogs/</dt>\r\n<dd>Very little happens in the Ruby community that is not talked about on the blogs. We've got a nice list of suggestions for you here for getting plugged in.</dd>\r\n\r\n<dt>\"Ruby Conferences\":conferences/</dt>\r\n<dd>Ruby programmers around the world are getting involved in more and more conferences, where they get together to share reports on work-in-progress, discuss the future of Ruby, and welcome newcomers to the Ruby community.</dd>\r\n\r\n<dt>\"The Ruby Mentor Project\":http://rubymentor.rubyforge.org/</dt>\r\n<dd>This new resource aims to pair people new to Ruby with more experienced guides.  The goal is to ease the process of learning Ruby by having someone you can ask questions of.  This is intended to be a little less intimidating than a mailing list, though Ruby Talk does welcome questions from beginners.</dd>\r\n\r\n<dt>General Ruby Information</dt>\r\n<dd>\r\n<ul>\r\n<li>\"Ruby Central\":http://www.rubycentral.org/</li>\r\n<li>\"Ruby at Open Directory Project\":http://dmoz.org/Computers/Programming/Languages/Ruby/</li>\r\n<li>\"Rails at Open Directory Project\":http://dmoz.org/Computers/Programming/Languages/Ruby/Software/Rails/</li>\r\n</ul>\r\n</dd>\r\n</dl>", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}}, "lock_version"=>"0", "breadcrumb"=>"Community", "parent_id"=>"1", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 501ms (DB: 73) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 19:04:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 502ms (View: 429, DB: 57) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 19:07:01) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"13", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 1382ms (View: 1287, DB: 48) | 200 OK [http://localhost/admin/pages/13/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 19:09:44) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"mailing-lists", "title"=>"Mailing Lists", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "content"=>"<r:subscribe>\r\n<r:unless_success>\r\nMailing-lists are a great way to keep your finger on the pulse of the Ruby community. Ruby has four primary English speaking mailing lists:\r\n\r\n<dl>\r\n<dt>Ruby-Talk</dt>\r\n<dd>This is the most popular mailing-list and deals with general topics about Ruby. Ruby-Talk is mirrored by the <a href=\"news:comp.lang.ruby\">comp.lang.ruby</a> newsgroup and <a href=\"http://ruby-forum.com\">Ruby-Forum.com</a>. (<a href=\"http://www.rubyweeklynews.org/\">Weekly Summaries</a>, <a href=\"http://rubyhacker.com/clrFAQ.html\">FAQ</a>, <a href=\"http://blade.nagaokaut.ac.jp/ruby/ruby-talk/index.shtml\">Archives</a>)</dd>\r\n\r\n<dt>Ruby-Core</dt>\r\n<dd>This list deals with core and implementation topics about Ruby, often used to run patches for review. (<a href=\"http://blade.nagaokaut.ac.jp/ruby/ruby-core/index.shtml\">Archives</a>)</dd>\r\n\r\n<dt>Ruby-Doc</dt>\r\n<dd>This list is for discussing documentation standards and tools for Ruby. (<a href=\"http://dir.gmane.org/gmane.comp.lang.ruby.documentation\">Archives at Gmane</a>)</dd>\r\n\r\n<dt>Ruby-CVS</dt>\r\n<dd>This list reports all commits to Ruby&#8217;s CVS repository.</dd>\r\n</dl>\r\n\r\n<r:form id=\"subscriptions-form\">\r\n  <h2>Subscribe or Unsubscribe</h2>\r\n  <r:if_error><p class=\"error\"><r:error_message /></p></r:if_error>\r\n  <table class=\"fieldset\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\r\n    <tr> <td class=\"label\">Mailing List  </td> <td><r:list_select />     </td> </tr>\r\n    <tr> <td class=\"label\">First Name    </td> <td><r:first_name_input /></td> </tr>\r\n    <tr> <td class=\"label\">Last Name     </td> <td><r:last_name_input /> </td> </tr>\r\n    <tr> <td class=\"label\">E-mail Address</td> <td><r:email_input />     </td> </tr>\r\n    <tr> <td class=\"label\">Action        </td> <td><r:action_select />   </td> </tr>\r\n  </table>\r\n  <div class=\"buttons\"><input class=\"button\" type=\"submit\" value=\"Submit Form\" /></div>\r\n</r:form>\r\n</r:unless_success>\r\n\r\n<r:if_success>\r\n<h2>Confirmation E-mail</h2>\r\n<p>You should receive a confirmation message within a few minutes.\r\n  Once you have received the message, follow the instructions it\r\n  contains to complete the process.</p>\r\n<p><r:link>Subscribe to another mailing list&#8230;</r:link></p>\r\n</r:if_success>\r\n</r:subscribe>\r\n<br />\r\n<p>If you fail to receive a confirmation e-mail using the form, try subscribing the <a href=\"manual-instructions/\">manual way</a>.</p>", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}}, "lock_version"=>"0", "breadcrumb"=>"Mailing Lists", "parent_id"=>"13", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 470ms (DB: 13) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 19:09:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 316ms (View: 229, DB: 23) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 19:11:11) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"13", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 161ms (View: 79, DB: 30) | 200 OK [http://localhost/admin/pages/13/children/?level=1]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 19:11:14) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"14", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 574ms (View: 461, DB: 37) | 200 OK [http://localhost/admin/pages/14/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 19:12:48) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"manual-instructions", "title"=>"Manual Mailing List Instructions", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "content"=>"To subscribe to a mailing list, please send a mail with the following mail body (not the subject) to the automated \"controller\" address:\r\n\r\n<r:code lang=\"mail\">subscribe Your-First-Name Your-Last-Name</r:code>\r\n\r\ne.g.\r\n    \r\n<r:code lang=\"mail\">subscribe John Doe</r:code>\r\n\r\n<dl>\r\n<dt>Ruby-Talk</dt>\r\n<dd>For the Ruby-Talk list, the controller address is [ruby-talk-ctl@ruby-lang.org](mailto:ruby-talk-ctl@ruby-lang.org), the posting address is [ruby-talk@ruby-lang.org](mailto:ruby-talk@ruby-lang.org), and the human administrator address is [ruby-talk-admin@ruby-lang.org](mailto:ruby-talk-admin@ruby-lang.org).</dd>\r\n\r\n<dt>Ruby-Core</dt>\r\n<dd>For the Ruby-Core list, the controller address is [ruby-core-ctl@ruby-lang.org](mailto:ruby-core-ctl@ruby-lang.org), the posting address is [ruby-core@ruby-lang.org](mailto:ruby-core@ruby-lang.org), and the \"human\" administrator address is [ruby-core-admin@ruby-lang.org](mailto:ruby-core-admin@ruby-lang.org).</dd>\r\n\r\n<dt>Ruby-Doc</dt>\r\n<dd>For the Ruby-Doc list, the controller address is [ruby-doc-ctl@ruby-lang.org](mailto:ruby-doc-ctl@ruby-lang.org), the posting address is [ruby-doc@ruby-lang.org](mailto:ruby-doc@ruby-lang.org), and the \"human\" administrator address is [ruby-doc-admin@ruby-lang.org](mailto:ruby-doc-admin@ruby-lang.org).</dd>\r\n\r\n<dt>Ruby-CVS</dt>\r\n<dd>For the Ruby-CVS list, the controller address is [ruby-cvs-ctl@ruby-lang.org](mailto:ruby-cvs-ctl@ruby-lang.org), the posting address is [ruby-cvs@ruby-lang.org](mailto:ruby-cvs@ruby-lang.org), and the \"human\" administrator address is [ruby-cvs-admin@ruby-lang.org](mailto:ruby-cvs-admin@ruby-lang.org).</dd>\r\n</dd>\r\n\r\n\r\nh3. Unsubscribing\r\n\r\nTo unsubscribe from a list, send a mail which body is \"unsubscribe\" to the controller address.\r\n\r\n\r\nh3. Getting Help\r\n\r\nTo see the list of commands, send a mail which body is \"help\" to the controller address.", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}}, "lock_version"=>"0", "breadcrumb"=>"Manual Instructions", "parent_id"=>"14", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 447ms (DB: 11) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 19:12:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 698ms (View: 633, DB: 38) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 19:12:56) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"14", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 154ms (View: 51, DB: 23) | 200 OK [http://localhost/admin/pages/14/children/?level=2]
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2011-01-16 19:15:24) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"13", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 732ms (View: 662, DB: 33) | 200 OK [http://localhost/admin/pages/13/children/new]
+
+
+Processing Admin::PagesController#create (for 127.0.0.1 at 2011-01-16 19:16:44) [POST]
+  Parameters: {"commit"=>"Create {{name}}", "action"=>"create", "authenticity_token"=>"ullfUZBAK5gJ2702t9mttXTOHDkJgJ7Fe0KGHCHOvC0=", "page"=>{"class_name"=>"", "slug"=>"conferences", "title"=>"Ruby Conferences", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "content"=>"Ruby programmers around the world are getting involved in more and more conferences, where they get together to share reports on work-in-progress, discuss the future of Ruby, and welcome newcomers to the Ruby community.\r\n\r\nh3. Major Ruby Conferences\r\n\r\n<dl>\r\n<dt>\"RubyConf\":http://rubyconf.org/</dt>\r\n<dd>Every year since 2001, \"Ruby Central, Inc.\":http://www.rubycentral.org has produced RubyConf, the International Ruby conference. Attendance grew by a factor of ten between 2001 and 2006.  RubyConf has provided a forum for presentations about Ruby technologies by their creators, including talks by Nathaniel Talbot on Test Unit, Jim Weirich on Rake, David Heinemeier Hansson on Ruby on Rails, Why the Lucky Stiff on the YAML library, and Sasada Koichi on YARV. Matz has attended, and spoken\r\nat, all the RubyConfs but one.</dd>\r\n\r\n<dt>\"RubyKaigi\":http://jp.rubyist.net/RubyKaigi2008/</dt>\r\n<dd>The first Japanese Ruby conference, RubyKaigi 2006, took place in Odaiba. RubyKaigi provides many new and exciting talks by Matz and other Rubyists in every year.</dd>\r\n\r\n<dt>\"EuRuKo <small>(Europaeische Ruby Konferenz)</small>\":http://www.approximity.com/cgi-bin/europeRuby/tiki.cgi?c=v&p=Euruko07</dt>\r\n<dd>The first annual European Ruby Conference (EuRuKo) was held in Karlsruhe, Germany, in 2003.  Organized by a team of German Rubyists including Armin Roehrl and Michael Neumann, EuRuKo emerged as the second annual Ruby event, starting two years after RubyConf.</dd>\r\n\r\n<dt>\"Open Source Developer Conference\":http://www.osdc.com.au/</dt>\r\n<dd>This is an annual open source development conference that is held each year in Australia. While not specifically a Ruby conference, each year we do get a number of Ruby papers and we are always interested in more Ruby content.</dd>\r\n</dl>\r\n\r\nh3. Regional Ruby Conferences\r\n\r\n\"Ruby Central\":http://www.rubycentral.org administers a \"Regional Conference Grant Program\":http://www.rubycentral.org/rcg2006.pdf, to offset expenses for local and regional groups wanting to organize events.</p>\r\n\r\nRuby Central has also teamed up with \"SDForum\":http://www.sdforum.org to produce the Silicon Valley\r\nRuby Conference, entering its second year in 2007.\r\n\r\n\"RubyNation\":http://rubynation.org/ is an annual Ruby conference serving the Virginia, West Virginia, Maryland, and Washington, DC areas.\r\n\r\nh3. Ruby At Other Conferences\r\n\r\nThere has been a Ruby track at the \"O'Reilly Open Source Conference\":http://conferences.oreillynet.com/os2006/ (OSCON) since 2004, and an increasing presence on the part of Ruby and Rubyists at other non-Ruby-specific gatherings.  A number of conferences have also been devoted to \"Ruby on Rails\":http://www.rubyonrails.org, including Ruby Central's \"RailsConf\":http://www.railsconf.org, \"RailsConf Europe\":http://europe.railsconf.org (co-produced in 2006 by Ruby Central and \"Skills Matter\":http://www.skillsmatter.com, and in 2007 by Ruby Central and O'Reilly), and Canada on Rails.", "_destroy"=>""}, "1"=>{"_destroy"=>"true"}}, "lock_version"=>"0", "breadcrumb"=>"Conferences", "parent_id"=>"13", "published_at"=>"", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 523ms (DB: 13) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 19:16:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 986ms (View: 877, DB: 40) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-16 19:17:34) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"13", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 252ms (View: 176, DB: 42) | 200 OK [http://localhost/admin/pages/13/children/?level=1]
