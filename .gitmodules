@@ -1,0 +1,3 @@
+[submodule "vendor/extensions/code"]
+	path = vendor/extensions/code
+	url = git://github.com/alno/radiant-code-extension.git

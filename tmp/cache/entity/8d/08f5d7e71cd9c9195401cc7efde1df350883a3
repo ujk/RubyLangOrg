@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/low.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+    <link title="Low vision" rel="alternate stylesheet" type="text/css" href="/stylesheets/low_vision_screen.css" media="screen" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    
+    
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <div id="logo"><a href="/en/"><img src="/images/logo.gif" width="331" height="119" alt="Ruby - A Programmer's Best Friend" title="" /></a></div>
+        <div class="site-links">
+<strong>İndirin</strong><span class="separator"> | </span><a href="/en/documentation/">Belgeler</a><span class="separator"> | </span><a href="/en/libraries/">Kütüphaneler</a><span class="separator"> | </span><a href="/en/community/">Topluluk</a><span class="separator"> | </span><a href="/en/news/">Haberler</a><span class="separator"> | </span><a href="/en/security/">Güvenlik</a><span class="separator"> | </span><a href="/en/about/">Ruby Hakkında</a>
+        </div>
+      </div>
+      <hr class="hidden-modern" />
+      <div id="main-wrapper">
+        <div id="main">
+          <div id="content-wrapper">
+            <div id="head-wrapper-1">
+              <div id="head-wrapper-2">
+                <div id="head">
+
+                  <h1></h1>
+                </div>
+              </div>
+            </div>
+            <div id="content">
+<p>Burada en son Ruby dağıtımlarını işinize gelen şekliyle bulabilirsiniz.  En son kararlı sürüm 1.9.2 , lütfen önce <a href="http://www.ruby-lang.org/en/about/license.txt">Ruby lisansını</a> okuyun.</p>
+<h3>Ruby Kaynak Kodu</h3>
+<p>Kaynak kodundan kurmak, platformunuza yeterince hakimseniz ve ortamınızda özel ayarlar gerekiyorsa uygun çözümdür. Eğer platformunuza hazır paket bulunmazsa da uygun olacaktır.</p>
+<ul>
+	<li><a href="ftp://ftp.ruby-lang.org:21//pub/ruby/1.9/ruby-1.9.2-p136.tar.gz">Ruby 1.9.2-p136</a> (md5:&nbsp; 6e17b200b907244478582b7d06cd512e) Kararlı Versiyon (<em>tavsiye edilir</em>)</li>
+	<li><a href="ftp://ftp.ruby-lang.org:21//pub/ruby/ruby-1.9-stable.tar.gz">Stable Snapshot</a> Bu son kararlı SVN&#8217;nin tar gzip hali. Son kararlı sürümden daha iyi olması beklenir.</li>
+	<li><a href="ftp://ftp.ruby-lang.org/pub/ruby/snapshot.tar.gz">Nightly Snapshot</a> Bu son SVN&#8217;nin tar gzip hali. Çözülmemiş problemleri olabilir.</li>
+</ul>
+<p>Ruby Subversion ve Git depoları hakkında bilgi için <a href="/en/community/ruby-core/">Ruby Core</a> sayfasına bakınız.</p>
+<h3>Windows&#8217;ta Ruby</h3>
+<p>Windows için Ruby kurulumunda birkaç seçenek vardır. İlk seçenek <a href="http://rubyinstaller.org/">RubyInstaller</a> kullanmak, derlemiş binary dosyaları içeren bir kurulum. İkincisi ise paketlenmiş uygulamaların ve binarylerin kullanılması. Ruby&#8217;yi nasıl kuracağınızdan emin değilseniz, ilk seçenek sizin için daha doğru olacaktır.</p>
+<ul>
+	<li><a href="http://rubyforge.org/frs/download.php/71066/rubyinstaller-1.8.6-p398.exe">Ruby 1.8.6-p398 RubyInstaller</a> (md5:&nbsp;233d6b3ddc4c61436b075b51254cd138) Kararlı versiyon (<em>tavsiye edilir</em>)</li>
+	<li><a href="http://rubyforge.org/frs/download.php/73719/rubyinstaller-1.8.7-p330.exe">Ruby 1.8.7-p330 RubyInstaller</a> (md5:&nbsp; 18d688cfae6e60857cad24da6f9ee055) Kararlı versiyon (<em>tavsiye edilir</em>)</li>
+	<li><a href="http://rubyforge.org/frs/download.php/72075/rubyinstaller-1.9.1-p430.exe">Ruby 1.9.1-p430 RubyInstaller</a> (md5:&nbsp;86ac589a955898c3163b161d81750a05) Kararlı versiyon (<em>tavsiye edilir</em>)</li>
+	<li><a href="http://rubyforge.org/frs/download.php/73722/rubyinstaller-1.9.2-p136.exe">Ruby 1.9.2-p136 RubyInstaller</a> (md5:&nbsp; 8e8843963dae29a98ce3e2ba2ee111f1) Kararlı versiyon (<em>tavsiye edilir</em>)</li>
+	<li><a href="ftp://ftp.ruby-lang.org/pub/ruby/binaries/mswin32/ruby-1.8.7-p249-i386-mswin32.zip">Ruby 1.8.7-p249 Binary</a><br />
+(md5:&nbsp;4fd37b0b4b21a042cae7f5f0a8daad16) Kararlı versiyon</li>
+	<li><a href="ftp://ftp.ruby-lang.org:21/pub/ruby/binaries/mswin32/ruby-1.9.1-p378-i386-mswin32.zip">Ruby 1.9.1-p378 Binary</a><br />
+(md5:&nbsp;7d14a918cc8d243d3e2c409aff41f454) Kararlı versiyon</li>
+</ul>
+<p>Lütfen dikkat edin yukarda belirtilen binaryler indirilip elle yüklenmesi gereken ve ek parçaları ayrıca yüklenmesi gereken dosyalardır. Detaylarını <a href="http://www.garbagecollect.jp/ruby/mswin32/en/documents/install.html">bu sayfada</a> bulabilirsiniz. Lütfen bir hata bildirmeden önce bu adımları yerine getirdiğinizden emin olun.</p>
+<p><a href="http://rubyinstaller.org/">RubyInstaller</a> ek işlemler takip etmeyi gerektirmez.</p>
+<p>Lütfen ayrıca <a href="http://github.com/vertiginous/pik">pik</a> kullanımını da inceleyin. Bununla Windows&#8217;ta aynı anda değişik versiyonları ve gemleri kullanmak mümkündür.</p>
+<h3>Linux&#8217;da Ruby</h3>
+<p>Kullandığınız dağıtıma bağlı olarak Ruby&#8217;yi kurmanın değişik yolları vardır. İlki kolay bir şekilde kaynak dosyalarını indirin ve derleyin. Bunun dışında bazı dağıtımlarda Ruby&#8217;yi çok kolay şekilde kurmak için paket yöneticileri vardır.</p>
+<p>Örneğin Debian&#8217;da ya da Ubuntu&#8217;da <code>apt-get</code> harika bir çözüm sunar:</p>
+<pre><code class="sh">
+% sudo apt-get install ruby1.9.1-full
+</code></pre><p>Yukarıdaki komut Ruby 1.9.1&#8217;in şu andaki kararlı sürümünü kuracaktır. Eğer Ruby 1.8 versiyon kurmak isterseniz şunu kullanabilirsiniz:</p>
+<pre><code class="sh">
+% sudo apt-get install ruby-full
+</code></pre><p>irb ve rdoc için &#8220;universe repository&#8221; aktif edilmelidir.</p>
+<p>Lütfen ayrıca <code>rvm</code> &#8217;i de inceleyin , <a href="http://rvm.beginrescueend.com">Ruby Version Manager</a> , ile aynı anda birkaç versiyon Ruby ve gemleri kullanabilirsiniz.</p>
+<h3>OS X&#8217;de Ruby</h3>
+<p>Ruby 1.8.6 Mac OS X Leopard&#8217;da Ruby on Rails, Capistrno, Mongrel ve birçok popüler gem&#8217;i de kapsayacak şekilde tam desteklenir. Ayrıntı için     <a href="http://trac.macosforge.org/projects/ruby/wiki">MacOS Forge&#8217;daki Ruby wiki</a> ye bakınız.</p>
+<p>Mac OS X Tiger 1.8.2 versiyon Ruby ile paketlenmiştir, ama Leopard&#8217;a yükseltilmemişler için de Ruby son versiyonu yüklemek için yollar vardır. <a href="http://locomotive.raaum.org/">Locomotive</a> eğer çok hızla Rails geliştirmeye başlamak isterseniz güzel bir seçim.   <a href="http://www.macports.org/">MacPorts</a> veya <a href="http://fink.sourceforge.net/">Fink</a> daha teknik kişiler için daha güzel gelebilir.</p>
+<p>MacPorts&#8217;da, Ruby&#8217;yi kurmak için&#8230;</p>
+<pre><code class="sh">
+% port install ruby
+</code></pre><p>Fink (Fink Commander kullanarak) Ruby kurulumu için bir grafik arabirime sahiptir.</p>
+<p>Ayrıca OS X, Unix temelli olduğu için, kaynak kodu indirip derlemek te diğer çözümler kadar etkili olacaktır.</p>
+<p>Ruby (ve Rails) in kurulumuna detaylı bakış için Dan Benjamin&#8217;in <a href="http://hivelogic.com/articles/ruby-rails-mongrel-mysql-osx">Tiger için</a>, <a href="http://hivelogic.com/articles/ruby-rails-leopard">Leopard için</a> ve <a href="http://hivelogic.com/articles/compiling-ruby-rubygems-and-rails-on-snow-leopard/">Snow Leopard için</a>  emsalsiz makaleleri sizin çok çabuk ilerlemenizi sağlayacaktır.</p>
+<h3>Solaris ve OpenSolaris&#8217;de Ruby</h3>
+<p>Ruby 1.8.7 Solaris 8&#8217;den Solaris 10&#8217;a kadar <a href="http://www.sunfreeware.com">Sunfreeware</a> kurulabilir ve Ruby 1.8.7 <a href="http://www.blastwave.org">Blastwave</a> &#8216;da bulunabilir.  Solaris 10 için ayarlanmış bir Ruby on Rails paketi Sun&#8217;ın Cooltools projesinde bulunabilir <a href="http://cooltools.sunsource.net/coolstack">Coolstack</a>.</p>
+<p><a href="http://www.opensolaris.org">OpenSolaris</a> &#8216;te Ruby kurmak için, lütfen <a href="http://opensolaris.org/os/project/pkg/">Image Packaging System veya <span class="caps">IPS</span></a> client kullanın. Bu en son binary ve gem&#8217;leri direk olarak OpenSolaris depolarından indirecektir. Şunu yazın:</p>
+<pre><code class="sh">
+% pfexec pkg install SUNWruby18
+</code></pre><p>Bu Ruby, Rubygems, ortak eklentiler ve onların destek kütüphanelerini kuracaktır. Bu paket ayrıca DTrace desteği ve performans optimizasyonları da içerir. Birçok değişik eserler <a href="http://jp.opensolaris.org/os/community/arc/caselog/2007/600/">Ruby OpenSolaris <span class="caps">ARC</span> Case</a> &#8217;de anlatılmıştır.</p>
+<p>Diğer OpenSolaris dağıtımı <a href="http://opensolaris.org/os/downloads">Solaris Express Community Edition veya <span class="caps">SXCE</span></a> üzerinde Ruby kurulu olarak gelir. Versiyonu, yeri vs. OpenSolaris&#8217;le aynıdır ve yukarda bahsedilen <span class="caps">ARC</span> Case&#8217;de dökümanı bulunabilir.</p>
+<p>SVR4 paketlerini elle yüklemek için lütfen <a href="http://rubyforge.org/projects/rubyopensolaris">RubyOpenSolaris project @ Rubyforge</a> adresini inceleyin.</p>
+<div id="extended">
+
+</div>
+            </div>
+          </div>
+          <hr class="hidden-modern" />
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+
+
+<div class="navigation">
+  <h3><strong>Başlangıç,</strong> çok kolay!</h3>
+  <ul class="menu">
+    <li><a href="http://TryRuby.org">Ruby'yi Deneyin! (tarayıcınızda)</a></li>
+
+    <li><a href="/en/downloads/">Ruby İndirin</a></li>
+
+    <li><a href="/en/documentation/quickstart/">Yirmi Dakikada Ruby</a></li>
+    <li><a href="/en/documentation/ruby-from-other-languages/">Diğer Dillerden Ruby'ye</a></li>
+  </ul>
+</div>
+
+<div class="navigation">
+  <h3><strong>Yeni bir dünya</strong> keşfedin&hellip;</h3>
+  <ul class="menu">
+    <li><a href="/en/documentation/">Belgeler</a></li>
+    <li><a href="http://www.amazon.com/s/ref=sr_nr_n_5?ie=UTF8&amp;rs=1000&amp;keywords=Ruby&amp;rh=i%3Aaps%2Ck%3ARuby%2Ci%3Astripbooks%2Cn%3A1000%2Cn%3A5">Kitaplar</a></li>
+    <li><a href="/en/libraries/">Kütüphaneler</a></li>
+    <li><a href="/en/documentation/success-stories/">Başarı Hikayeleri</a></li>
+  </ul>
+</div>
+
+<div class="navigation">
+  <h3>Hızla büyüyen bir <strong>Topluluğa</strong> katılın.</h3>
+  <ul>
+    <li><a href="/en/community/mailing-lists/">Mail Listeleri</a>: Tüm dünyadan programcılarla Ruby konuşun.</li>
+    <li><a href="/en/community/user-groups/">Kullanıcı Gruları</a>: Bölgenizdeki Rubyistlerle temas kurun.</li>
+    <li><a href="/en/community/weblogs/">Weblogs</a>: Şu anda Ruby dünyasında neler olduğunu öğrenin.</li>
+    <li><a href="/en/community/ruby-core/">Ruby Core</a>: En son Ruby'nin parlatılmasına yardımcı olun.</li>
+    <li><a href="http://redmine.ruby-lang.org/">Hata Takip</a>: Ruby sorunlarını bildirin veya çözümüne yardım edin.</li>
+  </ul>
+</div>
+
+
+<h3>Bazı Meşhur Ruby Projeleri</h3>
+
+<p class="more"><a href="/en/libraries/top-projects/">Daha&#8230;</a></p>
+
+
+<h3>Syndicate</h3>
+<p><a href="/en/feeds/news.rss">Recent News (RSS)</a></p>
+            </div>
+          </div>
+          <hr class="hidden-modern" />
+          <div class="foot">
+            <div class="site-links">
+<strong>İndirin</strong><span class="separator"> | </span><a href="/en/documentation/">Belgeler</a><span class="separator"> | </span><a href="/en/libraries/">Kütüphaneler</a><span class="separator"> | </span><a href="/en/community/">Topluluk</a><span class="separator"> | </span><a href="/en/news/">Haberler</a><span class="separator"> | </span><a href="/en/security/">Güvenlik</a><span class="separator"> | </span><a href="/en/about/">Ruby Hakkında</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="search-box">
+<form id="search-form" action="http://www.google.com/cse">
+  <table class="fieldset">
+    <tr>
+      <td>
+        <input class="field" type="text" name="q" size="31" style="background: white url(http://www.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat" onfocus="this.style.background='white'" onblur="if (/^\s*$/.test(this.value)) this.style.background='white url(http://www.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat'"/>
+      </td>
+      <td>
+        <input type="hidden" name="cx" value="013598269713424429640:g5orptiw95w" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input class="button" type="submit" name="sa" value="Search" />
+      </td>
+    </tr>
+  </table>
+</form>
+      </div>
+      <div id="footer">
+        <div class="fine-print">
+          <p>Content available in <a href="/en/">English</a>, <a href="/fr/">French</a>, <a href="/ja/">Japanese</a>, <a href="/ko/">Korean</a>, <a href="/pl/">Polish</a>, <a href="/es/">Spanish</a>, <a href="/pt/">Portuguese</a>, <a href="/zh_cn/">Simplified Chinese</a>, <a href="/zh_TW/">Traditional Chinese</a>, <a href="/id/">Bahasa Indonesia</a>, <a href="/de/">German</a>, <a href="/it/">Italian</a>, <a href="/cs/">Czech</a> and <a href="/bg/">Bulgarian</a>.</p> 
+          <p>This website is made with Ruby and powered by <a href="http://radiantcms.org">Radiant CMS</a>.
+            It is proudly maintained by <a href="http://rubyidentity.org">members of the Ruby community</a>. Please contact
+            our <a href="mailto:webmaster@ruby-lang.org">webmaster</a> for questions or comments
+            concerning this website.</p>
+        </div>
+      </div>
+    </div>
+<div><strong>snippet not found</strong></div>
+  </body>
+</html>

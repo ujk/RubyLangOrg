@@ -1,4 +1,4 @@
-== Türkçe Tercüme 
+h3. Türkçe Tercüme 
 
 Ana sitenin Türkçe tercümesini yaparken takip edebilmek amaçlı olarak koyasını 
 oluşturmaya çalıştım. Buradan klonlayıp klasörün içinde
@@ -10,14 +10,6 @@ Ben önce lokalde alıştırma yapayım diye bunu tercih ettim. Ama bir şekilde
 dışına alıp çalışmak daha doğru olacak.
 
 Radiant cms kullanımı için gem olarak kurulması gerekiyor. Şimdilik sqlite3 veritabanı kullandım.
-
-== Yapılacaklar
-
-* Documentation sayfası kontrol edilecek
-* Tercüme edilmişler ve tercüme edilecekler ayrı klasörlerde toplanacak
-* Sitenin orjinalini nasıl takip edeceğiz? Sayfa değişince buraya çekmek lazım
-
-=====================================================================================
  
 == Welcome to Radiant
 
