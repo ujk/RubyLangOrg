@@ -1,0 +1,26 @@
+ 
+<r:if_url matches="^/en/news/?$">
+<div class="navigation">
+  <h3><strong>Archives By Year</strong></h3>
+  <ul class="menu">
+<r:children:each order="desc"><r:header>
+    <li><a href="<r:date format="/en/news/%Y/"/>"><r:date format="%Y" /> Archives</a></li>
+</r:header></r:children:each>
+  </ul>
+</div>
+</r:if_url>
+
+<r:unless_url matches="^/en/news/?$">
+<r:find url="/en/news/">
+<div class="navigation">
+  <h3><strong>Recent News</strong></h3>
+  <ul class="menu">
+<r:children:each order="desc" limit="5">
+    <li><r:link /></li>
+</r:children:each>
+  </ul>
+</div>
+</r:find>
+</r:unless_url>
+
+<r:snippet name="en-syndicate" />

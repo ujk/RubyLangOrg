@@ -4462,3 +4462,198 @@ Completed in 42ms (View: 30, DB: 5) | 200 OK [http://localhost/admin/login]
 Processing SiteController#show_page (for 127.0.0.1 at 2011-01-19 23:26:08) [GET]
   Parameters: {"action"=>"show_page", "url"=>["en", "documentation"], "controller"=>"site"}
 Completed in 2152ms (DB: 48) | 200 [http://localhost/en/documentation/]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-22 21:18:15) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "documentation"], "controller"=>"site"}
+Completed in 2005ms (DB: 47) | 200 [http://localhost/en/documentation/]
+
+
+Processing Admin::WelcomeController#index (for 127.0.0.1 at 2011-01-22 21:52:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 18ms (DB: 2) | 302 Found [http://localhost/admin]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-22 21:52:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-22 21:52:11) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 78ms (View: 68, DB: 4) | 200 OK [http://localhost/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-22 21:52:17) [POST]
+  Parameters: {"username_or_email"=>"admin", "action"=>"login", "authenticity_token"=>"80e7ZQ4zK0hDlo4jlu2IduEZaktroWcJr5VSetXivgk=", "controller"=>"admin/welcome", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 92ms (DB: 22) | 302 Found [http://localhost/admin/login]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-22 21:52:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 1168ms (View: 1003, DB: 92) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 21:52:26) [GET]
+  Parameters: {"action"=>"edit", "id"=>"20", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 1231ms (View: 1183, DB: 15) | 200 OK [http://localhost/admin/pages/20/edit]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-22 21:55:17) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"80e7ZQ4zK0hDlo4jlu2IduEZaktroWcJr5VSetXivgk=", "id"=>"20", "page"=>{"class_name"=>"", "slug"=>"documentation", "title"=>"Documentation", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "id"=>"32", "content"=>"Here you will find pointers to manuals, tutorials and references that will come in handy when you feel like coding in Ruby.\r\n\r\nh3. Getting Started\r\n\r\n<dl>\r\n<dt>\"Try Ruby!\":http://tryruby.org/</dt>\r\n<dd>Ruby'yi tarayıcınızda deneyebileceğiniz interaktif bir tutorial. Bu 15 dakikalık çalışma ile bu dile yenibaşlayanların ilk denemelerini yapmaları amaçlanmıştır.</dd>\r\n\r\n<dt>\"Ruby Koans\":http://rubykoans.com/</dt>\r\n<dd>The Koans walk you along the path to enlightenment in order to learn Ruby. The goal is to learn the Ruby language, syntax, structure, and some common functions and libraries. We also teach you culture.</dd>\r\n\r\n<dt>\"Hackety Hack\":http://hackety-hack.com/</dt>\r\n<dd><q cite=\"http://hackety-hack.com/\">The little coder's starter kit</q>. A fun and easy way to learn about programming (through Ruby) using the Shoes GUI Toolkit.</dd>\r\n\r\n<dt>\"Why's (Poignant) Guide to Ruby\":http://mislav.uniqpath.com/poignant-guide/</dt>\r\n<dd>An unconventional but interesting book that will teach you Ruby through stories, wit, and comics. Originally created by _why the lucky stiff_, this guide remains a classic for Ruby learners.</dd>\r\n\r\n<dt>\"Learn to Program\":http://pine.fm/LearnToProgram/</dt>\r\n<dd>A wonderful little tutorial by Chris Pine for programming newbies. If you don't know how to program, start here.</dd>\r\n\r\n<dt>\"Ruby in Twenty Minutes\":/en/documentation/quickstart/</dt>\r\n<dd>A nice tutorial covering the basics of Ruby. From start to finish it shouldn't take you more than twenty minutes.</dd>\r\n\r\n<dt>\"Ruby from Other Languages\":/en/documentation/ruby-from-other-languages/</dt>\r\n<dd>Coming to Ruby from another language? Whether it's C, C++, Java, Perl, PHP, or Python, this article has you covered!</dd>\r\n\r\n<dt>\"Learning Ruby\":http://rubylearning.com/</dt>\r\n<dd>A thorough collection of Ruby study notes for those who are new to the language and in search of a solid introduction to Ruby's concepts and constructs.</dd>\r\n\r\n<dt>\"Ruby Essentials\":http://www.techotopia.com/index.php/Ruby_Essentials</dt>\r\n<dd>Ruby Essentials is a free on-line book designed to provide a concise and easy to follow guide to learning Ruby.</dd>\r\n\r\n<dt>\"Ruby &amp; Ruby on Rails programming tutorials\":http://www.meshplex.org/wiki/Ruby/Ruby_on_Rails_programming_tutorials</dt>\r\n<dd>A site that aims to provide well-organized, rich content tutorials for both Ruby and Rails.</dd>\r\n</dl>\r\n\r\n\r\nh3. Manuals\r\n\r\n<dl>\r\n<dt>\"Programming Ruby\":http://www.ruby-doc.org/docs/ProgrammingRuby/</dt>\r\n<dd>The seminal work on Ruby in English, this first edition of the \"Pragmatic Programmers' book\":http://pragmaticprogrammer.com/titles/ruby/index.html is available for free online.</dd>\r\n\r\n<dt>\"Ruby User's Guide\":http://www.rubyist.net/~slagell/ruby/</dt>\r\n<dd>Translated from the original Japanese version written by Yukihiro Matsumoto (the creator of Ruby), this version, by Goto Kentaro and Mark Slagell is nice overview of many aspects of the Ruby language.</dd>\r\n\r\n<dt>\"The Ruby Programming Wikibook\":http://en.wikibooks.org/wiki/Ruby_programming_language</dt>\r\n<dd>A free online manual with beginner and intermediate content plus a thorough language reference.</dd>\r\n</dl>\r\n\r\nh3. Reference Documentation\r\n\r\n<dl>\r\n<dt>\"Ruby Core Reference\":http://www.ruby-doc.org/core</dt>\r\n<dd>Pulled straight from the source code using \"RDoc\":http://rdoc.sourceforge.net, this reference work documents all of the core classes and modules (like String, Array, Symbol, etc...).</dd>\r\n\r\n<dt>\"Ruby Standard Library Reference\":http://www.ruby-doc.org/stdlib</dt>\r\n<dd>Also pulled from the source code using RDoc, this reference work documents the standard library.</dd>\r\n\r\n<dt>\"Ruby C API Reference\":http://www.ruby-doc.org/doxygen/current/</dt>\r\n<dd>Documentation for Ruby's underlying C code. Great if you want to write C extensions or contribute to Ruby's development.</dd>\r\n\r\n<dt>\"RubyDoc.info\":http://www.rubydoc.info/</dt>\r\n<dd>The one-stop web site for reference documentation about Ruby gems and GitHub-hosted Ruby projects.</dd>\r\n\r\n<dt>\"Rails Searchable API Doc\":http://railsapi.com/</dt>\r\n<dd>Rails and Ruby documentation with smart searching.</dd>\r\n\r\n<dt>\"RubyDox\":http://www.rubydox.net/</dt>\r\n<dd>Ruby, Rails, Gem and Plugin Documentation.</dd>\r\n</dl>\r\n\r\nh3. Further Reading\r\n\r\n\"Ruby-Doc.org\":http://ruby-doc.org maintains a comprehensive list of English documentation sources. There are also plenty of \"books about Ruby\":http://www.ruby-doc.org/bookstore. If you have questions about Ruby the \"mailing list\":/en/community/mailing-lists/ is a great place to start.\r\n", "_destroy"=>""}}, "lock_version"=>"0", "breadcrumb"=>"Documentation", "parent_id"=>"1", "published_at"=>"January 16, 2011", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/20/edit
+Completed in 517ms (DB: 9) | 302 Found [http://localhost/admin/pages/20]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 21:55:17) [GET]
+  Parameters: {"action"=>"edit", "id"=>"20", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 723ms (View: 661, DB: 33) | 200 OK [http://localhost/admin/pages/20/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-22 21:55:22) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "documentation"], "controller"=>"site"}
+Completed in 2978ms (DB: 66) | 200 [http://localhost/en/documentation/]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-22 22:08:11) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"80e7ZQ4zK0hDlo4jlu2IduEZaktroWcJr5VSetXivgk=", "id"=>"20", "page"=>{"class_name"=>"", "slug"=>"documentation", "title"=>"Documentation", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "id"=>"32", "content"=>"Here you will find pointers to manuals, tutorials and references that will come in handy when you feel like coding in Ruby.\r\n\r\nh3. Getting Started\r\n\r\n<dl>\r\n<dt>\"Try Ruby!\":http://tryruby.org/</dt>\r\n<dd>Ruby'yi tarayıcınızda deneyebileceğiniz interaktif bir tutorial. Bu 15 dakikalık çalışma ile bu dile yenibaşlayanların ilk denemelerini yapmaları amaçlanmıştır.</dd>\r\n\r\n<dt>\"Ruby Koans\":http://rubykoans.com/</dt>\r\n<dd>Koans Ruby öğrenmek için bir aydınlanma yolu üzerinden yürümenizi sağlar. Amaç Ruby dilini, deyimlerini, yapısını ve birkaç çok kullanılan yapılarını öğrenmek ama bununla beraber size kültürünü de öğretiyor.</dd>\r\n\r\n<dt>\"Hackety Hack\":http://hackety-hack.com/</dt>\r\n<dd><q cite=\"http://hackety-hack.com/\">Küçük programcının başlangıç kiti</q>. Shoes GUI Toolkit kullanarak Ruby programlamayı öğrenmek için eğlenceli ve koly bir yol.</dd>\r\n\r\n<dt>\"Why's (Poignant) Guide to Ruby\":http://mislav.uniqpath.com/poignant-guide/</dt>\r\n<dd>Ruby'nin hikayelerle, nüktelerle ve karikatürlerle anlatıldığı sıradışı ama ilginç bir kitap. Orjinali _why the lucky stiff_ tarafından yazılmıştır, bu klavuz Ruby'ye yeni başlayanlar için bir klasiktir.</dd>\r\n\r\n<dt>\"Learn to Program\":http://pine.fm/LearnToProgram/</dt>\r\n<dd>A wonderful little tutorial by Chris Pine for programming newbies. If you don't know how to program, start here.</dd>\r\n\r\n<dt>\"Ruby in Twenty Minutes\":/en/documentation/quickstart/</dt>\r\n<dd>A nice tutorial covering the basics of Ruby. From start to finish it shouldn't take you more than twenty minutes.</dd>\r\n\r\n<dt>\"Ruby from Other Languages\":/en/documentation/ruby-from-other-languages/</dt>\r\n<dd>Coming to Ruby from another language? Whether it's C, C++, Java, Perl, PHP, or Python, this article has you covered!</dd>\r\n\r\n<dt>\"Learning Ruby\":http://rubylearning.com/</dt>\r\n<dd>A thorough collection of Ruby study notes for those who are new to the language and in search of a solid introduction to Ruby's concepts and constructs.</dd>\r\n\r\n<dt>\"Ruby Essentials\":http://www.techotopia.com/index.php/Ruby_Essentials</dt>\r\n<dd>Ruby Essentials is a free on-line book designed to provide a concise and easy to follow guide to learning Ruby.</dd>\r\n\r\n<dt>\"Ruby &amp; Ruby on Rails programming tutorials\":http://www.meshplex.org/wiki/Ruby/Ruby_on_Rails_programming_tutorials</dt>\r\n<dd>A site that aims to provide well-organized, rich content tutorials for both Ruby and Rails.</dd>\r\n</dl>\r\n\r\n\r\nh3. Manuals\r\n\r\n<dl>\r\n<dt>\"Programming Ruby\":http://www.ruby-doc.org/docs/ProgrammingRuby/</dt>\r\n<dd>The seminal work on Ruby in English, this first edition of the \"Pragmatic Programmers' book\":http://pragmaticprogrammer.com/titles/ruby/index.html is available for free online.</dd>\r\n\r\n<dt>\"Ruby User's Guide\":http://www.rubyist.net/~slagell/ruby/</dt>\r\n<dd>Translated from the original Japanese version written by Yukihiro Matsumoto (the creator of Ruby), this version, by Goto Kentaro and Mark Slagell is nice overview of many aspects of the Ruby language.</dd>\r\n\r\n<dt>\"The Ruby Programming Wikibook\":http://en.wikibooks.org/wiki/Ruby_programming_language</dt>\r\n<dd>A free online manual with beginner and intermediate content plus a thorough language reference.</dd>\r\n</dl>\r\n\r\nh3. Reference Documentation\r\n\r\n<dl>\r\n<dt>\"Ruby Core Reference\":http://www.ruby-doc.org/core</dt>\r\n<dd>Pulled straight from the source code using \"RDoc\":http://rdoc.sourceforge.net, this reference work documents all of the core classes and modules (like String, Array, Symbol, etc...).</dd>\r\n\r\n<dt>\"Ruby Standard Library Reference\":http://www.ruby-doc.org/stdlib</dt>\r\n<dd>Also pulled from the source code using RDoc, this reference work documents the standard library.</dd>\r\n\r\n<dt>\"Ruby C API Reference\":http://www.ruby-doc.org/doxygen/current/</dt>\r\n<dd>Documentation for Ruby's underlying C code. Great if you want to write C extensions or contribute to Ruby's development.</dd>\r\n\r\n<dt>\"RubyDoc.info\":http://www.rubydoc.info/</dt>\r\n<dd>The one-stop web site for reference documentation about Ruby gems and GitHub-hosted Ruby projects.</dd>\r\n\r\n<dt>\"Rails Searchable API Doc\":http://railsapi.com/</dt>\r\n<dd>Rails and Ruby documentation with smart searching.</dd>\r\n\r\n<dt>\"RubyDox\":http://www.rubydox.net/</dt>\r\n<dd>Ruby, Rails, Gem and Plugin Documentation.</dd>\r\n</dl>\r\n\r\nh3. Further Reading\r\n\r\n\"Ruby-Doc.org\":http://ruby-doc.org maintains a comprehensive list of English documentation sources. There are also plenty of \"books about Ruby\":http://www.ruby-doc.org/bookstore. If you have questions about Ruby the \"mailing list\":/en/community/mailing-lists/ is a great place to start.\r\n", "_destroy"=>""}}, "lock_version"=>"1", "breadcrumb"=>"Documentation", "parent_id"=>"1", "published_at"=>"January 16, 2011", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/20/edit
+Completed in 548ms (DB: 8) | 302 Found [http://localhost/admin/pages/20]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 22:08:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"20", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 916ms (View: 869, DB: 36) | 200 OK [http://localhost/admin/pages/20/edit]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-22 22:17:24) [PUT]
+  Parameters: {"action"=>"update", "_method"=>"put", "authenticity_token"=>"80e7ZQ4zK0hDlo4jlu2IduEZaktroWcJr5VSetXivgk=", "id"=>"20", "page"=>{"class_name"=>"", "slug"=>"documentation", "title"=>"Documentation", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "id"=>"32", "content"=>"Here you will find pointers to manuals, tutorials and references that will come in handy when you feel like coding in Ruby.\r\n\r\nh3. Getting Started\r\n\r\n<dl>\r\n<dt>\"Try Ruby!\":http://tryruby.org/</dt>\r\n<dd>Ruby'yi tarayıcınızda deneyebileceğiniz interaktif bir tutorial. Bu 15 dakikalık çalışma ile bu dile yenibaşlayanların ilk denemelerini yapmaları amaçlanmıştır.</dd>\r\n\r\n<dt>\"Ruby Koans\":http://rubykoans.com/</dt>\r\n<dd>Koans Ruby öğrenmek için bir aydınlanma yolu üzerinden yürümenizi sağlar. Amaç Ruby dilini, deyimlerini, yapısını ve birkaç çok kullanılan yapılarını öğrenmek ama bununla beraber size kültürünü de öğretiyor.</dd>\r\n\r\n<dt>\"Hackety Hack\":http://hackety-hack.com/</dt>\r\n<dd><q cite=\"http://hackety-hack.com/\">Küçük programcının başlangıç kiti</q>. Shoes GUI Toolkit kullanarak Ruby programlamayı öğrenmek için eğlenceli ve koly bir yol.</dd>\r\n\r\n<dt>\"Why's (Poignant) Guide to Ruby\":http://mislav.uniqpath.com/poignant-guide/</dt>\r\n<dd>Ruby'nin hikayelerle, nüktelerle ve karikatürlerle anlatıldığı sıradışı ama ilginç bir kitap. Orjinali _why the lucky stiff_ tarafından yazılmıştır, bu klavuz Ruby'ye yeni başlayanlar için bir klasiktir.</dd>\r\n\r\n<dt>\"Learn to Program\":http://pine.fm/LearnToProgram/</dt>\r\n<dd>A wonderful little tutorial by Chris Pine for programming newbies. If you don't know how to program, start here.</dd>\r\n\r\n<dt>\"Ruby in Twenty Minutes\":/en/documentation/quickstart/</dt>\r\n<dd>A nice tutorial covering the basics of Ruby. From start to finish it shouldn't take you more than twenty minutes.</dd>\r\n\r\n<dt>\"Ruby from Other Languages\":/en/documentation/ruby-from-other-languages/</dt>\r\n<dd>Coming to Ruby from another language? Whether it's C, C++, Java, Perl, PHP, or Python, this article has you covered!</dd>\r\n\r\n<dt>\"Learning Ruby\":http://rubylearning.com/</dt>\r\n<dd>A thorough collection of Ruby study notes for those who are new to the language and in search of a solid introduction to Ruby's concepts and constructs.</dd>\r\n\r\n<dt>\"Ruby Essentials\":http://www.techotopia.com/index.php/Ruby_Essentials</dt>\r\n<dd>Ruby Essentials is a free on-line book designed to provide a concise and easy to follow guide to learning Ruby.</dd>\r\n\r\n<dt>\"Ruby &amp; Ruby on Rails programming tutorials\":http://www.meshplex.org/wiki/Ruby/Ruby_on_Rails_programming_tutorials</dt>\r\n<dd>A site that aims to provide well-organized, rich content tutorials for both Ruby and Rails.</dd>\r\n</dl>\r\n\r\n\r\nh3. Manuals\r\n\r\n<dl>\r\n<dt>\"Programming Ruby\":http://www.ruby-doc.org/docs/ProgrammingRuby/</dt>\r\n<dd>The seminal work on Ruby in English, this first edition of the \"Pragmatic Programmers' book\":http://pragmaticprogrammer.com/titles/ruby/index.html is available for free online.</dd>\r\n\r\n<dt>\"Ruby User's Guide\":http://www.rubyist.net/~slagell/ruby/</dt>\r\n<dd>Translated from the original Japanese version written by Yukihiro Matsumoto (the creator of Ruby), this version, by Goto Kentaro and Mark Slagell is nice overview of many aspects of the Ruby language.</dd>\r\n\r\n<dt>\"The Ruby Programming Wikibook\":http://en.wikibooks.org/wiki/Ruby_programming_language</dt>\r\n<dd>A free online manual with beginner and intermediate content plus a thorough language reference.</dd>\r\n</dl>\r\n\r\nh3. Reference Documentation\r\n\r\n<dl>\r\n<dt>\"Ruby Core Reference\":http://www.ruby-doc.org/core</dt>\r\n<dd>Pulled straight from the source code using \"RDoc\":http://rdoc.sourceforge.net, this reference work documents all of the core classes and modules (like String, Array, Symbol, etc...).</dd>\r\n\r\n<dt>\"Ruby Standard Library Reference\":http://www.ruby-doc.org/stdlib</dt>\r\n<dd>Also pulled from the source code using RDoc, this reference work documents the standard library.</dd>\r\n\r\n<dt>\"Ruby C API Reference\":http://www.ruby-doc.org/doxygen/current/</dt>\r\n<dd>Documentation for Ruby's underlying C code. Great if you want to write C extensions or contribute to Ruby's development.</dd>\r\n\r\n<dt>\"RubyDoc.info\":http://www.rubydoc.info/</dt>\r\n<dd>Ruby gem'leri için dökümanlar ve GitHub Ruby projeleri için tek kaynak site.</dd>\r\n\r\n<dt>\"Rails Searchable API Doc\":http://railsapi.com/</dt>\r\n<dd>Akıllı arama özellikleri olan Rails ve Ruby dökümantasyonu.</dd>\r\n\r\n<dt>\"RubyDox\":http://www.rubydox.net/</dt>\r\n<dd>Ruby, Rails, Gem ve Plugin Belgeleri.</dd>\r\n</dl>\r\n\r\nh3. Further Reading\r\n\r\n\"Ruby-Doc.org\":http://ruby-doc.org maintains a comprehensive list of English documentation sources. There are also plenty of \"books about Ruby\":http://www.ruby-doc.org/bookstore. If you have questions about Ruby the \"mailing list\":/en/community/mailing-lists/ is a great place to start.\r\n", "_destroy"=>""}}, "lock_version"=>"1", "breadcrumb"=>"Documentation", "parent_id"=>"1", "published_at"=>"January 16, 2011", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages", "continue"=>"Save and Continue Editing"}
+Redirected to http://localhost:3000/admin/pages/20/edit
+Completed in 395ms (DB: 7) | 302 Found [http://localhost/admin/pages/20]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 22:17:25) [GET]
+  Parameters: {"action"=>"edit", "id"=>"20", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 414ms (View: 365, DB: 13) | 200 OK [http://localhost/admin/pages/20/edit]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2011-01-22 22:30:44) [PUT]
+  Parameters: {"commit"=>"Save Changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"80e7ZQ4zK0hDlo4jlu2IduEZaktroWcJr5VSetXivgk=", "id"=>"20", "page"=>{"class_name"=>"", "slug"=>"documentation", "title"=>"Documentation", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "id"=>"32", "content"=>"Here you will find pointers to manuals, tutorials and references that will come in handy when you feel like coding in Ruby.\r\n\r\nh3. Getting Started\r\n\r\n<dl>\r\n<dt>\"Try Ruby!\":http://tryruby.org/</dt>\r\n<dd>Ruby'yi tarayıcınızda deneyebileceğiniz interaktif bir tutorial. Bu 15 dakikalık çalışma ile bu dile yenibaşlayanların ilk denemelerini yapmaları amaçlanmıştır.</dd>\r\n\r\n<dt>\"Ruby Koans\":http://rubykoans.com/</dt>\r\n<dd>Koans Ruby öğrenmek için bir aydınlanma yolu üzerinden yürümenizi sağlar. Amaç Ruby dilini, deyimlerini, yapısını ve birkaç çok kullanılan yapılarını öğrenmek ama bununla beraber size kültürünü de öğretiyor.</dd>\r\n\r\n<dt>\"Hackety Hack\":http://hackety-hack.com/</dt>\r\n<dd><q cite=\"http://hackety-hack.com/\">Küçük programcının başlangıç kiti</q>. Shoes GUI Toolkit kullanarak Ruby programlamayı öğrenmek için eğlenceli ve koly bir yol.</dd>\r\n\r\n<dt>\"Why's (Poignant) Guide to Ruby\":http://mislav.uniqpath.com/poignant-guide/</dt>\r\n<dd>Ruby'nin hikayelerle, nüktelerle ve karikatürlerle anlatıldığı sıradışı ama ilginç bir kitap. Orjinali _why the lucky stiff_ tarafından yazılmıştır, bu klavuz Ruby'ye yeni başlayanlar için bir klasiktir.</dd>\r\n\r\n<dt>\"Learn to Program\":http://pine.fm/LearnToProgram/</dt>\r\n<dd>A wonderful little tutorial by Chris Pine for programming newbies. If you don't know how to program, start here.</dd>\r\n\r\n<dt>\"Ruby in Twenty Minutes\":/en/documentation/quickstart/</dt>\r\n<dd>A nice tutorial covering the basics of Ruby. From start to finish it shouldn't take you more than twenty minutes.</dd>\r\n\r\n<dt>\"Ruby from Other Languages\":/en/documentation/ruby-from-other-languages/</dt>\r\n<dd>Coming to Ruby from another language? Whether it's C, C++, Java, Perl, PHP, or Python, this article has you covered!</dd>\r\n\r\n<dt>\"Learning Ruby\":http://rubylearning.com/</dt>\r\n<dd>A thorough collection of Ruby study notes for those who are new to the language and in search of a solid introduction to Ruby's concepts and constructs.</dd>\r\n\r\n<dt>\"Ruby Essentials\":http://www.techotopia.com/index.php/Ruby_Essentials</dt>\r\n<dd>Ruby Essentials is a free on-line book designed to provide a concise and easy to follow guide to learning Ruby.</dd>\r\n\r\n<dt>\"Ruby &amp; Ruby on Rails programming tutorials\":http://www.meshplex.org/wiki/Ruby/Ruby_on_Rails_programming_tutorials</dt>\r\n<dd>A site that aims to provide well-organized, rich content tutorials for both Ruby and Rails.</dd>\r\n</dl>\r\n\r\n\r\nh3. Manuals\r\n\r\n<dl>\r\n<dt>\"Programming Ruby\":http://www.ruby-doc.org/docs/ProgrammingRuby/</dt>\r\n<dd>The seminal work on Ruby in English, this first edition of the \"Pragmatic Programmers' book\":http://pragmaticprogrammer.com/titles/ruby/index.html is available for free online.</dd>\r\n\r\n<dt>\"Ruby User's Guide\":http://www.rubyist.net/~slagell/ruby/</dt>\r\n<dd>Translated from the original Japanese version written by Yukihiro Matsumoto (the creator of Ruby), this version, by Goto Kentaro and Mark Slagell is nice overview of many aspects of the Ruby language.</dd>\r\n\r\n<dt>\"The Ruby Programming Wikibook\":http://en.wikibooks.org/wiki/Ruby_programming_language</dt>\r\n<dd>A free online manual with beginner and intermediate content plus a thorough language reference.</dd>\r\n</dl>\r\n\r\nh3. Reference Documentation\r\n\r\n<dl>\r\n<dt>\"Ruby Core Reference\":http://www.ruby-doc.org/core</dt>\r\n<dd>Pulled straight from the source code using \"RDoc\":http://rdoc.sourceforge.net, this reference work documents all of the core classes and modules (like String, Array, Symbol, etc...).</dd>\r\n\r\n<dt>\"Ruby Standard Library Reference\":http://www.ruby-doc.org/stdlib</dt>\r\n<dd>Also pulled from the source code using RDoc, this reference work documents the standard library.</dd>\r\n\r\n<dt>\"Ruby C API Reference\":http://www.ruby-doc.org/doxygen/current/</dt>\r\n<dd>Documentation for Ruby's underlying C code. Great if you want to write C extensions or contribute to Ruby's development.</dd>\r\n\r\n<dt>\"RubyDoc.info\":http://www.rubydoc.info/</dt>\r\n<dd>Ruby gem'leri için dökümanlar ve GitHub Ruby projeleri için tek kaynak site.</dd>\r\n\r\n<dt>\"Rails Searchable API Doc\":http://railsapi.com/</dt>\r\n<dd>Akıllı arama özellikleri olan Rails ve Ruby dökümantasyonu.</dd>\r\n\r\n<dt>\"RubyDox\":http://www.rubydox.net/</dt>\r\n<dd>Ruby, Rails, Gem ve Plugin Belgeleri.</dd>\r\n</dl>\r\n\r\nh3. Further Reading\r\n\r\n\"Ruby-Doc.org\":http://ruby-doc.org maintains a comprehensive list of English documentation sources. There are also plenty of \"books about Ruby\":http://www.ruby-doc.org/bookstore. If you have questions about Ruby the \"mailing list\":/en/community/mailing-lists/ is a great place to start.\r\n", "_destroy"=>""}}, "lock_version"=>"1", "breadcrumb"=>"Documentation", "parent_id"=>"1", "published_at"=>"January 16, 2011", "status_id"=>"100", "description"=>"", "layout_id"=>"2", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 963ms (DB: 132) | 302 Found [http://localhost/admin/pages/20]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-22 22:30:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 589ms (View: 409, DB: 89) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 22:30:59) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 1017ms (View: 975, DB: 17) | 200 OK [http://localhost/admin/pages/9/edit]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 22:32:31) [GET]
+  Parameters: {"action"=>"edit", "id"=>"13", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 460ms (View: 411, DB: 15) | 200 OK [http://localhost/admin/pages/13/edit]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 22:33:49) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 496ms (View: 448, DB: 25) | 200 OK [http://localhost/admin/pages/9/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-22 22:35:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 538ms (View: 436, DB: 53) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 22:35:10) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 775ms (View: 746, DB: 11) | 200 OK [http://localhost/admin/pages/2/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-22 22:39:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 1144ms (View: 962, DB: 130) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 22:39:36) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 460ms (View: 427, DB: 22) | 200 OK [http://localhost/admin/pages/11/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-22 22:39:45) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"11", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 209ms (View: 124, DB: 50) | 200 OK [http://localhost/admin/pages/11/children/?level=1]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-22 22:39:50) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"2", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 542ms (View: 474, DB: 34) | 200 OK [http://localhost/admin/pages/2/children/?level=1]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-22 22:40:02) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"13", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 284ms (View: 222, DB: 33) | 200 OK [http://localhost/admin/pages/13/children/?level=1]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-22 22:40:12) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"14", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 129ms (View: 69, DB: 11) | 200 OK [http://localhost/admin/pages/14/children/?level=2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-22 22:42:28) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 470ms (View: 448, DB: 11) | 200 OK [http://localhost/admin/pages/11/edit]
+
+
+Processing Admin::WelcomeController#logout (for 127.0.0.1 at 2011-01-22 22:44:09) [GET]
+  Parameters: {"action"=>"logout", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/login
+Completed in 37ms (DB: 3) | 302 Found [http://localhost/admin/logout]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-22 22:44:09) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 58ms (View: 48, DB: 4) | 200 OK [http://localhost/admin/login]
