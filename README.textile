@@ -16,6 +16,9 @@ Radiant cms kullanımı için gem olarak kurulması gerekiyor. Şimdilik sqlite3
 h3. Yapılacaklar
 
 * -Documentation sayfası kontrol edilecek-
-* Tercüme edilmişler ve tercüme edilecekler ayrı klasörlerde toplanacak
+* -Tercüme edilmişler ve tercüme edilecekler ayrı klasörlerde toplanacak-
 * Sitenin orjinalini nasıl takip edeceğiz? Sayfa değişince buraya çekmek lazım
+* Tercüme edilecekler klasöründen birşeyi tercüme edecek olan buraya not bıraksın (bu dosyayı edit etsin)
+* Tercümesi biteni bitmişler klasörüne koyun ben siteye atabilirim
+* Topluluk sayfası kontrol edilecek
 
