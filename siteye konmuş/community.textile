@@ -1,0 +1,36 @@
+Giderek gelişen ve büyüyen bir topluluk, bir programlama dilinin en önemli güçlerinden biridir. Ruby, hangi bilgi kademesine sahip olursa olsun, her insanı sevgiyle kucaklayan, arkadaş canlısı bir topluluğa sahiptir.
+
+Eğer Ruby topluluğu ile içiçe olmak istiyorsanız, aşağıda bir kaç başlangıç önerisi var:
+
+<dl>
+<dt>"Ruby Kullanıcı Grupları":kullanici-gruplari/</dt>
+<dd>Yerel Ruby kullanıcı grubunuz olması, diğer Ruby programcıları ile iletişim kurmanız için ideal bir fırsattır. Ruby Kullanıcı Grupları aylık toplantılar, e-posta listeleri, bir web sitesi ve eğer şanslıysanız kodlama festivalleri gibi harika aktiviteler içerir.</dd>
+
+<dt>"Ruby E-Posta Listeleri ve Haber Grupları":eposta-listeleri/</dt>
+<dd>Ruby değişik dillerde ve çeşitli konularda kullanılan e-posta listelerine sahiptir. Eğer aklınızda Ruby ile ilgili bir soru varsa, e-posta listeleri cevap aramak için başvuracağınız ilk kaynaklardan biridir.</dd>
+
+<dt>"IRC'de Ruby":irc://irc.freenode.net/ruby-lang</dt>
+<dd>Ruby IRC Kanalı, diğer Ruby'cilerle sohbet etmek için harika bir yoldur. ("Önceki Sohbet Logları":http://meme.b9.com/)
+</dd>
+
+<dt>"Ruby Çekirdek":ruby-cekirdek/</dt>
+<dd>Ruby 2.0'ın yolda olduğu şu günlerde, Ruby'in gelişimini takip etmek inanılmaz. Eğer siz de ilgileniyorsanız, buradan başlayabilirsiniz.
+</dd>
+
+<dt>"Ruby Hakkında Webloglar":webloglar/</dt>
+<dd>Ruby dünyasında, bloglarda konuşulmamış pek az şey vardır. Bu bölümde, sizi ortama ısıtacak önerilerden oluşan bir liste bulunuyor.</dd>
+
+<dt>"Ruby Konferansları":konferanslar/</dt>
+<dd>Dünya çapındaki Ruby programcıları, Ruby konferansları sayesinde Ruby'nin geleceğini tartışıyor, yenilikleri konuşuyor ve yeni gelenlerle kaynaşıyorlar.</dd>
+
+<dt>"Ruby Rehber Projesi":http://rubymentor.rubyforge.org/</dt>
+<dd>Bu yeni kaynak, Ruby'ye yeni olan insanları, daha tecrübeli rehberler ile buluşturma amacıyla ortaya çıkmıştır. Buradaki amaç, Ruby'yi öğrenirken aklınıza gelen soruları sorabileceğiniz birilerinin olmasıdır.</dd>
+
+<dt>Genel Ruby Kaynakları</dt>
+<dd>
+<ul>
+<li>"Ruby Central":http://www.rubycentral.org/</li>
+<li>"Açık Dizin Projesinde Ruby":http://dmoz.org/Computers/Programming/Languages/Ruby/</li>
+<li>"Açık Dizin Projesinde Rails":http://dmoz.org/Computers/Programming/Languages/Ruby/Software/Rails/</li>
+</ul>
+</dd>
