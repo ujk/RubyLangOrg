@@ -20,4 +20,5 @@ h3. Yapılacaklar
 * Sitenin orjinalini nasıl takip edeceğiz? Sayfa değişince buraya çekmek lazım
 * Tercüme edilecekler klasöründen birşeyi tercüme edecek olan buraya not bıraksın (bu dosyayı edit etsin)
 * Tercümesi biteni bitmişler klasörüne koyun ben siteye atabilirim
+* Topluluk sayfası kontrol edilecek
 
