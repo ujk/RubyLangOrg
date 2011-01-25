@@ -4657,3 +4657,128 @@ Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-22 22:44:09)
 Rendering template within layouts/application
 Rendering admin/welcome/login
 Completed in 58ms (View: 48, DB: 4) | 200 OK [http://localhost/admin/login]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-24 21:15:22) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 3107ms (DB: 149) | 200 [http://localhost/en]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-24 21:15:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/admin/pages]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-24 21:15:38) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 79ms (View: 60, DB: 4) | 200 OK [http://localhost/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-24 21:15:41) [POST]
+  Parameters: {"username_or_email"=>"admin", "action"=>"login", "authenticity_token"=>"80e7ZQ4zK0hDlo4jlu2IduEZaktroWcJr5VSetXivgk=", "controller"=>"admin/welcome", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/admin/pages
+Completed in 22ms (DB: 7) | 302 Found [http://localhost/admin/login]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-24 21:15:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 565ms (View: 493, DB: 40) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-24 21:15:54) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"20", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 168ms (View: 119, DB: 14) | 200 OK [http://localhost/admin/pages/20/children/?level=1]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-24 21:15:58) [GET]
+  Parameters: {"action"=>"edit", "id"=>"27", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 1024ms (View: 931, DB: 83) | 200 OK [http://localhost/admin/pages/27/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-24 21:27:13) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"20", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 114ms (View: 83, DB: 12) | 200 OK [http://localhost/admin/pages/20/children/?level=1]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-24 21:27:15) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"27", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 397ms (View: 365, DB: 12) | 200 OK [http://localhost/admin/pages/27/children/?level=2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-24 21:27:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"28", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 238ms (View: 206, DB: 15) | 200 OK [http://localhost/admin/pages/28/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-24 21:28:02) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"20", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 181ms (View: 146, DB: 15) | 200 OK [http://localhost/admin/pages/20/children/?level=1]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-24 21:28:04) [GET]
+  Parameters: {"action"=>"edit", "id"=>"29", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 642ms (View: 518, DB: 115) | 200 OK [http://localhost/admin/pages/29/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-24 21:28:50) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"20", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 111ms (View: 79, DB: 14) | 200 OK [http://localhost/admin/pages/20/children/?level=1]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-24 21:28:51) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"27", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 112ms (View: 80, DB: 13) | 200 OK [http://localhost/admin/pages/27/children/?level=2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-24 21:28:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"30", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 568ms (View: 518, DB: 41) | 200 OK [http://localhost/admin/pages/30/edit]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-24 21:29:08) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 84ms (View: 18, DB: 25) | 404 Not Found [http://localhost/]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-24 21:30:24) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/not_found (404)
+Completed in 61ms (View: 15, DB: 21) | 404 Not Found [http://localhost/]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-24 21:30:30) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2377ms (DB: 52) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-24 21:30:36) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "documentation", "quickstart"], "controller"=>"site"}
+Completed in 2773ms (DB: 63) | 200 [http://localhost/en/documentation/quickstart/]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-25 20:06:49) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "documentation", "quickstart"], "controller"=>"site"}
+Completed in 2843ms (DB: 112) | 200 [http://localhost/en/documentation/quickstart/]
