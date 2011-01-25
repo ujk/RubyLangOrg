@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/low.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+    <link title="Low vision" rel="alternate stylesheet" type="text/css" href="/stylesheets/low_vision_screen.css" media="screen" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link href="/en/feeds/news.rss" rel="alternate" title="RSS" type="application/rss+xml" />
+    
+  </head>
+  <body id="home-page-layout">
+    <div id="page">
+      <div id="header">
+        <div id="logo"><img src="/images/logo.gif" width="331" height="119" alt="Ruby - Bir Programcının En İyi Arkadaşı" title="" /></div>
+        <div class="site-links">
+<a href="/en/downloads/">İndirin</a><span class="separator"> | </span><a href="/en/documentation/">Belgeler</a><span class="separator"> | </span><a href="/en/libraries/">Kütüphaneler</a><span class="separator"> | </span><a href="/en/community/">Topluluk</a><span class="separator"> | </span><a href="/en/news/">Haberler</a><span class="separator"> | </span><a href="/en/security/">Güvenlik</a><span class="separator"> | </span><a href="/en/about/">Ruby Hakkında</a>
+        </div>
+      </div>
+      <hr class="hidden-modern" />
+      <div id="main-wrapper">
+        <div id="main">
+          <div id="content-wrapper">
+            <div id="head-wrapper-1">
+              <div id="head-wrapper-2">
+                <div id="head">
+
+                  <div id="intro">
+                    <h1>Ruby&#8230;</h1>
+                    <p>Basitlik ve üretkenlik üzerine odaklanmış, dinamik, açık kaynaklı
+                       bir programlama dilidir. Kolay okunur ve yazılır eşsiz bir deyim yapısına sahiptir.
+                     </p>
+                    <p><a href="about/">Dahası&#8230;</a></p>
+                  </div>
+                  <div id="code">
+
+                    <div class="comment"># Selamlama sınıfı The Greeter class</div>
+                    <div><span class="keyword">class</span> Greeter</div>
+                    <div>&nbsp;&nbsp;<span class="keyword">def</span> initialize<span class="op">(</span>isim<span class="op">)</span></div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;@isim <span class="op">=</span> isim<span class="op">.</span>capitalize</div>
+                    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+                    <div class="blank-line">&nbsp;</div>
+                    <div>&nbsp;&nbsp;<span class="keyword">def</span> salute</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;puts <span class="string">"Merhaba #{</span><span class="op">@</span>isim<span class="string">}!"</span></div>
+                    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+                    <div><span class="keyword">end</span></div>
+                    <div class="blank-line">&nbsp;</div>
+                    <div class="comment"># Yeni bir obje üretin</div>
+                    <div>g <span class="op">=</span> Greeter<span class="op">.</span>new<span class="op">(</span><span class="string">"Dünya!"</span><span class="op">)</span></div>
+                    <div class="blank-line">&nbsp;</div>
+                    <div class="comment"># Çıktı "Merhaba Dünya!"</div>
+                    <div>g<span class="op">.</span>salute</div>
+  
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="content">
+
+
+
+
+<div class="post">
+  <h3><a href="/en/news/2010/12/25/ruby-1-8-7-p330-srm-yaynland/">Ruby 1.8.7-p330 Sürümü Yayınlandı</a></h3>
+
+  <p>Yıllık 1.8.7 update&rsquo;leri burada.</p>
+
+
+  <p><a href="/en/news/2010/12/25/ruby-1-8-7-p330-srm-yaynland/">Devamı&#8230;</a></p>
+
+  <p class="post-info">Administrator tarafından 25 Dec 2010 tarihinde gönderildi</p>
+</div>
+
+
+<div class="post">
+  <h3><a href="/en/news/2010/12/25/ruby-1-9-2-p136-srm-yaynland/">Ruby 1.9.2-p136 sürümü yayınlandı</a></h3>
+
+  Ruby 1.9.2-p136 sürümü yayınlandı. 
+
+  <p><a href="/en/news/2010/12/25/ruby-1-9-2-p136-srm-yaynland/">Devamı&#8230;</a></p>
+
+  <p class="post-info">Administrator tarafından 25 Dec 2010 tarihinde gönderildi</p>
+</div>
+
+
+
+<div id="news">
+  <h3><a href="/en/news/">Diğer Haberler</a></h3>
+  <ul>
+    <li><a href="/en/news/2010/11/15/ruby-1-9-2-is-released/">Ruby 1.9.2 is released</a>
+      <span class="post-info">Administrator tarafından 15 Nov 2010</span></li>
+    <li><a href="/en/news/2010/10/31/ruby-1-9-1-preview-1-released/"> Ruby 1.9.1-preview 1 released</a>
+      <span class="post-info">Administrator tarafından 31 Oct 2010</span></li>
+    <li><a href="/en/news/2010/10/10/see-matz-in-san-francisco-or-silicon-valley/">See Matz in San Francisco or Silicon Valley</a>
+      <span class="post-info">Administrator tarafından 10 Oct 2010</span></li>
+  </ul>
+  <ul>
+    <li><a href="/en/news/2010/08/16/ruby-1-8-7-p302-is-released/">Ruby 1.8.7-p302 is released</a>
+      <span class="post-info">Administrator tarafından 16 Aug 2010</span></li>
+  </ul>
+  <p class="more"><a href="/en/news/">More&nbsp;News&#8230;</a></p>
+</div>
+
+
+
+
+            </div>
+          </div>
+          <hr class="hidden-modern" />
+          <div id="sidebar-wrapper">
+            <div id="sidebar">
+
+<div class="navigation"><a href="/en/downloads/"><img src="/images/download.gif" alt="Ruby İndirin" title="" /></a></div>
+
+
+<div class="navigation">
+  <h3><strong>Başlangıç,</strong> çok kolay!</h3>
+  <ul class="menu">
+    <li><a href="http://TryRuby.org">Ruby'yi Deneyin! (tarayıcınızda)</a></li>
+
+    <li><a href="/en/documentation/quickstart/">Yirmi Dakikada Ruby</a></li>
+    <li><a href="/en/documentation/ruby-from-other-languages/">Diğer Dillerden Ruby'ye</a></li>
+  </ul>
+</div>
+
+<div class="navigation">
+  <h3><strong>Yeni bir dünya</strong> keşfedin&hellip;</h3>
+  <ul class="menu">
+    <li><a href="/en/documentation/">Belgeler</a></li>
+    <li><a href="http://www.amazon.com/s/ref=sr_nr_n_5?ie=UTF8&amp;rs=1000&amp;keywords=Ruby&amp;rh=i%3Aaps%2Ck%3ARuby%2Ci%3Astripbooks%2Cn%3A1000%2Cn%3A5">Kitaplar</a></li>
+    <li><a href="/en/libraries/">Kütüphaneler</a></li>
+    <li><a href="/en/documentation/success-stories/">Başarı Hikayeleri</a></li>
+  </ul>
+</div>
+
+<div class="navigation">
+  <h3>Hızla büyüyen bir <strong>Topluluğa</strong> katılın.</h3>
+  <ul>
+    <li><a href="/en/community/mailing-lists/">Mail Listeleri</a>: Tüm dünyadan programcılarla Ruby konuşun.</li>
+    <li><a href="/en/community/user-groups/">Kullanıcı Gruları</a>: Bölgenizdeki Rubyistlerle temas kurun.</li>
+    <li><a href="/en/community/weblogs/">Weblogs</a>: Şu anda Ruby dünyasında neler olduğunu öğrenin.</li>
+    <li><a href="/en/community/ruby-core/">Ruby Core</a>: En son Ruby'nin parlatılmasına yardımcı olun.</li>
+    <li><a href="http://redmine.ruby-lang.org/">Hata Takip</a>: Ruby sorunlarını bildirin veya çözümüne yardım edin.</li>
+  </ul>
+</div>
+
+
+<h3>Bazı Meşhur Ruby Projeleri</h3>
+
+<p class="more"><a href="/en/libraries/top-projects/">Daha&#8230;</a></p>
+
+
+<h3>Syndicate</h3>
+<p><a href="/en/feeds/news.rss">Recent News (RSS)</a></p>
+            </div>
+          </div>
+          <hr class="hidden-modern" />
+          <div class="foot">
+            <div class="site-links">
+<a href="/en/downloads/">İndirin</a><span class="separator"> | </span><a href="/en/documentation/">Belgeler</a><span class="separator"> | </span><a href="/en/libraries/">Kütüphaneler</a><span class="separator"> | </span><a href="/en/community/">Topluluk</a><span class="separator"> | </span><a href="/en/news/">Haberler</a><span class="separator"> | </span><a href="/en/security/">Güvenlik</a><span class="separator"> | </span><a href="/en/about/">Ruby Hakkında</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="search-box">
+<form id="search-form" action="http://www.google.com/cse">
+  <table class="fieldset">
+    <tr>
+      <td>
+        <input class="field" type="text" name="q" size="31" style="background: white url(http://www.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat" onfocus="this.style.background='white'" onblur="if (/^\s*$/.test(this.value)) this.style.background='white url(http://www.google.com/coop/intl/en/images/google_custom_search_watermark.gif) left no-repeat'"/>
+      </td>
+      <td>
+        <input type="hidden" name="cx" value="013598269713424429640:g5orptiw95w" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input class="button" type="submit" name="sa" value="Search" />
+      </td>
+    </tr>
+  </table>
+</form>
+      </div>
+      <div id="footer">
+        <div class="fine-print">
+          <p>Content available in <a href="/en/">English</a>, <a href="/fr/">French</a>, <a href="/ja/">Japanese</a>, <a href="/ko/">Korean</a>, <a href="/pl/">Polish</a>, <a href="/es/">Spanish</a>, <a href="/pt/">Portuguese</a>, <a href="/zh_cn/">Simplified Chinese</a>, <a href="/zh_TW/">Traditional Chinese</a>, <a href="/id/">Bahasa Indonesia</a>, <a href="/de/">German</a>, <a href="/it/">Italian</a>, <a href="/cs/">Czech</a> and <a href="/bg/">Bulgarian</a>.</p> 
+          <p>This website is made with Ruby and powered by <a href="http://radiantcms.org">Radiant CMS</a>.
+            It is proudly maintained by <a href="http://rubyidentity.org">members of the Ruby community</a>. Please contact
+            our <a href="mailto:webmaster@ruby-lang.org">webmaster</a> for questions or comments
+            concerning this website.</p>
+        </div>
+      </div>
+    </div>
+<div><strong>snippet not found</strong></div>
+  </body>
+</html>

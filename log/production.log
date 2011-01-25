@@ -4782,3 +4782,118 @@ Completed in 2773ms (DB: 63) | 200 [http://localhost/en/documentation/quickstart
 Processing SiteController#show_page (for 127.0.0.1 at 2011-01-25 20:06:49) [GET]
   Parameters: {"action"=>"show_page", "url"=>["en", "documentation", "quickstart"], "controller"=>"site"}
 Completed in 2843ms (DB: 112) | 200 [http://localhost/en/documentation/quickstart/]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-25 23:24:01) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 2898ms (DB: 75) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-25 23:24:06) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "documentation", "ruby-from-other-languages"], "controller"=>"site"}
+Completed in 3588ms (DB: 121) | 200 [http://localhost/en/documentation/ruby-from-other-languages/]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-25 23:24:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 1158ms (View: 1088, DB: 38) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-25 23:24:29) [GET]
+  Parameters: {"action"=>"edit", "id"=>"21", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 947ms (View: 889, DB: 19) | 200 OK [http://localhost/admin/pages/21/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-25 23:25:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 1104ms (View: 957, DB: 125) | 200 OK [http://localhost/admin/pages]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-25 23:25:51) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"21", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 174ms (View: 133, DB: 17) | 200 OK [http://localhost/admin/pages/21/children/?level=2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-25 23:26:16) [GET]
+  Parameters: {"action"=>"edit", "id"=>"22", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 277ms (View: 247, DB: 14) | 200 OK [http://localhost/admin/pages/22/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-25 23:27:32) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"21", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 162ms (View: 123, DB: 17) | 200 OK [http://localhost/admin/pages/21/children/?level=2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-25 23:27:37) [GET]
+  Parameters: {"action"=>"edit", "id"=>"23", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 353ms (View: 334, DB: 9) | 200 OK [http://localhost/admin/pages/23/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-25 23:28:30) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"21", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 465ms (View: 431, DB: 13) | 200 OK [http://localhost/admin/pages/21/children/?level=2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-25 23:28:33) [GET]
+  Parameters: {"action"=>"edit", "id"=>"25", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 287ms (View: 254, DB: 15) | 200 OK [http://localhost/admin/pages/25/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-25 23:29:32) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"21", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 145ms (View: 111, DB: 14) | 200 OK [http://localhost/admin/pages/21/children/?level=2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-25 23:29:35) [GET]
+  Parameters: {"action"=>"edit", "id"=>"24", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 279ms (View: 248, DB: 16) | 200 OK [http://localhost/admin/pages/24/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-25 23:30:11) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"21", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 156ms (View: 117, DB: 15) | 200 OK [http://localhost/admin/pages/21/children/?level=2]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2011-01-25 23:30:14) [GET]
+  Parameters: {"action"=>"edit", "id"=>"26", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 269ms (View: 238, DB: 15) | 200 OK [http://localhost/admin/pages/26/edit]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2011-01-25 23:30:54) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"21", "level"=>"2", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 391ms (View: 341, DB: 30) | 200 OK [http://localhost/admin/pages/21/children/?level=2]
+
+
+Processing Admin::WelcomeController#logout (for 127.0.0.1 at 2011-01-25 23:31:12) [GET]
+  Parameters: {"action"=>"logout", "controller"=>"admin/welcome"}
+Redirected to http://localhost:3000/admin/login
+Completed in 56ms (DB: 8) | 302 Found [http://localhost/admin/logout]
+
+
+Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-25 23:31:12) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 38ms (View: 28, DB: 4) | 200 OK [http://localhost/admin/login]
