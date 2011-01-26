@@ -21,5 +21,9 @@ h3. Yapılacaklar
 * Tercüme edilecekler klasöründen birşeyi tercüme edecek olan buraya not bıraksın (bu dosyayı edit etsin)
 * Tercümesi biteni bitmişler klasörüne koyun ben siteye atabilirim
 * Topluluk sayfası kontrol edilecek
+* Tercüme için dosyaya başlayan , başladığı işi buraya (yani direk bu dosyayı git üzerinde edit ederek) yazarsa karışma olmaz sanırım
 
-Not: to-ruby-from-python.textile dosyasını çevirdim. Doğan Aydın.
+h3. Yapılmışlar
+
+* 110125: to-ruby-from-python.textile dosyasını çevirdim. Doğan Aydın.
+* 110126 - Ümit - Doğanaydın katılımcı yapılıdı
