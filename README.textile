@@ -13,6 +13,10 @@ dışına alıp çalışmak daha doğru olacak.
 
 Radiant cms kullanımı için gem olarak kurulması gerekiyor. Şimdilik sqlite3 veritabanı kullandım.
 
+h3. Not
+
+* ritm3.textile'ı tercümeye aldım
+
 h3. Yapılacaklar
 
 * -Documentation sayfası kontrol edilecek-
