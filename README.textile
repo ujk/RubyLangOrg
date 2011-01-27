@@ -16,7 +16,7 @@ Radiant cms kullanımı için gem olarak kurulması gerekiyor. Şimdilik sqlite3
 h3. Not
 
 * -ritm3.textile'ı tercümeye aldım-
-* to-ruby-from-php.textile tercümesine başladım. (Doğan Aydın)
+* -to-ruby-from-php.textile tercümesine başladım. (Doğan Aydın)-
 
 h3. Yapılacaklar
 
@@ -30,6 +30,6 @@ h3. Yapılacaklar
 
 h3. Yapılmışlar
 
-* 110125: to-ruby-from-python.textile dosyasını çevirdim. Doğan Aydın.
-* 110126 - Ümit - Doğan Aydın katılımcı yapılıdı, 20 dakikada ruby 3. sayfa bitti, yerine kondu.
-
+* 110125 -  Doğan Aydın - to-ruby-from-python.textile dosyasını çevirdim.
+* 110126 -  Ümit - Doğan Aydın katılımcı yapılıdı, 20 dakikada ruby 3. sayfa bitti, yerine kondu.
+* 67f621a - Doğan Aydın - to-ruby-from-php.textile dosyasını çevirdim.
