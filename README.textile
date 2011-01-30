@@ -35,3 +35,4 @@ h3. Yapılmışlar
 * 110125 -  Doğan Aydın - to-ruby-from-python.textile dosyasını çevirdim.
 * 110126 -  Ümit - Doğan Aydın katılımcı yapılıdı, 20 dakikada ruby 3. sayfa bitti, yerine kondu.
 * 67f621a - Doğan Aydın - to-ruby-from-php.textile dosyasını çevirdim.
+* 110201 - Ümit - 20 dakikada Ruby 4. sayfa bitti, yeni sayfalar tercüme edilmek için klasöre kondu.
