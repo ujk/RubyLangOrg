@@ -20,6 +20,7 @@ h3. Not
 * -110127 - Ümit - Ya bir tane Tercüme Edilmişler Klasörü vardı kaybolmuş. İçi boş bırakınca otomatik siliniyor herhalde, fake bişeyler bırakmak lazım içine-
 * -110201 - Ümit - ritm4.textile tercümeye aldım-
 * Doğan Aydın - succes-stories.textile dosyası benimdir.
+* 110201 - Ümit - ruby-from-other-laguages.textile tercüme için aldım.
 
 h3. Yapılacaklar
 
