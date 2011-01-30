@@ -4897,3 +4897,18 @@ Processing Admin::WelcomeController#login (for 127.0.0.1 at 2011-01-25 23:31:12)
 Rendering template within layouts/application
 Rendering admin/welcome/login
 Completed in 38ms (View: 28, DB: 4) | 200 OK [http://localhost/admin/login]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-30 13:59:02) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en"], "controller"=>"site"}
+Completed in 3179ms (DB: 175) | 200 [http://localhost/en]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-30 13:59:16) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "downloads"], "controller"=>"site"}
+Completed in 3584ms (DB: 132) | 200 [http://localhost/en/downloads/]
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2011-01-30 13:59:32) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["en", "documentation"], "controller"=>"site"}
+Completed in 2609ms (DB: 89) | 200 [http://localhost/en/documentation/]
