@@ -1,47 +1,47 @@
-Many people use Ruby in their daily jobs. Others just as a hobby. Here you'll find a small sample of real world usage of Ruby.
+Bir çok insan Ruby'yi günlük işlerinde kullanır. Diğerleri sadece hobi olarak. Burada Ruby'nin gerçek dünyadan örneklerini görebilirsiniz.
 
 
-h4. Simulations
+h4. Simülasyonlar
 
-* "NASA Langley Research Center":http://www.larc.nasa.gov/ uses Ruby to conduct simulations.
+* "NASA Langley Araştırma Merkezi":http://www.larc.nasa.gov/ simülasyonları yönetmek için Ruby kullanıyor.
 
-* A research group in "Motorola":http://www.motorola.com uses Ruby to script a simulator, both to generate scenarios and to post process the data.
+* "Motorola" da bir araştırma grubu:http://www.motorola.com Ruby'yi simülatör geliştirirken, hem senaryo üretmek için hemde işlem sonrası veriler için kullanıyor.
 
-h4. 3D Modeling
+h4. 3D Modelleme
 
-* "Google SketchUp":http://www.sketchup.com/ is a 3D modeling application that uses Ruby for its macro scripting API.
+* "Google SketchUp":http://www.sketchup.com/ makro geliştirme API'si için Ruby kullanan 3D modelleme uygulamasıdır.
 
-h4. Business
+h4. İş
 
-* "Toronto Rehab":http://www.torontorehab.on.ca/ uses a RubyWebDialogs based app to manage and track on-call and on-site support for the IT help desk and IT operations teams.
+* "Toronto Rehab":http://www.torontorehab.on.ca/ BT yardım masası ve BT operasyon takımlarında çağrı destek ve yerinde destek yönetimi ve izlemesi için RubyWebDialogs tabanlı bir uygulama kullanır.
 
-h4. Robotics
+h4. Robotik
 
-* At "MORPHA":http://www.morpha.de/php_e/ project, Ruby was used to implemented the reactive control part for the Siemens service robot.
+* "MORPHA":http://www.morpha.de/php_e/ projesinde, Ruby Siemens servis robotunun reaktif denetim kısmını uygulamak için kullanıldı.
 
-h4. Networking
+h4. Ağ
 
-* "Open Domain Server":http://ods.org/ uses Ruby to allow people using Dynamic DNS clients to update in real time their IP configuration so that it can be mapped to static domains.
+* "Open Domain Server":http://ods.org/ IP ayarlarının gerçek zamanlı olarak güncellenmesini ve böylece statik domainler ile eşlenebilmesini sağlayan "Dynamic DNS" istemcileri Ruby ile yazıldı.
 
-h4. Telephony
+h4. Telefonculuk
 
-* Ruby is being used within "Lucent":http://www.lucent.com/ on a 3G wireless telephony product.
+* Ruby 3G kablosuz telefonculuk ürünü olan "Lucent":http://www.lucent.com/ içinde kullanılmaya başlandı.
 
-h4. System Administration
+h4. Sistem Yönetimi
 
-* Ruby was used to write the central data collection portion of "Level 3 Communications":http://www.level3.com/ Unix Capacity and Planning system that gathers performance statistics from over 1700 Unix (Solaris and Linux) servers scattered around the globe.
+* "Level 3 Communications":http://www.level3.com/ merkezi veri toplama kısmını yazmak için Ruby kullanıldı. Dünya çapında dağılmış 1700 Unix (Solaris ve Linux) sunucu üzerinden gelen performans istatistiklerini toplayan Unix kapasite ve planlama sistemidir.
 
-h4. Web Applications
+h4. Web Uygulamaları
 
-* "Basecamp":http://www.basecamphq.com, a web-based project management application developed by "37signals":http://www.37signals.com, is programmed entirely in Ruby.
+* "Basecamp":http://www.basecamphq.com, "37signals":http://www.37signals.com tarafından geliştirilen web tabanlı proje yönetim uygulamasıdır, tamamen Ruby ile yazılmıştır.
 
-* "43 Things":http://www.43things.com allows you to keep a list of goals and share it with the world. It was developed entirely in Ruby.
+* "43 Things":http://www.43things.com hedeflerinin bir listesini tutmanı ve dünya ile paylaşmanı sağlar. Tamamen Ruby ile geliştirilmiştir.
 
-* "A List Apart":http://www.alistapart.com, a magazine for people who make websites that has been around since 1997, has recently been revamped and uses a custom application built with Ruby on Rails.
+* "A List Apart":http://www.alistapart.com, yaklaşık 1997 yılından bu yana web-sitelerini yapan insanlar için bir dergi. Son zamanlarda yeniden canlandı ve Ruby On Rails ile oluşturulan özel bir uygulama kullanır.
 
-* "Blue Sequence":http://www.bluefountain.com/casestudies/bfs-deliver-a-2nd-sequence-production-system-for-toyota/, a sophisticated mission-critical application which forms part of Toyota Motor Manufacturing's own "sequence-in-time" production process, has recently been selected as finalist the British Computer (BCS) Information Management Awards.
+* "Blue Sequence":http://www.bluefountain.com/casestudies/bfs-deliver-a-2nd-sequence-production-system-for-toyota/, Toyota Motor İmalatı'nın kendi "sequence-in-time" üretim sürecinin bir parçası olan gelişmiş,kritik bir uygulama, son zamanlarda British Computer (BCS) Bilgi Yönetimi Ödülleri'nde finalist olarak seçildi.
 
-h4. Security
+h4. Güvenlik
 
-* The "Metasploit Framework":http://www.metasploit.com, a community open source project managed by "Rapid7":http://www.rapid7.com, is a free penetration testing platform that helps IT professionals assess the security of their networks and applications. The Metasploit Project consists of over 700,000 lines of code and has been downloaded over a million times in 2010. The commercial editions "Metasploit Express":http://www.rapid7.com/products/metasploit-express.jsp and "Metasploit Pro":http://www.rapid7.com/products/metasploit-pro.jsp developed by Rapid7 are also based on Ruby.
+* "Metasploit Framework":http://www.metasploit.com, "Rapid7":http://www.rapid7.com tarafından yönetilen topluluk açık kaynak projesi, ağların ve uygulamarın güvenliğini değerlendirmede BT uzmanlarına yardımcı olan ücretsiz bir penetrasyon test platformudur. Metasploit Projesi 700,000 satırın üstünde koddan oluşur ve 2010 yılında 1 milyondan fazla indirilme sayısına ulaşmıştır. Ticari sürüm olan "Metasploit Express":http://www.rapid7.com/products/metasploit-express.jsp ve "Metasploit Pro":http://www.rapid7.com/products/metasploit-pro.jsp Rapid7 tarafından geliştirilir ayrıca Ruby tabanlıdır.
  
