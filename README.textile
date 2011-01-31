@@ -13,6 +13,9 @@ dışına alıp çalışmak daha doğru olacak.
 
 Radiant cms kullanımı için gem olarak kurulması gerekiyor. Şimdilik sqlite3 veritabanı kullandım.
 
+Yaptığınız çalışmaları siteye ulaştırmak için bana ya da "hazal":http://tuxweet.linux.org.tr/hazal a başvurabilirsiniz.
+İletişim : ujk7107@gmail.com , niyaziates77@gmail.com
+
 h3. Not
 
 * -ritm3.textile'ı tercümeye aldım-
