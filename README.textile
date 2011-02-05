@@ -13,12 +13,17 @@ dışına alıp çalışmak daha doğru olacak.
 
 Radiant cms kullanımı için gem olarak kurulması gerekiyor. Şimdilik sqlite3 veritabanı kullandım.
 
+Yaptığınız çalışmaları siteye ulaştırmak için bana ya da "hazal":http://tuxweet.linux.org.tr/hazal a başvurabilirsiniz.
+İletişim : ujk7107@gmail.com , niyaziates77@gmail.com
+
 h3. Not
 
 * -ritm3.textile'ı tercümeye aldım-
 * -to-ruby-from-php.textile tercümesine başladım. (Doğan Aydın)-
 * -110127 - Ümit - Ya bir tane Tercüme Edilmişler Klasörü vardı kaybolmuş. İçi boş bırakınca otomatik siliniyor herhalde, fake bişeyler bırakmak lazım içine-
 * -110201 - Ümit - ritm4.textile tercümeye aldım-
+* -Doğan Aydın - succes-stories.textile dosyası benimdir.-
+* 110201 - Ümit - ruby-from-other-laguages.textile tercüme için aldım.
 
 h3. Yapılacaklar
 
@@ -35,3 +40,5 @@ h3. Yapılmışlar
 * 110125 -  Doğan Aydın - to-ruby-from-python.textile dosyasını çevirdim.
 * 110126 -  Ümit - Doğan Aydın katılımcı yapılıdı, 20 dakikada ruby 3. sayfa bitti, yerine kondu.
 * 67f621a - Doğan Aydın - to-ruby-from-php.textile dosyasını çevirdim.
+* 110201 - Ümit - 20 dakikada Ruby 4. sayfa bitti, yeni sayfalar tercüme edilmek için klasöre kondu.
+* 0771659 - Doğan Aydın - succes.stories.textile bitti, tercüme edilmişlerin arasına kondu.
