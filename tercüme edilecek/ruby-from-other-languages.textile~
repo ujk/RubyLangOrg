@@ -176,50 +176,50 @@ end
 
 
 
-h3. Erişim Belirleyicileri Kısım Sonuna Kadar Geçerlidir
+h3. Access modifiers apply until the end of scope
 
-Aşağıdaki Ruby kodunda,
+In the following Ruby code,
   
 <notextile><r:code>
 class MyClass
   private
-  def bir_metod; true; end
-  def diger_metod; false; end
-end
-</r:code></notextile>
-  
-<code>diger_metod</code> erişiminin genel olacağını düşünebilirsiniz 
-ama öyle değil. "privete" erişim belirleyici sınıf tanımı sonuna kadar 
-veya başka bir erişim belirleyici satıra kadar geçerli olacaktır. 
-Default olarak tüm metodlar "public"(genel erişim)dir:
-  
-<notextile><r:code>
-class MyClass
-  # Şimdi a_method public erişim
   def a_method; true; end
-
-  private
-
-  # another_method private erişim
   def another_method; false; end
 end
 </r:code></notextile>
   
-<code>public</code>, <code>private</code> ve <code>protected</code> 
-aslında metoddur ve bu yüzden parametre alabilirler. Eğer bunlara bir 
-sembol gönderirseniz metodun görünrlüğü değişir.
-
-
-h3. Metod Erişimleri
+You might expect <code>another_method</code> to be public. Not so. The 'private' access
+modifier continues until the end of the scope, or until another access modifier
+pops up, whichever comes first. By default, methods are public:
   
-<p>Java'da, <code>public</code> metoda herkes erişebilir demektir.  <code>protected</code> sınıfın oluşumlarından, türetilmiş sınıfların 
-oluşumlarından ve aynı paket içersindeki sınıfların oluşumlarından 
-erişilebilir demektir. <code>private</code> ise sınıfın oluşumlarından 
-başka kimse metoda ulaşamaz demektir.</p>
+<notextile><r:code>
+class MyClass
+  # Now a_method is public
+  def a_method; true; end
 
-Ruby biraz farklılık gösterir. <code>public</code> doğal olarak herkese açık 
-demektir. <code>private</code> ise metodun belirlenmiş alıcısı varsa 
-erişilebileceğini belirtir ve bu alıcı sadece *self* olabilir.
+  private
+
+  # another_method is private
+  def another_method; false; end
+end
+</r:code></notextile>
+  
+<code>public</code>, <code>private</code> and <code>protected</code> are really methods,
+so they can take parameters. If you pass a Symbol to one of them, that method's visibility
+is altered.
+
+
+
+h3. Method access
+  
+<p>In Java, <code>public</code> means a method is accessible by anyone. <code>protected</code>
+means the class's instances, instances of descendant classes, and instances of classes in the same package
+can access it, but not anyone else, and <code>private</code> means nobody besides the classes instances 
+can access the method.</p>
+
+Ruby differs slightly. <code>public</code> is, naturally, public. <code>private</code> means
+the method(s) are accessible only when they can be called without an explicit receiver. Only *self* is
+allowed to be the receiver of a private method call.
 
 <code>protected</code> is the one to be on the lookout for. A protected method can be called
 from a class or descendant class instances, but also with another instance as its receiver.
