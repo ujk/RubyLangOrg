@@ -221,21 +221,22 @@ Ruby biraz farklılık gösterir. <code>public</code> doğal olarak herkese aç�
 demektir. <code>private</code> ise metodun belirlenmiş alıcısı varsa 
 erişilebileceğini belirtir ve bu alıcı sadece *self* olabilir.
 
-<code>protected</code> is the one to be on the lookout for. A protected method can be called
-from a class or descendant class instances, but also with another instance as its receiver.
+<code>protected</code> incelenmesi gereken birşey. Bir protected metod
+sınıfın yada türetilmiş sınıfın oluşumlarından çağrılabilir, ayrıca diğer oluşum 
+üzerinden çağrılabilir. 
 
-Example, adapted from the "Ruby FAQ":http://faq.rubygarden.org/entry/show/57?controller_prefix=faq%2F:
+Örnek, "Ruby FAQ":http://faq.rubygarden.org/entry/show/57?controller_prefix=faq%2F alınmıştır:
 
 <notextile><r:code>
 $ irb
 irb(main):001:0> class Test
-irb(main):002:1>   # public by default
+irb(main):002:1>   # default olarak public
 irb(main):003:1*   def func
 irb(main):004:2>     99
 irb(main):005:2>   end
 irb(main):006:1> 
-irb(main):007:1*   def ==(other)
-irb(main):008:2>     func == other.func
+irb(main):007:1*   def ==(diger)
+irb(main):008:2>     func == diger.func
 irb(main):009:2>   end
 irb(main):010:1> end
 => nil
@@ -246,15 +247,15 @@ irb(main):013:0> t2 = Test.new
 => #<Test:0x342784>
 irb(main):014:0> t1 == t2
 => true
-irb(main):015:0> # now make `func` protected, still works
-irb(main):016:0* # because protected allows the other reference
+irb(main):015:0> # şimdi `func` u protected yapalım, hala çalışıyor
+irb(main):016:0* # çünkü protexted diğerine referansa izin veriyor
 irb(main):017:0* class Test
 irb(main):018:1>   protected :func
 irb(main):019:1> end
 => Test
 irb(main):020:0> t1 == t2
 => true
-irb(main):021:0> # now make `func` private
+irb(main):021:0> # şimdi `func` u private yapalım
 irb(main):022:0* class Test
 irb(main):023:1>   private :func
 irb(main):024:1> end
@@ -269,164 +270,164 @@ irb(main):026:0>
 
 
 
-h3. Classes are open
+h3. Sınıflar Açıktır
   
-Ruby classes are open. You can open them up, add to them, and change them
-at any time. Even core classes, like <code>Fixnum</code> or even
-<code>Object</code>, the parent of all objects. Ruby on Rails defines a
-bunch of methods for dealing with time on <code>Fixnum</code>. Watch:
+Ruby sınıfları açıktır. İstediğiniz zaman açabilir, ekleme yapabilir, 
+değiştirebilirsiniz. Core sınıfları bile, mesela <code>Fixnum</code> 
+ve hatta tüm sınıfların anası <code>Object</code> sınıfı dahil. Ruby 
+on Rails <code>Fixnum</code> sınıfına zamanla ilgili bir kısım metod 
+eklemiştir. İzleyin:  
  
 <notextile><r:code>
 class Fixnum
   def hours
-    self * 3600 # number of seconds in an hour
+    self * 3600 # bir saat içindeki saniye miktarı
   end
   alias hour hours
 end
   
-# 14 hours from 00:00 January 1st
-# (aka when you finally wake up ;)
-Time.mktime(2006, 01, 01) + 14.hours # => Sun Jan 01 14:00:00
+# 1 Ocak saat 00:00 dan itibaren 14 saat sonra
+# anca uyanmışsınız ;)
+Time.mktime(2011, 01, 01) + 14.hours # => Sat Jan 01 14:00:00
 </r:code></notextile>
 
+ 
 
+h3. Eğlenceli Metod İsimleri 
 
-h3. Funny method names
-
-In Ruby, methods are allowed to end with question marks or exclamation marks.
-By convention, methods that answer questions (i.e. <tt>Array#empty?</tt>
-returns *true* if the receiver is empty) end in question marks. Potentially
-"dangerous" methods (ie methods that modify *self* or the arguments,
-<code>exit!</code> etc.) by convention end with exclamation marks.
+Ruby'de metodların soru veya ünlem işareti ile bitmesine izin verilir. 
+Gelenek olarak sorulara cevap veren metodlar (örnek, <tt>Array#empty?</tt> 
+eğer alıcısı boşsa *true* döner) soru işareti ile biter. Tehlikeli sonuçları 
+olabilecek metodlar (örneğin "kendi"ni değiştiren metodlar, <code>exit!</code> 
+gibi) ünlem işareti ile bitirilirler.  
   
-All methods that change their arguments don't end with exclamation marks,
-though. <tt>Array#replace</tt> replaces the contents of an array with the contents
-of another array. It doesn't make much sense to have a method like that
-that *doesn't* modify self.
+Argümanlarını değiştiren tüm metodlar ünlem işareti ile bitmayabilir. 
+ <tt>Array#replace</tt> bir array'in içeriğini diğer biriyle değiştirir ama 
+ünlemle bitmez.
 
 
 
-h3. Singleton methods
+h3. Özel Metodlar
 
-Singleton methods are per-object methods. They are only available on the
-Object you defined it on.
+Özel metodlar, tek nesneye özel metodlardır. Hangi nesne için tanımlandıysa 
+onun için geçerlidir.
   
 <notextile><r:code>
 class Car
   def inspect
-    "Cheap car"
+    "Ucuz araba"
   end
 end
 
 porsche = Car.new
-porsche.inspect # => Cheap car
+porsche.inspect # => Ucuz araba
 def porsche.inspect
-  "Expensive car"
+  "Pahalı araba"
 end
 
-porsche.inspect # => Expensive car
+porsche.inspect # => Pahalı araba
 
-# Other objects are not affected
+# Diğer nesneler etkilenmez
 other_car = Car.new
-other_car.inspect # => Cheap car
+other_car.inspect # => Ucuz araba
 </r:code></notextile>
 
 
-h3. Missing methods
+h3. Kayıp Metodlar
 
-Ruby doesn't give up if it can't find a method that responds to a particular
-message. It calls the <code>method_missing</code> method with the name of the method
-it couldn't find and the arguments. By default, method_missing raises a
-NameError exception, but you can redefine it to better fit your application,
-and many libraries do. Here is an example:
+Ruby bir metodu listesinde bulamayınca vazgeçmez, <code>method_missing</code> 
+metodunu bulamadığı metod ismi ve argümanları ile çağırır. Normalde 
+method_missing bir NameError hatası verir, fakat isterseniz bunu istediğiniz 
+şekilde değiştirebilirsiniz ve birçok kütüphane de bunu yapar. Bir örnek: 
  
 <notextile><r:code>
-# id is the name of the method called, the * syntax collects
-# all the arguments in an array named 'arguments'
+# id çağrılan metodun adı, * deyimiyle tüm argümanlar 
+# bir 'arguments' adlı bir array içinde toplanır
 def method_missing( id, *arguments )
-  puts "Method #{id} was called, but not found. It has " + 
-       "these arguments: #{arguments.join(", ")}"
+  puts "Metod #{id} çağrıldı fakat bulunamadı. Argümanları " + 
+       "şunlar : #{arguments.join(", ")}"
 end
 
 __ :a, :b, 10
-# => Method __ was called, but not found. It has these
-# arguments: a, b, 10
+# => Metod __ çağrıldı fakat bulunamadı. Argümanları 
+# şunlar: a, b, 10
 </r:code></notextile>
 
-The code above just prints the details of the call, but you are free to handle the message in any way that is appropriate.
+Yukardaki kod sadece çağrının detaylarını çağırır, fakat siz bu mesajı istediğiniz gibi değiştirmekte serbestsiniz.
 
 
 
-h3. Message passing, not function calls
+h3. Fonksiyon Çağrısı Değil Mesaj İletimi
 
-A method call is really a *message* to another object:
+Bir metod çağrısı aslında diğer bir nesneye bir *mesaj* dır:
 
 <notextile><r:code>
-# This
+# Bununla
 1 + 2
-# Is the same as this ...
+# Bu aynıdır ...
 1.+(2)
-# Which is the same as this:
+# Bu da aynıdır:
 1.send "+", 2
 </r:code></notextile>
 
-h3. Blocks are Objects, they just don't know it yet
+h3. Bloklar Nesnedir, Sadece Henüz Bunu Bilmiyorlar
 
-Blocks (closures, really) are heavily used by the standard library. To call a
-block, you can either use @yield@, or make it a @Proc@ by appending a special
-argument to the argument list, like so:
+Bloklar (çevrili kodlar) standart kütüphaneler tarafından çok kullanılır.
+Bir bloğu çağırmak için @yield@ da kullanabilirsiniz, argüman listesinde 
+özel bir argüman ekleyerek @Proc@ da yapabilirsiniz. Şöyleki:
 
 <notextile><r:code>
 def block( &the_block )
-  # Inside here, the_block is the block passed to the method
-  the_block # return the block
+  # Burada the_block metoda gönderilen bloktur
+  the_block # bloğu geri döndür
 end
 adder = block { |a, b| a + b }
-# adder is now a Proc object
+# burada adder şimdi bir Proc nesnesidir
 adder.class # => Proc
 </r:code></notextile>
   
-You can create blocks outside of method calls, too, by calling Proc.new with
-a block or calling the <code>lambda</code> method.
+Blokları metod çağrıları dışında da Proc.new ile veya <code>lambda</code> 
+metodu ile üretebilirsiniz
   
-Similarly, methods are also Objects in the making:
+Benzer olarak metodlar da birer nesnedir:
 
 <notextile><r:code>
 method(:puts).call "puts is an object!"
 # => puts is an object!
 </r:code></notextile>
 
-h3. Operators are syntactic sugar
+h3. Operatörler de Deyimdir
 
-Most operators in Ruby are just syntactic sugar (with some precedence rules) for method calls. You can, for example, override Fixnums + method:
+Ruby'deki operatörler birbirlerine belli öncelikleri olan metodlardır. Bu yüzden 
+isterseniz Fixnum'un + metodunu değiştirebilirsiniz:
   
 <notextile><r:code>
 class Fixnum
-  # You can, but please don't do this
+  # Yapabilirsiniz ama lütfen bunu yapmayın
   def +( other )
     self - other
   end
 end
 </r:code></notextile>
   
-You don't need C++'s <code>operator+</code>, etc.
+C++'ın <code>operator+</code> sına ihtiyacınız yok.
   
-You can even have array-style access if you define the <code>[]</code> and <code>[]=</code>
-methods. To define the unary + and - (think +1 and -2), you must define the
-<code>+@</code> and <code>-@</code> methods, respectively.
+Array stili bir erişim için <code>[]</code> ve <code>[]=</code> metodları 
+tanımlayabilirsiniz. (+1 ve -2 deki gibi) işaretler için <code>+@</code> 
+ve <code>-@</code> metodlarını tanımlamalısınız.
   
-The operators below are *not* syntactic sugar, though. They are not methods, 
-and cannot be redefined:
+Aşağıdaki operatörler bu şekilde değerlendirilmezler. Bunlar metod değildir 
+ve tekrar tanımlanamazlar:
 
 <notextile><r:code lang="symbols">  
 =, .., ..., !, not, &&, and, ||, or, !=, !~, ::
 </r:code></notextile>
 
-In addition, +=, *= etc. are just abbrevations for
-<code>var = var + other_var</code>, <code>var = var * other_var</code>, etc. and therefore
-cannot be redefined.
+Ek olarak, +=, *= vb. şunların kısaltmasıdır : 
+<code>var = var + other_var</code>, <code>var = var * other_var</code>, vb. ve 
+bu yüzden tekrar tanımlanamazlar.
 
 
-h2. Finding Out More
+h2. Daha Fazla Bilgi
 
-When you are ready for more Ruby knowledge, see our "Documentation":/en/documentation/ section.
+Daha fazla bilgiye ihtiyaç duyarsanız  "Belgeler":/tr/documentation/ bölümüne bakınız.
