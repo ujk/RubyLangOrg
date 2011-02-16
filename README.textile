@@ -23,7 +23,8 @@ h3. Not
 * -110127 - Ümit - Ya bir tane Tercüme Edilmişler Klasörü vardı kaybolmuş. İçi boş bırakınca otomatik siliniyor herhalde, fake bişeyler bırakmak lazım içine-
 * -110201 - Ümit - ritm4.textile tercümeye aldım-
 * -Doğan Aydın - succes-stories.textile dosyası benimdir.-
-* 110201 - Ümit - ruby-from-other-laguages.textile tercüme için aldım.
+* -110201 - Ümit - ruby-from-other-laguages.textile tercüme için aldım.-
+* 110216 - Ümit - to-ruby-from-java.textile tercüme için aldım
 
 h3. Yapılacaklar
 
@@ -42,3 +43,4 @@ h3. Yapılmışlar
 * 67f621a - Doğan Aydın - to-ruby-from-php.textile dosyasını çevirdim.
 * 110201 - Ümit - 20 dakikada Ruby 4. sayfa bitti, yeni sayfalar tercüme edilmek için klasöre kondu.
 * 0771659 - Doğan Aydın - succes.stories.textile bitti, tercüme edilmişlerin arasına kondu.
+* 110215 - Ümit - ruby-from-other-laguages.textile tercüme bitti.
