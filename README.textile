@@ -24,7 +24,8 @@ h3. Not
 * -110201 - Ümit - ritm4.textile tercümeye aldım-
 * -Doğan Aydın - succes-stories.textile dosyası benimdir.-
 * -110201 - Ümit - ruby-from-other-laguages.textile tercüme için aldım.-
-* 110216 - Ümit - to-ruby-from-java.textile tercüme için aldım
+* -110216 - Ümit - to-ruby-from-java.textile tercüme için aldım-
+* 110220 - Ümit - to-ruby-from-c-and-c-.textile tercüme için aldım
 
 h3. Yapılacaklar
 
@@ -44,3 +45,4 @@ h3. Yapılmışlar
 * 110201 - Ümit - 20 dakikada Ruby 4. sayfa bitti, yeni sayfalar tercüme edilmek için klasöre kondu.
 * 0771659 - Doğan Aydın - succes.stories.textile bitti, tercüme edilmişlerin arasına kondu.
 * 110215 - Ümit - ruby-from-other-laguages.textile tercüme bitti.
+* 110220 - Ümit - to-ruby-from-java ve to-ruby-from-perl tercümeleri bitti.
