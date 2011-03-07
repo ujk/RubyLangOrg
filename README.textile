@@ -26,6 +26,7 @@ h3. Not
 * -110201 - Ümit - ruby-from-other-laguages.textile tercüme için aldım.-
 * -110216 - Ümit - to-ruby-from-java.textile tercüme için aldım-
 * -110220 - Ümit - to-ruby-from-c-and-c-.textile tercüme için aldım-
+* 110307 - Ümit - libraries.textile tercüme için aldım
 
 h3. Yapılacaklar
 
