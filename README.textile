@@ -25,7 +25,7 @@ h3. Not
 * -Doğan Aydın - succes-stories.textile dosyası benimdir.-
 * -110201 - Ümit - ruby-from-other-laguages.textile tercüme için aldım.-
 * -110216 - Ümit - to-ruby-from-java.textile tercüme için aldım-
-* 110220 - Ümit - to-ruby-from-c-and-c-.textile tercüme için aldım
+* -110220 - Ümit - to-ruby-from-c-and-c-.textile tercüme için aldım-
 
 h3. Yapılacaklar
 
@@ -46,3 +46,4 @@ h3. Yapılmışlar
 * 0771659 - Doğan Aydın - succes.stories.textile bitti, tercüme edilmişlerin arasına kondu.
 * 110215 - Ümit - ruby-from-other-laguages.textile tercüme bitti.
 * 110220 - Ümit - to-ruby-from-java ve to-ruby-from-perl tercümeleri bitti.
+* 110307 - Ümit - to-ruby-from-c-and-c-.textile tercüme bitti.
