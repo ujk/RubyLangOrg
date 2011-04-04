@@ -1,9 +1,11 @@
 h1. Türkçe Tercüme 
 
-Ana sitenin Türkçe tercümesini yaparken takip edebilmek amaçlı olarak koyasını 
+Ana sitenin Türkçe tercümesini yaparken takip edebilmek amaçlı olarak kopyasını 
 oluşturmaya çalıştım. Buradan klonlayıp klasörün içinde
 
+<pre>
 script/server -e production
+</pre>
 
 komutuyla çalıştırabilirsiniz. Administrator - radiant kullanıcı ve şifre ile giriliyor. 
 Ben önce lokalde alıştırma yapayım diye bunu tercih ettim. Ama bir şekilde sayfaları veritabanı 
@@ -11,9 +13,39 @@ dışına alıp çalışmak daha doğru olacak.
 
 Radiant cms kullanımı için gem olarak kurulması gerekiyor. Şimdilik sqlite3 veritabanı kullandım.
 
+Yaptığınız çalışmaları siteye ulaştırmak için bana ya da "hazal":http://tuxweet.linux.org.tr/hazal a başvurabilirsiniz.
+İletişim : ujk7107@gmail.com , niyaziates77@gmail.com
+
+h3. Not
+
+* -ritm3.textile'ı tercümeye aldım-
+* -to-ruby-from-php.textile tercümesine başladım. (Doğan Aydın)-
+* -110127 - Ümit - Ya bir tane Tercüme Edilmişler Klasörü vardı kaybolmuş. İçi boş bırakınca otomatik siliniyor herhalde, fake bişeyler bırakmak lazım içine-
+* -110201 - Ümit - ritm4.textile tercümeye aldım-
+* -Doğan Aydın - succes-stories.textile dosyası benimdir.-
+* -110201 - Ümit - ruby-from-other-laguages.textile tercüme için aldım.-
+* -110216 - Ümit - to-ruby-from-java.textile tercüme için aldım-
+* -110220 - Ümit - to-ruby-from-c-and-c-.textile tercüme için aldım-
+* -110307 - Ümit - libraries.textile tercüme için aldım-
+
 h3. Yapılacaklar
 
 * -Documentation sayfası kontrol edilecek-
-* Tercüme edilmişler ve tercüme edilecekler ayrı klasörlerde toplanacak
+* -Tercüme edilmişler ve tercüme edilecekler ayrı klasörlerde toplanacak-
 * Sitenin orjinalini nasıl takip edeceğiz? Sayfa değişince buraya çekmek lazım
+* Tercüme edilecekler klasöründen birşeyi tercüme edecek olan buraya not bıraksın (bu dosyayı edit etsin)
+* Tercümesi biteni bitmişler klasörüne koyun ben siteye atabilirim
+* Topluluk sayfası kontrol edilecek
+* Tercüme için dosyaya başlayan , başladığı işi buraya (yani direk bu dosyayı git üzerinde edit ederek) yazarsa karışma olmaz sanırım
 
+h3. Yapılmışlar
+
+* 110125 -  Doğan Aydın - to-ruby-from-python.textile dosyasını çevirdim.
+* 110126 -  Ümit - Doğan Aydın katılımcı yapılıdı, 20 dakikada ruby 3. sayfa bitti, yerine kondu.
+* 67f621a - Doğan Aydın - to-ruby-from-php.textile dosyasını çevirdim.
+* 110201 - Ümit - 20 dakikada Ruby 4. sayfa bitti, yeni sayfalar tercüme edilmek için klasöre kondu.
+* 0771659 - Doğan Aydın - succes.stories.textile bitti, tercüme edilmişlerin arasına kondu.
+* 110215 - Ümit - ruby-from-other-laguages.textile tercüme bitti.
+* 110220 - Ümit - to-ruby-from-java ve to-ruby-from-perl tercümeleri bitti.
+* 110307 - Ümit - to-ruby-from-c-and-c-.textile tercüme bitti.
+* 110404 - Ümit - libraries.textile tercüme bitti

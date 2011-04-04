@@ -1,0 +1,77 @@
+ 
+Ruby çok sayıda büyüleyici ve kullanışlı kütüphanelere sahiptir, bir çoğu "klasik _gem_ dosyası":http://docs.rubygems.org olarak yayınlanmıştır. Diğer kütüphaneler kaynak kodunun .zip ya da .tar.gz arşivlenmişi olarak yayınlanır. Haydi kütüphaneleri nasıl bulacağımızı kuracağımızı inceleyelim.
+
+h3. <a id="finding-libraries"></a>Kütüphaneleri Bulmak
+
+"*RubyForge*":http://rubyforge.org/ , Ruby kütüphanelerinin popüler evidir. İyi bir yol onun kütüphanelerinin başlıklar altında incelendiği "software map":http://rubyforge.org/softwaremap/trove_list.php 'inde gezinmek. Eğer kendi kütüphanenizi üretirseniz Rubyforge'ye "kayıt":http://rubyforge.org/register/ ederek ücretsiz Subversion erişimi, web alanı ve mail listesi alabilirsiniz.
+
+"*Ruby Application Archive*":http://raa.ruby-lang.org/ (ya da RAA) işlevleri bakımından ruby uygulamalarının toplandığı bir klasör. Şu anda "Database":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=Database
+kategorisi en çok girdiye sahip, "Net.":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=Net
+"HTML":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=HTML ve "XML":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=XML
+onu takip ediyorlar. "Physics":http://raa.ruby-lang.org/cat.rhtml?category_major=Library;category_minor=Physics için bile girdi var.
+
+h3. <a id="using-rubygems"></a>RubyGemlerin Kullanımı
+
+"RubyGems web sitesinde":http://docs.rubygems.org yer aldığı gibi "RubyGemleri esas Ruby paketleme sistemidir. Ruby program ve kütüphanelerinin dağıtımı için standart yapıdır ve Gem paketlerini kurmak için kolay kullanılan bir araçtır." 
+
+Windows installer içinde RubyGems olmasına rağmen birçok dağıtımda ayrıca kurulması gerekir. Bu konuda eğer sıradaki gem komutu sizde çalışmazsa aşağıdaki "RubyGemlerin Kurulması":#installing-rubygems kısmına bakınız.
+
+h4. Gemleri Araştırmak
+
+ *search* komutu adı belirli bir gem'i bulmak için  kullanılır. Adında "html" olan bir Gem bulmak için:
+
+<notextile><r:code lang="bash">
+ $ gem search html --remote
+
+ *** REMOTE GEMS ***
+
+ html-sample (1.0, 1.1)
+    A sample Ruby gem, just to illustrate how RubyGems works.
+</r:code></notextile>
+
+(_Burada @--remote@ bayrağı ile ana depodaki gemleri sorguluyoruz._)
+
+h4. Bir Gem Kurulması
+
+Hangi gem'i *kuracağınıza* karar verdiğinizde:
+
+<notextile><r:code lang="bash">
+ $ gem install html-sample
+</r:code></notextile>
+
+Eğer isterseniz @--version@ bayrağı ile belli bir versiyonu da yükleyebilirsiniz.
+
+<notextile><r:code lang="bash">
+ $ gem install html-sample --version 1.0
+</r:code></notextile>
+
+h4. Tüm Gemlerin Listelenmesi
+
+Ana depodaki tüm gemlerin bir *listesi* için:
+
+<notextile><r:code lang="bash">
+ $ gem list --remote
+</r:code></notextile>
+
+Sizde kurulu olan gemleri listelemek için bayrak kullanmadan yazın.
+
+<notextile><r:code lang="bash">
+ $ gem list
+</r:code></notextile>
+
+RubyGems kullanımı hakkında daha fazla bilgi için "*the official manual*":http://rubygems.org/read/chapter/1 e bakınız, burada Ruby betiklerinizde gemlerin nasıl kullanılacağına dair örnekler vardır.
+
+h3. <a id="installing-rubygems"></a>RubyGems Kurulumu
+
+RubyGems kurmak için, önce "download sayfasından":http://rubyforge.org/frs/?group_id=126 indirin. Arşivi açın ve @setup.rb@ çalıştırın. Bazı işletim sistemlerinde bunu root olarak yapmanız gerekir.
+
+Örneğin, Linux'ta:
+
+<notextile><r:code lang="bash">
+$ tar xzvf rubygems-0.9.0.tar.gz
+$ cd rubygems-0.9.0
+$ su -
+# ruby setup.rb
+</r:code></notextile>
+
+If you need some further direction on how to install Ruby, check out the "*installation chapter*":http://rubygems.org/read/chapter/3 in the RubyGems manual.
